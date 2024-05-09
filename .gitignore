@@ -1,0 +1,33 @@
+# Directory create da PyCharm
+.idea/
+
+# File di configurazione di PyCharm
+*.iml
+*.ipr
+*.iws
+
+# File di configurazione del debugger
+*.pyc
+
+# File temporanei di PyCharm
+*~
+
+# File generati dall'editor
+*.swp
+
+# Cache di PyCharm
+__pycache__/
+
+# Cache di Jupyter Notebook
+.ipynb_checkpoints/
+
+# File di log
+*.log
+
+# File di backup
+*.bak
+
+# Directory dell'ambiente virtuale
+venv/
+
+generated.json
