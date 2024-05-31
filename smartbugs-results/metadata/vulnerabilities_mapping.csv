@@ -161,3 +161,23 @@ semgrep,use-ownable2step
 semgrep,use-custom-error-not-require
 semgrep,use-short-revert-string
 semgrep,incorrect-use-of-blockhash
+conkas,Reentrancy
+conkas,Unchecked Low Level Call
+conkas,Time Manipulation
+conkas,Transaction Ordering Dependence
+confuzzius,Assertion Failure
+confuzzius,Unhandled Exception
+confuzzius,Transaction Order Dependency
+confuzzius,Block Dependency
+confuzzius,Leaking Ether
+confuzzius,Arbitrary Memory Access
+confuzzius,Unsafe Delegatecall
+confuzzius,Unprotected Selfdestruct
+sfuzz,Exception Disorder
+sfuzz,Timestamp Dependency
+sfuzz,Gasless Send
+sfuzz,Block Number Dependency
+sfuzz,Freezing Ether
+sfuzz,Dangerous Delegate Call
+vandal,UncheckedCall
+vandal,ReentrantCall
