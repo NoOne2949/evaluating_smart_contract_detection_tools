@@ -32,3 +32,4 @@ venv/
 
 generated.json
 results/
+dataset/*

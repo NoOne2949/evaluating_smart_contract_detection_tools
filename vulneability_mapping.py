@@ -12,23 +12,25 @@ def check_line(vulnerability_name):
     return False
 
 
-def process_vulnerabilities(vulnerabilities, vulnerability_type):
+def process_vulnerabilities(tool, vulnerabilities, vulnerability_type):
     for vulnerability in vulnerabilities:
-        if vulnerability.get("name"):
+        if type(vulnerability) is dict and vulnerability.get("name"):
             vulnerability_name = vulnerability.get("name")
-            category = vulnerability.get("category")
-            print(f"{vulnerability_type}, {category}, {vulnerability_name}")
+
+            if vulnerability_name == 'secure':
+                return
+
+            print(f"{tool}, {vulnerability_type}, {vulnerability_name}")
             if not check_line(vulnerability_name):
                 with open(vulnerability_file, 'a', newline='') as file:
                     writer = csv.writer(file)
-                    writer.writerow(['semgrep', vulnerability_name])
+                    writer.writerow([tool, vulnerability_name])
+
+def parser(tool, json_content):
+    process_vulnerabilities(tool, json_content.get("errors", []), "error")
+    process_vulnerabilities(tool, json_content.get("fails", []), "fail")
+    process_vulnerabilities(tool, json_content.get("findings", []), "finding")
 
 
-def semgrep(json_content):
-    process_vulnerabilities(json_content.get("errors", []), "error")
-    process_vulnerabilities(json_content.get("fails", []), "fail")
-    process_vulnerabilities(json_content.get("findings", []), "finding")
-
-
-def addVulnerability(file):
-    semgrep(file)
+def addVulnerability(tool, file):
+    parser(tool, file)
