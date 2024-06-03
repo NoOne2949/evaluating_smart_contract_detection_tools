@@ -5,6 +5,7 @@ import random
 from compile import compile_sol_to_hex
 from vulneability_mapping import addVulnerability
 
+
 def process_json_files(directory):
     for dir_name in os.listdir(directory):
         tool = dir_name.lower()
@@ -19,9 +20,27 @@ def process_json_files(directory):
                         addVulnerability(tool, json_content)
 
 
-if __name__ == '__main__':
-    directory = r"results/"
-    process_json_files(directory)
+def compileContract(directory):
+    compiled_contracts = []
+    not_compiled_contracts = []
 
-    # sol_file_path = 'dataset/'
-    # compile_sol_to_hex(sol_file_path)
+    for root, _, files in os.walk(directory):
+        for file in files:
+            compiled = compile_sol_to_hex(os.path.join(directory, file))
+            if compiled is True:
+                compiled_contracts.append(file)
+            else:
+                not_compiled_contracts.append(file)
+
+    print(f"\ncontracts compiled: {len(compiled_contracts)}")
+    for contract in not_compiled_contracts:
+        print(f"contract compiled: {contract}")
+
+    print(f"\ncontracts not compiled: {len(not_compiled_contracts)}")
+    for contract in not_compiled_contracts:
+        print(f"contract not compiled: {contract}")
+
+
+if __name__ == '__main__':
+    sol_file_path = 'dataset/'
+    compileContract(sol_file_path)
