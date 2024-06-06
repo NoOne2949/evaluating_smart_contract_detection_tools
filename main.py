@@ -1,5 +1,5 @@
 from compile import compileContract
-from vulneability_mapping import process_json_files
+from vulnerability_mapping import process_json_files
 
 
 def menu():
