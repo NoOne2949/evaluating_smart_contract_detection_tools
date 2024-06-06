@@ -1,3 +1,4 @@
+from aggregate_artifacts import aggregate_artifacts
 from compile import compileContract
 from vulnerability_mapping import process_json_files
 
@@ -6,6 +7,7 @@ def menu():
     print("\n\nMenu:")
     print("1. Compile dataset files")
     print("2. Parse analysis results")
+    print("3. Aggregate artifacts csvs")
     print("0. Exit")
     choice = input("-: ")
 
@@ -17,6 +19,8 @@ def menu():
         results_file_path = 'results/'
         process_json_files(results_file_path)
         menu()
+    elif choice == '3':
+        aggregate_artifacts()
     elif choice == '0':
         print("Exiting...")
     else:
