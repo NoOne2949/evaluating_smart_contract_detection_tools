@@ -1,5 +1,6 @@
 from aggregate_artifacts import aggregate_artifacts
 from compile import compileContract
+from confront_vulnerability import confront_vulnerability
 from vulnerability_mapping import process_json_files
 
 
@@ -7,7 +8,8 @@ def menu():
     print("\n\nMenu:")
     print("1. Compile dataset files")
     print("2. Parse analysis results")
-    print("3. Aggregate artifacts csvs")
+    print("3. Confront tool analysis")
+    print("4. Aggregate artifacts csvs")
     print("0. Exit")
     choice = input("-: ")
 
@@ -20,6 +22,8 @@ def menu():
         process_json_files(results_file_path)
         menu()
     elif choice == '3':
+        confront_vulnerability()
+    elif choice == '4':
         aggregate_artifacts()
     elif choice == '0':
         print("Exiting...")
