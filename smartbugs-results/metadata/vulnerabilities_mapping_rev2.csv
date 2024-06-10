@@ -140,44 +140,37 @@ honeybadger,straw_man_contract,,,,TRUE,,,,,,,
 honeybadger,hidden_transfer,,,,,,,,,,TRUE,
 honeybadger,balance_disorder,,,,,,,,,,,TRUE
 honeybadger,type_overflow,,TRUE,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,Include,97
-,,,,,,,,,,,Ignore,44semgrep,non-payable-constructor
 semgrep,use-prefix-decrement-not-postfix
 semgrep,inefficient-state-variable-increment
-semgrep,use-multiple-require
+semgrep,use-multiple-require,,,,,,,,,,TRUE
 semgrep,array-length-outside-loop
 semgrep,state-variable-read-in-a-loop
 semgrep,unnecessary-checked-arithmetic-in-loop
-semgrep,use-nested-if
+semgrep,use-nested-if,,,,,,,,,,TRUE
 semgrep,use-prefix-increment-not-postfix
 semgrep,delegatecall-to-arbitrary-address
 semgrep,init-variables-with-default-value
 semgrep,use-ownable2step
 semgrep,use-custom-error-not-require
 semgrep,use-short-revert-string
-semgrep,incorrect-use-of-blockhash
-conkas,Reentrancy
-conkas,Unchecked Low Level Call
-conkas,Time Manipulation
-conkas,Transaction Ordering Dependence
-confuzzius,Assertion Failure
-confuzzius,Unhandled Exception
-confuzzius,Transaction Order Dependency
+semgrep,incorrect-use-of-blockhash,,,,,,TRUE
+conkas,Reentrancy,,,,TRUE
+conkas,Unchecked Low Level Call,,,,,TRUE
+conkas,Time Manipulation,,,,,,,,TRUE
+conkas,Transaction Ordering Dependence,,,,,,,TRUE
+confuzzius,Assertion Failure,,,,,,,,,,TRUE
+confuzzius,Unhandled Exception,,,,,,,,,,TRUE
+confuzzius,Transaction Order Dependency,,,,,TRUE
 confuzzius,Block Dependency
 confuzzius,Leaking Ether
-confuzzius,Arbitrary Memory Access
+confuzzius,Arbitrary Memory Access,TRUE
 confuzzius,Unsafe Delegatecall
-confuzzius,Unprotected Selfdestruct
+confuzzius,Unprotected Selfdestruct,TRUE
 sfuzz,Exception Disorder
-sfuzz,Timestamp Dependency
+sfuzz,Timestamp Dependency,,,,,,,,TRUE
 sfuzz,Gasless Send
 sfuzz,Block Number Dependency
 sfuzz,Freezing Ether
 sfuzz,Dangerous Delegate Call
-vandal,UncheckedCall
-vandal,ReentrantCall
+vandal,UncheckedCall,,,,,TRUE
+vandal,ReentrantCall,,,,TRUE
