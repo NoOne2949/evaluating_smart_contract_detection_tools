@@ -161,9 +161,9 @@ semgrep,use-ownable2step
 semgrep,use-custom-error-not-require
 semgrep,use-short-revert-string
 semgrep,incorrect-use-of-blockhash
-conkas,Reentrancy
-conkas,Unchecked Low Level Call
-conkas,Time Manipulation
+conkas,Reentrancy,,,,TRUE
+conkas,Unchecked Low Level Call,,,,,TRUE
+conkas,Time Manipulation,,,,,,,,TRUE
 conkas,Transaction Ordering Dependence
 confuzzius,Assertion Failure
 confuzzius,Unhandled Exception
@@ -181,3 +181,88 @@ sfuzz,Freezing Ether
 sfuzz,Dangerous Delegate Call
 vandal,UncheckedCall
 vandal,ReentrantCall
+slither,arbitrary-send-eth
+slither,unchecked-lowlevel
+slither,missing-zero-check
+slither,reentrancy-unlimited-gas
+slither,controlled-array-length
+slither,weak-prng
+slither,reentrancy-events
+slither,divide-before-multiply
+slither,unchecked-send
+slither,events-access
+slither,events-maths
+slither,incorrect-modifier
+slither,costly-loop
+slither,constant-function-asm
+slither,too-many-digits
+slither,dead-code
+slither,cache-array-length
+slither,tautology
+slither,boolean-equal
+slither,similar-names
+slither,unchecked-transfer
+slither,missing-inheritance
+slither,return-bomb
+slither,redundant-statements
+maian,Not destructible (no self-destruct)
+maian,No Ether leak (no send)
+maian,No Ether lock (Ether refused)
+maian,Ether leak (verified)
+maian,Destructible (verified)
+oyente,Callstack Depth Attack Vulnerability
+oyente,Re-Entrancy Vulnerability
+oyente,Transaction-Ordering Dependence (TOD)
+solhint,compiler-version
+solhint,reason-string
+solhint,func-visibility
+solhint,avoid-call-value
+solhint,avoid-low-level-calls
+solhint,avoid-sha3
+solhint,visibility-modifier-order
+solhint,not-rely-on-time
+solhint,contract-name-camelcase
+solhint,var-name-mixedcase
+solhint,state-visibility
+solhint,func-name-mixedcase
+solhint,avoid-tx-origin
+solhint,payable-fallback
+solhint,check-send-result
+solhint,multiple-sends
+solhint,avoid-throw
+solhint,quotes
+solhint,not-rely-on-block-hash
+solhint,no-unused-vars
+solhint,const-name-snakecase
+solhint,no-inline-assembly
+solhint,no-empty-blocks
+solhint,no-complex-fallback
+solhint,avoid-suicide
+solhint,max-states-count
+solhint,event-name-camelcase
+mythril,Transaction Order Dependence (SWC 114)
+mythril,Unprotected Ether Withdrawal (SWC 105)
+mythril,Dependence on tx.origin (SWC 115)
+mythril,External Call To User-Supplied Address (SWC 107)
+mythril,Unchecked return value from external call. (SWC 104)
+mythril,State access after external call (SWC 107)
+mythril,Exception State (SWC 110)
+mythril,Multiple Calls in a Single Transaction (SWC 113)
+mythril,Dependence on predictable environment variable (SWC 116)
+mythril,Integer Arithmetic Bugs (SWC 101)
+mythril,Dependence on predictable environment variable (SWC 120)
+mythril,requirement violation (SWC 123)
+mythril,Delegatecall to user-supplied address (SWC 112)
+mythril,Write to an arbitrary storage location (SWC 124)
+mythril,Unprotected Selfdestruct (SWC 106)
+ethor-2023,insecure
+vandal,OriginUsed
+vandal,CheckedCallStateUpdate
+osiris,Callstack bug
+osiris,Truncation bugs
+osiris,Reentrancy bug
+osiris,Overflow bugs
+osiris,Underflow bugs
+osiris,Concurrency bug
+osiris,Time dependency bug
+osiris,Division bugs
