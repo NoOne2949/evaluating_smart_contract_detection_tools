@@ -16,20 +16,19 @@ def menu():
     if choice == '1':
         sol_file_path = 'dataset/'
         compileContract(sol_file_path)
-        menu()
     elif choice == '2':
         results_file_path = 'results/'
         process_json_files(results_file_path)
-        menu()
     elif choice == '3':
         confront_vulnerability()
     elif choice == '4':
         aggregate_artifacts()
     elif choice == '0':
         print("Exiting...")
+        return
     else:
         print("Invalid input. Retry...")
-        menu()
+    menu()
 
 
 if __name__ == '__main__':

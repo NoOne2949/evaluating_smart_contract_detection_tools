@@ -181,30 +181,30 @@ sfuzz,Freezing Ether
 sfuzz,Dangerous Delegate Call
 vandal,UncheckedCall
 vandal,ReentrantCall
-slither,arbitrary-send-eth
-slither,unchecked-lowlevel
-slither,missing-zero-check
-slither,reentrancy-unlimited-gas
-slither,controlled-array-length
-slither,weak-prng
-slither,reentrancy-events
-slither,divide-before-multiply
-slither,unchecked-send
-slither,events-access
-slither,events-maths
-slither,incorrect-modifier
-slither,costly-loop
-slither,constant-function-asm
-slither,too-many-digits
-slither,dead-code
-slither,cache-array-length
-slither,tautology
-slither,boolean-equal
-slither,similar-names
-slither,unchecked-transfer
-slither,missing-inheritance
-slither,return-bomb
-slither,redundant-statements
+slither,arbitrary-send-eth,,,,,TRUE
+slither,unchecked-lowlevel,,,,,TRUE
+slither,missing-zero-check,,,,,TRUE
+slither,reentrancy-unlimited-gas,,,,TRUE
+slither,controlled-array-length,TRUE
+slither,weak-prng,,,,,,,,TRUE
+slither,reentrancy-events,,,,TRUE
+slither,divide-before-multiply,,TRUE
+slither,unchecked-send,,,,,TRUE
+slither,events-access,TRUE
+slither,events-maths,,TRUE
+slither,incorrect-modifier,,TRUE
+slither,costly-loop,,,,,,,,,,,TRUE
+slither,constant-function-asm,TRUE
+slither,too-many-digits,,,,,,,,,,,TRUE
+slither,dead-code,,,,,,,,,,,TRUE
+slither,cache-array-length,,,,,,,,,,TRUE
+slither,tautology,,,,,,,,,,TRUE
+slither,boolean-equal,,,,,,,,,,,TRUE
+slither,similar-names,,,,,,,,,,,TRUE
+slither,unchecked-transfer,TRUE
+slither,missing-inheritance,,,,,,,,,,,TRUE
+slither,return-bomb,,,,,TRUE
+slither,redundant-statements,,,,,,,,,,,TRUE
 maian,Not destructible (no self-destruct)
 maian,No Ether leak (no send)
 maian,No Ether lock (Ether refused)
@@ -266,3 +266,15 @@ osiris,Underflow bugs
 osiris,Concurrency bug
 osiris,Time dependency bug
 osiris,Division bugs
+slither,incorrect-exp
+slither,pragma
+slither,variable-scope
+slither,cyclomatic-complexity
+slither,function-init-state
+slither,msg-value-loop
+slither,mapping-deletion
+maian,Ether lock (Ether accepted without send)
+maian,Ether lock
+maian,Ether leak
+solhint,use-forbidden-name
+mythril,Locking Ether
