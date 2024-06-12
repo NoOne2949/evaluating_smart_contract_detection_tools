@@ -146,135 +146,135 @@ honeybadger,type_overflow,,TRUE,,,,,,,,,
 ,,,,,,,,,,,,
 ,,,,,,,,,,,,
 ,,,,,,,,,,,Include,97
-,,,,,,,,,,,Ignore,44semgrep,non-payable-constructor
-semgrep,use-prefix-decrement-not-postfix
-semgrep,inefficient-state-variable-increment
-semgrep,use-multiple-require
-semgrep,array-length-outside-loop
-semgrep,state-variable-read-in-a-loop
-semgrep,unnecessary-checked-arithmetic-in-loop
-semgrep,use-nested-if
-semgrep,use-prefix-increment-not-postfix
-semgrep,delegatecall-to-arbitrary-address
-semgrep,init-variables-with-default-value
-semgrep,use-ownable2step
-semgrep,use-custom-error-not-require
-semgrep,use-short-revert-string
-semgrep,incorrect-use-of-blockhash
-conkas,Reentrancy,,,,TRUE
-conkas,Unchecked Low Level Call,,,,,TRUE
-conkas,Time Manipulation,,,,,,,,TRUE
-conkas,Transaction Ordering Dependence
-confuzzius,Assertion Failure
-confuzzius,Unhandled Exception
-confuzzius,Transaction Order Dependency
-confuzzius,Block Dependency
-confuzzius,Leaking Ether
-confuzzius,Arbitrary Memory Access
-confuzzius,Unsafe Delegatecall
-confuzzius,Unprotected Selfdestruct
-sfuzz,Exception Disorder
-sfuzz,Timestamp Dependency
-sfuzz,Gasless Send
-sfuzz,Block Number Dependency
-sfuzz,Freezing Ether
-sfuzz,Dangerous Delegate Call
-vandal,UncheckedCall
-vandal,ReentrantCall
-slither,arbitrary-send-eth,,,,,TRUE
-slither,unchecked-lowlevel,,,,,TRUE
-slither,missing-zero-check,,,,,TRUE
-slither,reentrancy-unlimited-gas,,,,TRUE
-slither,controlled-array-length,TRUE
-slither,weak-prng,,,,,,,,TRUE
-slither,reentrancy-events,,,,TRUE
-slither,divide-before-multiply,,TRUE
-slither,unchecked-send,,,,,TRUE
-slither,events-access,TRUE
-slither,events-maths,,TRUE
-slither,incorrect-modifier,,TRUE
+,,,,,,,,,,,Ignore,44semgrep
+semgrep,use-prefix-decrement-not-postfix,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,inefficient-state-variable-increment,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,use-multiple-require,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,array-length-outside-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,state-variable-read-in-a-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,unnecessary-checked-arithmetic-in-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,use-nested-if,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,use-prefix-increment-not-postfix,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,delegatecall-to-arbitrary-address,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,init-variables-with-default-value,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,use-ownable2step,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,use-custom-error-not-require,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,use-short-revert-string,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,incorrect-use-of-blockhash,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+conkas,Reentrancy,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+conkas,Unchecked Low Level Call,,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL
+conkas,Time Manipulation,,,,,,,,TRUE,NULL,NULL,NULL
+conkas,Transaction Ordering Dependence,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+confuzzius,Assertion Failure,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+confuzzius,Unhandled Exception,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+confuzzius,Transaction Order Dependency,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+confuzzius,Block Dependency,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+confuzzius,Leaking Ether,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+confuzzius,Arbitrary Memory Access,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+confuzzius,Unsafe Delegatecall,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+confuzzius,Unprotected Selfdestruct,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+sfuzz,Exception Disorder,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+sfuzz,Timestamp Dependency,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+sfuzz,Gasless Send,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+sfuzz,Block Number Dependency,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+sfuzz,Freezing Ether,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+sfuzz,Dangerous Delegate Call,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+vandal,UncheckedCall,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+vandal,ReentrantCall,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,arbitrary-send-eth,,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL
+slither,unchecked-lowlevel,,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL
+slither,missing-zero-check,,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL
+slither,reentrancy-unlimited-gas,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,controlled-array-length,TRUE,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,weak-prng,,,,,,,,TRUE,NULL,NULL,NULL
+slither,reentrancy-events,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,divide-before-multiply,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,unchecked-send,,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL
+slither,events-access,TRUE,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,events-maths,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,incorrect-modifier,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 slither,costly-loop,,,,,,,,,,,TRUE
-slither,constant-function-asm,TRUE
+slither,constant-function-asm,TRUE,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 slither,too-many-digits,,,,,,,,,,,TRUE
 slither,dead-code,,,,,,,,,,,TRUE
-slither,cache-array-length,,,,,,,,,,TRUE
-slither,tautology,,,,,,,,,,TRUE
+slither,cache-array-length,,,,,,,,,,TRUE,NULL
+slither,tautology,,,,,,,,,,TRUE,NULL
 slither,boolean-equal,,,,,,,,,,,TRUE
 slither,similar-names,,,,,,,,,,,TRUE
-slither,unchecked-transfer,TRUE
+slither,unchecked-transfer,TRUE,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 slither,missing-inheritance,,,,,,,,,,,TRUE
-slither,return-bomb,,,,,TRUE
+slither,return-bomb,,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL
 slither,redundant-statements,,,,,,,,,,,TRUE
-maian,Not destructible (no self-destruct)
-maian,No Ether leak (no send)
-maian,No Ether lock (Ether refused)
-maian,Ether leak (verified)
-maian,Destructible (verified)
-oyente,Callstack Depth Attack Vulnerability
-oyente,Re-Entrancy Vulnerability
-oyente,Transaction-Ordering Dependence (TOD)
-solhint,compiler-version
-solhint,reason-string
-solhint,func-visibility
-solhint,avoid-call-value
-solhint,avoid-low-level-calls
-solhint,avoid-sha3
-solhint,visibility-modifier-order
-solhint,not-rely-on-time
-solhint,contract-name-camelcase
-solhint,var-name-mixedcase
-solhint,state-visibility
-solhint,func-name-mixedcase
-solhint,avoid-tx-origin
-solhint,payable-fallback
-solhint,check-send-result
-solhint,multiple-sends
-solhint,avoid-throw
-solhint,quotes
-solhint,not-rely-on-block-hash
-solhint,no-unused-vars
-solhint,const-name-snakecase
-solhint,no-inline-assembly
-solhint,no-empty-blocks
-solhint,no-complex-fallback
-solhint,avoid-suicide
-solhint,max-states-count
-solhint,event-name-camelcase
-mythril,Transaction Order Dependence (SWC 114)
-mythril,Unprotected Ether Withdrawal (SWC 105)
-mythril,Dependence on tx.origin (SWC 115)
-mythril,External Call To User-Supplied Address (SWC 107)
-mythril,Unchecked return value from external call. (SWC 104)
-mythril,State access after external call (SWC 107)
-mythril,Exception State (SWC 110)
-mythril,Multiple Calls in a Single Transaction (SWC 113)
-mythril,Dependence on predictable environment variable (SWC 116)
-mythril,Integer Arithmetic Bugs (SWC 101)
-mythril,Dependence on predictable environment variable (SWC 120)
-mythril,requirement violation (SWC 123)
-mythril,Delegatecall to user-supplied address (SWC 112)
-mythril,Write to an arbitrary storage location (SWC 124)
-mythril,Unprotected Selfdestruct (SWC 106)
-ethor-2023,insecure
-vandal,OriginUsed
-vandal,CheckedCallStateUpdate
-osiris,Callstack bug
-osiris,Truncation bugs
-osiris,Reentrancy bug
-osiris,Overflow bugs
-osiris,Underflow bugs
-osiris,Concurrency bug
-osiris,Time dependency bug
-osiris,Division bugs
-slither,incorrect-exp
-slither,pragma
-slither,variable-scope
-slither,cyclomatic-complexity
-slither,function-init-state
-slither,msg-value-loop
-slither,mapping-deletion
-maian,Ether lock (Ether accepted without send)
-maian,Ether lock
-maian,Ether leak
-solhint,use-forbidden-name
-mythril,Locking Ether
+maian,Not destructible (no self-destruct),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+maian,No Ether leak (no send),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+maian,No Ether lock (Ether refused),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+maian,Ether leak (verified),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+maian,Destructible (verified),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+oyente,Callstack Depth Attack Vulnerability,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+oyente,Re-Entrancy Vulnerability,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+oyente,Transaction-Ordering Dependence (TOD),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,compiler-version,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,reason-string,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,func-visibility,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,avoid-call-value,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,avoid-low-level-calls,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,avoid-sha3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,visibility-modifier-order,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,not-rely-on-time,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,contract-name-camelcase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,var-name-mixedcase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,state-visibility,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,func-name-mixedcase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,avoid-tx-origin,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,payable-fallback,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,check-send-result,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,multiple-sends,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,avoid-throw,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,quotes,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,not-rely-on-block-hash,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,no-unused-vars,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,const-name-snakecase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,no-inline-assembly,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,no-empty-blocks,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,no-complex-fallback,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,avoid-suicide,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,max-states-count,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,event-name-camelcase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Transaction Order Dependence (SWC 114),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Unprotected Ether Withdrawal (SWC 105),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Dependence on tx.origin (SWC 115),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,External Call To User-Supplied Address (SWC 107),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Unchecked return value from external call. (SWC 104),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,State access after external call (SWC 107),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Exception State (SWC 110),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Multiple Calls in a Single Transaction (SWC 113),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Dependence on predictable environment variable (SWC 116),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Integer Arithmetic Bugs (SWC 101),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Dependence on predictable environment variable (SWC 120),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,requirement violation (SWC 123),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Delegatecall to user-supplied address (SWC 112),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Write to an arbitrary storage location (SWC 124),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Unprotected Selfdestruct (SWC 106),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+ethor-2023,insecure,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+vandal,OriginUsed,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+vandal,CheckedCallStateUpdate,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+osiris,Callstack bug,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+osiris,Truncation bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+osiris,Reentrancy bug,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+osiris,Overflow bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+osiris,Underflow bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+osiris,Concurrency bug,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+osiris,Time dependency bug,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+osiris,Division bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,incorrect-exp,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,pragma,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,variable-scope,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,cyclomatic-complexity,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,function-init-state,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,msg-value-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+slither,mapping-deletion,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+maian,Ether lock (Ether accepted without send),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+maian,Ether lock,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+maian,Ether leak,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+solhint,use-forbidden-name,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,Locking Ether,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
