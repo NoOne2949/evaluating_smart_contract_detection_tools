@@ -181,9 +181,9 @@ sfuzz,Freezing Ether,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 sfuzz,Dangerous Delegate Call,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 vandal,UncheckedCall,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 vandal,ReentrantCall,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,arbitrary-send-eth,,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL
+slither,arbitrary-send-eth,TRUE,,,,,NULL,NULL,NULL,NULL,NULL,NULL
 slither,unchecked-lowlevel,,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL
-slither,missing-zero-check,,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL
+slither,missing-zero-check,TRUE,,,,,,,,,,
 slither,reentrancy-unlimited-gas,,,,TRUE,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 slither,controlled-array-length,TRUE,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 slither,weak-prng,,,,,,,,TRUE,NULL,NULL,NULL
