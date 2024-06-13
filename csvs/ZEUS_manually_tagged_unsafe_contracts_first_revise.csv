@@ -40815,7 +40815,7 @@ contract Videos is mortal {
         return false;
     }
 }",,,True
-0x655f01313bb55c04e8ed36a5098984f3f3de57bc0x655f01313bb55c04e8ed36a5098984f3f3de57bc,6: bad randomness; 6: time manipulation;,,,,"contract RNG {
+0x655f01313bb55c04e8ed36a5098984f3f3de57bc,6: bad randomness; 6: time manipulation;,,,,"contract RNG {
     mapping (address => uint) nonces;
     uint public last;
     function RNG() { }
