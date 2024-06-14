@@ -1,285 +1,285 @@
-Tools,Vulnerability name,access_control,arithmetic,denial_service,reentrancy,unchecked_low_calls,bad_randomness,front_running,time_manipulation,short_addresses,Other,Ignore
-maian,is_lock_vulnerable,,,,,,,,,,TRUE,
-maian,is_prodigal_vulnerable,TRUE,,,,,,,,,,
-maian,is_suicidal_vulnerable,TRUE,,,,,,,,,,
-manticore,Delegatecall to user controlled address,TRUE,,,,,,,,,,
-manticore,Delegatecall to user controlled function,TRUE,,,,,,,,,,
-manticore,INVALID instruction,,,,,,,,,,TRUE,
-manticore,Potential reentrancy vulnerability,,,,TRUE,,,,,,,
-manticore,Potentially reading uninitialized memory at instruction,,,,,,,,,,TRUE,
-manticore,Potentially reading uninitialized storage,,,,,,,,,,TRUE,
-manticore,Reachable ether leak to sender,TRUE,,,,,,,,,,
-manticore,Reachable ether leak to sender via argument,TRUE,,,,,,,,,,
-manticore,Reachable external call to sender,TRUE,,,,,,,,,,
-manticore,Reachable external call to sender via argument,TRUE,,,,,,,,,,
-manticore,Reachable SELFDESTRUCT,TRUE,,,,,,,,,,
-manticore,Reentrancy multi-million ether bug,,,,TRUE,,,,,,,
-manticore,Returned value at CALL instruction is not used,,,,,TRUE,,,,,,
-manticore,Returned value at CALL instruction is not used,,,,,TRUE,,,,,,
-manticore,Unsigned integer overflow at ADD instruction,,TRUE,,,,,,,,,
-manticore,Unsigned integer overflow at MUL instruction,,TRUE,,,,,,,,,
-manticore,Unsigned integer overflow at SUB instruction,,TRUE,,,,,,,,,
-manticore,Warning BLOCKHASH instruction used,,,,,,,,,,TRUE,
-manticore,Warning NUMBER instruction used,,,,,,,,,,TRUE,
-manticore,Warning ORIGIN instruction used,TRUE,,,,,,,,,,
-manticore,Warning TIMESTAMP instruction used,,,,,,,,TRUE,,,
-mythril,Call data forwarded with delegatecall(),TRUE,,,,,,,,,,
-mythril,DELEGATECALL to user-supplied address,TRUE,,,,,,,,,,
-mythril,Dependence on predictable environment variable,,,,,,,,,,TRUE,
-mythril,Dependence on predictable variable,,,,,,,,,,TRUE,
-mythril,Ether send,TRUE,,,,,,,,,,
-mythril,Exception state,,,,,,,,,,TRUE,
-mythril,Integer Overflow,,TRUE,,,,,,,,,
-mythril,Integer Underflow,,TRUE,,,,,,,,,
-mythril,Message call to external contract,,,,TRUE,,,,,,,
-mythril,Multiple Calls,,,,,,,,,,,TRUE
-mythril,State change after external call,,,,TRUE,,,,,,,
-mythril,Transaction order dependence,,,,,,,TRUE,,,,
-mythril,Unchecked CALL return value,,,,,TRUE,,,,,,
-mythril,Unchecked SUICIDE,TRUE,,,,,,,,,,
-mythril,Use of tx.origin,TRUE,,,,,,,,,,
-osiris,callstack_bug,,,TRUE,,,,,,,,
-osiris,concurrency_bug,,,,,,,,,,,TRUE
-osiris,division_bugs,,TRUE,,,,,,,,,
-osiris,overflow_bugs,,TRUE,,,,,,,,,
-osiris,reentrancy_bug,,,,TRUE,,,,,,,
-osiris,signedness_bugs,,TRUE,,,,,,,,,
-osiris,time_dependency_bug,,,,,,,,TRUE,,,
-osiris,truncation_bugs,,TRUE,,,,,,,,,
-osiris,underflow_bugs,,TRUE,,,,,,,,,
-oyente,Callstack Depth Attack Vulnerability,,,TRUE,,,,,,,,
-oyente,Integer Overflow,,TRUE,,,,,,,,,
-oyente,Integer Underflow,,TRUE,,,,,,,,,
-oyente,Parity Multisig Bug 2,TRUE,,,,,,,,,,
-oyente,Re-Entrancy Vulnerability,,,,TRUE,,,,,,,
-oyente,Timestamp Dependency,,,,,,,,TRUE,,,
-securify,DAO,,,,TRUE,,,,,,,
-securify,DAOConstantGas,,,,TRUE,,,,,,,
-securify,LockedEther,,,,,,,,,,TRUE,
-securify,MissingInputValidation,,,,,,,,,,,TRUE
-securify,RepeatedCall,,,,,,,,,,,TRUE
-securify,TODAmount,,,,,,,TRUE,,,,
-securify,TODReceiver,,,,,,,TRUE,,,,
-securify,TODTransfer,,,,,,,TRUE,,,,
-securify,UnhandledException,,,,,TRUE,,,,,,
-securify,UnrestrictedEtherFlow,TRUE,,,,,,,,,,
-securify,UnrestrictedWrite,TRUE,,,,,,,,,,
-slither,arbitrary-send,TRUE,,,,,,,,,,
-slither,assembly,,,,,,,,,,,TRUE
-slither,calls-loop,,,TRUE,,,,,,,,
-slither,constable-states,,,,,,,,,,,TRUE
-slither,constant-function,,,,,,,,,,,TRUE
-slither,controlled-delegatecall,TRUE,,,,,,,,,,
-slither,deprecated-standards,,,,,,,,,,,TRUE
-slither,erc20-indexed,,,,,,,,,,,TRUE
-slither,erc20-interface,,,,,,,,,,,TRUE
-slither,external-function,,,,,,,,,,,TRUE
-slither,incorrect-equality,,,,,,,,,,TRUE,
-slither,locked-ether,,,,,,,,,,TRUE,
-slither,low-level-calls,,,,,TRUE,,,,,,
-slither,naming-convention,,,,,,,,,,,TRUE
-slither,reentrancy-benign,,,,TRUE,,,,,,,
-slither,reentrancy-eth,,,,TRUE,,,,,,,
-slither,reentrancy-no-eth,,,,TRUE,,,,,,,
-slither,shadowing-abstract,,,,,,,,,,,TRUE
-slither,shadowing-builtin,,,,,,,,,,,TRUE
-slither,shadowing-local,,,,,,,,,,,TRUE
-slither,shadowing-state,,,,,,,,,,,TRUE
-slither,solc-version,,,,,,,,,,,TRUE
-slither,suicidal,TRUE,,,,,,,,,,
-slither,timestamp,,,,,,,,TRUE,,,
-slither,tx-origin,TRUE,,,,,,,,,,
-slither,uninitialized-local,,,,,,,,,,TRUE,
-slither,uninitialized-state,,,,,,,,,,TRUE,
-slither,uninitialized-storage,,,,,,,,,,TRUE,
-slither,unused-return,,,,,TRUE,,,,,,
-slither,unused-state,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_ADDRESS_HARDCODED,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_ARRAY_LENGTH_MANIPULATION,,TRUE,,,,,,,,,
-smartcheck,SOLIDITY_BALANCE_EQUALITY,,,,,,,,,,TRUE,
-smartcheck,SOLIDITY_BYTE_ARRAY_INSTEAD_BYTES,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_CALL_WITHOUT_DATA,,,,TRUE,,,,,,,
-smartcheck,SOLIDITY_DEPRECATED_CONSTRUCTIONS,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_DIV_MUL,,TRUE,,,,,,,,,
-smartcheck,SOLIDITY_ERC20_APPROVE,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_ERC20_FUNCTIONS_ALWAYS_RETURN_FALSE,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_ERC20_TRANSFER_SHOULD_THROW,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_EXACT_TIME,,,,,,,,TRUE,,,
-smartcheck,SOLIDITY_EXTRA_GAS_IN_LOOPS,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,,,,,,,,,,TRUE,
-smartcheck,SOLIDITY_GAS_LIMIT_IN_LOOPS,,,TRUE,,,,,,,,
-smartcheck,SOLIDITY_INCORRECT_BLOCKHASH,,,,,,,,,,TRUE,
-smartcheck,SOLIDITY_LOCKED_MONEY,,,,,,,,,,TRUE,
-smartcheck,SOLIDITY_MSGVALUE_EQUALS_ZERO,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_OVERPOWERED_ROLE,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_PRAGMAS_VERSION,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_REDUNDANT_FALLBACK_REJECT,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_REVERT_REQUIRE,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_SAFEMATH,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_SEND,,,,,TRUE,,,,,,
-smartcheck,SOLIDITY_SHOULD_NOT_BE_PURE,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_SHOULD_NOT_BE_VIEW,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_SHOULD_RETURN_STRUCT,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_TRANSFER_IN_LOOP,,,TRUE,,,,,,,,
-smartcheck,SOLIDITY_TX_ORIGIN,TRUE,,,,,,,,,,
-smartcheck,SOLIDITY_UINT_CANT_BE_NEGATIVE,,TRUE,,,,,,,,,
-smartcheck,SOLIDITY_UNCHECKED_CALL,,,,,TRUE,,,,,,
-smartcheck,SOLIDITY_UPGRADE_TO_050,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_USING_INLINE_ASSEMBLY,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_VAR,,TRUE,,,,,,,,,
-smartcheck,SOLIDITY_VAR_IN_LOOP_FOR,,TRUE,,,,,,,,,
-smartcheck,SOLIDITY_VISIBILITY,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_WRONG_SIGNATURE,,,,,,,,,,,TRUE
-solhint,indent,,,,,,,,,,,TRUE
-solhint,max-line-length,,,,,,,,,,,TRUE
-honeybadger,hidden_state_update,,,,,,,,,,,TRUE
-honeybadger,uninitialised_struct,,,,,,,,,,TRUE,
-honeybadger,inheritance_disorder,,,,,,,,,,,TRUE
-honeybadger,straw_man_contract,,,,TRUE,,,,,,,
-honeybadger,hidden_transfer,,,,,,,,,,TRUE,
-honeybadger,balance_disorder,,,,,,,,,,,TRUE
-honeybadger,type_overflow,,TRUE,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,Include,97
-,,,,,,,,,,,Ignore,44semgrep
-semgrep,use-prefix-decrement-not-postfix,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,inefficient-state-variable-increment,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,use-multiple-require,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,array-length-outside-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,state-variable-read-in-a-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,unnecessary-checked-arithmetic-in-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,use-nested-if,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,use-prefix-increment-not-postfix,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,delegatecall-to-arbitrary-address,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,init-variables-with-default-value,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,use-ownable2step,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,use-custom-error-not-require,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,use-short-revert-string,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,incorrect-use-of-blockhash,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-conkas,Reentrancy,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-conkas,Unchecked Low Level Call,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-conkas,Time Manipulation,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-conkas,Transaction Ordering Dependence,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-confuzzius,Assertion Failure,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-confuzzius,Unhandled Exception,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-confuzzius,Transaction Order Dependency,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-confuzzius,Block Dependency,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-confuzzius,Leaking Ether,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-confuzzius,Arbitrary Memory Access,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-confuzzius,Unsafe Delegatecall,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-confuzzius,Unprotected Selfdestruct,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-sfuzz,Exception Disorder,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-sfuzz,Timestamp Dependency,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-sfuzz,Gasless Send,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-sfuzz,Block Number Dependency,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-sfuzz,Freezing Ether,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-sfuzz,Dangerous Delegate Call,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-vandal,UncheckedCall,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-vandal,ReentrantCall,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,arbitrary-send-eth,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,unchecked-lowlevel,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,missing-zero-check,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,reentrancy-unlimited-gas,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,controlled-array-length,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,weak-prng,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,reentrancy-events,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,divide-before-multiply,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,unchecked-send,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,events-access,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,events-maths,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,incorrect-modifier,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,costly-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,constant-function-asm,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,too-many-digits,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,dead-code,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,cache-array-length,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,tautology,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,boolean-equal,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,similar-names,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,unchecked-transfer,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,missing-inheritance,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,return-bomb,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,redundant-statements,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-maian,Not destructible (no self-destruct),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-maian,No Ether leak (no send),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-maian,No Ether lock (Ether refused),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-maian,Ether leak (verified),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-maian,Destructible (verified),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-oyente,Callstack Depth Attack Vulnerability,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-oyente,Re-Entrancy Vulnerability,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-oyente,Transaction-Ordering Dependence (TOD),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,compiler-version,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,reason-string,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,func-visibility,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,avoid-call-value,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,avoid-low-level-calls,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,avoid-sha3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,visibility-modifier-order,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,not-rely-on-time,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,contract-name-camelcase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,var-name-mixedcase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,state-visibility,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,func-name-mixedcase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,avoid-tx-origin,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,payable-fallback,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,check-send-result,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,multiple-sends,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,avoid-throw,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,quotes,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,not-rely-on-block-hash,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,no-unused-vars,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,const-name-snakecase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,no-inline-assembly,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,no-empty-blocks,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,no-complex-fallback,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,avoid-suicide,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,max-states-count,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,event-name-camelcase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-mythril,Unprotected Ether Withdrawal,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-mythril,Dependence on tx.origin,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-mythril,External Call To User-Supplied Address,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-mythril,Unchecked return value from external call,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-mythril,Multiple Calls in a Single Transaction,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-mythril,Integer Arithmetic Bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-mythril,requirement violation,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-mythril,Write to an arbitrary storage location,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-mythril,Unprotected Selfdestruct,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-ethor-2023,insecure,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-vandal,OriginUsed,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-vandal,CheckedCallStateUpdate,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-osiris,Callstack bug,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-osiris,Truncation bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-osiris,Reentrancy bug,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-osiris,Overflow bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-osiris,Underflow bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-osiris,Concurrency bug,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-osiris,Time dependency bug,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-osiris,Division bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,incorrect-exp,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,pragma,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,variable-scope,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,cyclomatic-complexity,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,function-init-state,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,msg-value-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-slither,mapping-deletion,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-maian,Ether lock (Ether accepted without send),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-maian,Ether lock,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-maian,Ether leak,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-solhint,use-forbidden-name,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-mythril,Locking Ether,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-semgrep,non-payable-constructor
-solhint,reentrancy
-mythril,state access after external call
-conkas,Integer Overflow
-conkas,Integer Underflow
-confuzzius,Reentrancy
-confuzzius,Integer Overflow
-ethor-2023,secure
-sfuzz,Reentrancy
-sfuzz,Integer Underflow
-sfuzz,Integer Overflow
+Tools,Vulnerability name,access_control,arithmetic,denial_service,reentrancy,unchecked_low_calls,bad_randomness,front_running,time_manipulation,short_addresses,Other,Ignore,
+maian,is_lock_vulnerable,,,,,,,,,,TRUE,,
+maian,is_prodigal_vulnerable,TRUE,,,,,,,,,,,
+maian,is_suicidal_vulnerable,TRUE,,,,,,,,,,,
+manticore,Delegatecall to user controlled address,TRUE,,,,,,,,,,,
+manticore,Delegatecall to user controlled function,TRUE,,,,,,,,,,,
+manticore,INVALID instruction,,,,,,,,,,TRUE,,
+manticore,Potential reentrancy vulnerability,,,,TRUE,,,,,,,,
+manticore,Potentially reading uninitialized memory at instruction,,,,,,,,,,TRUE,,
+manticore,Potentially reading uninitialized storage,,,,,,,,,,TRUE,,
+manticore,Reachable ether leak to sender,TRUE,,,,,,,,,,,
+manticore,Reachable ether leak to sender via argument,TRUE,,,,,,,,,,,
+manticore,Reachable external call to sender,TRUE,,,,,,,,,,,
+manticore,Reachable external call to sender via argument,TRUE,,,,,,,,,,,
+manticore,Reachable SELFDESTRUCT,TRUE,,,,,,,,,,,
+manticore,Reentrancy multi-million ether bug,,,,TRUE,,,,,,,,
+manticore,Returned value at CALL instruction is not used,,,,,TRUE,,,,,,,
+manticore,Returned value at CALL instruction is not used,,,,,TRUE,,,,,,,
+manticore,Unsigned integer overflow at ADD instruction,,TRUE,,,,,,,,,,
+manticore,Unsigned integer overflow at MUL instruction,,TRUE,,,,,,,,,,
+manticore,Unsigned integer overflow at SUB instruction,,TRUE,,,,,,,,,,
+manticore,Warning BLOCKHASH instruction used,,,,,,,,,,TRUE,,
+manticore,Warning NUMBER instruction used,,,,,,,,,,TRUE,,
+manticore,Warning ORIGIN instruction used,TRUE,,,,,,,,,,,
+manticore,Warning TIMESTAMP instruction used,,,,,,,,TRUE,,,,
+mythril,Call data forwarded with delegatecall(),TRUE,,,,,,,,,,,
+mythril,DELEGATECALL to user-supplied address,TRUE,,,,,,,,,,,
+mythril,Dependence on predictable environment variable,,,,,,,,,,TRUE,,
+mythril,Dependence on predictable variable,,,,,,,,,,TRUE,,
+mythril,Ether send,TRUE,,,,,,,,,,,
+mythril,Exception state,,,,,,,,,,TRUE,,
+mythril,Integer Overflow,,TRUE,,,,,,,,,,
+mythril,Integer Underflow,,TRUE,,,,,,,,,,
+mythril,Message call to external contract,,,,TRUE,,,,,,,,
+mythril,Multiple Calls,,,,,,,,,,,TRUE,
+mythril,State change after external call,,,,TRUE,,,,,,,,
+mythril,Transaction order dependence,,,,,,,TRUE,,,,,
+mythril,Unchecked CALL return value,,,,,TRUE,,,,,,,
+mythril,Unchecked SUICIDE,TRUE,,,,,,,,,,,
+mythril,Use of tx.origin,TRUE,,,,,,,,,,,
+osiris,callstack_bug,,,TRUE,,,,,,,,,
+osiris,concurrency_bug,,,,,,,,,,,TRUE,
+osiris,division_bugs,,TRUE,,,,,,,,,,
+osiris,overflow_bugs,,TRUE,,,,,,,,,,
+osiris,reentrancy_bug,,,,TRUE,,,,,,,,
+osiris,signedness_bugs,,TRUE,,,,,,,,,,
+osiris,time_dependency_bug,,,,,,,,TRUE,,,,
+osiris,truncation_bugs,,TRUE,,,,,,,,,,
+osiris,underflow_bugs,,TRUE,,,,,,,,,,
+oyente,Callstack Depth Attack Vulnerability,,,TRUE,,,,,,,,,
+oyente,Integer Overflow,,TRUE,,,,,,,,,,
+oyente,Integer Underflow,,TRUE,,,,,,,,,,
+oyente,Parity Multisig Bug 2,TRUE,,,,,,,,,,,
+oyente,Re-Entrancy Vulnerability,,,,TRUE,,,,,,,,
+oyente,Timestamp Dependency,,,,,,,,TRUE,,,,
+securify,DAO,,,,TRUE,,,,,,,,
+securify,DAOConstantGas,,,,TRUE,,,,,,,,
+securify,LockedEther,,,,,,,,,,TRUE,,
+securify,MissingInputValidation,,,,,,,,,,,TRUE,
+securify,RepeatedCall,,,,,,,,,,,TRUE,
+securify,TODAmount,,,,,,,TRUE,,,,,
+securify,TODReceiver,,,,,,,TRUE,,,,,
+securify,TODTransfer,,,,,,,TRUE,,,,,
+securify,UnhandledException,,,,,TRUE,,,,,,,
+securify,UnrestrictedEtherFlow,TRUE,,,,,,,,,,,
+securify,UnrestrictedWrite,TRUE,,,,,,,,,,,
+slither,arbitrary-send,TRUE,,,,,,,,,,,
+slither,assembly,,,,,,,,,,,TRUE,
+slither,calls-loop,,,TRUE,,,,,,,,,
+slither,constable-states,,,,,,,,,,,TRUE,
+slither,constant-function,,,,,,,,,,,TRUE,
+slither,controlled-delegatecall,TRUE,,,,,,,,,,,
+slither,deprecated-standards,,,,,,,,,,,TRUE,
+slither,erc20-indexed,,,,,,,,,,,TRUE,
+slither,erc20-interface,,,,,,,,,,,TRUE,
+slither,external-function,,,,,,,,,,,TRUE,
+slither,incorrect-equality,,,,,,,,,,TRUE,,
+slither,locked-ether,,,,,,,,,,TRUE,,
+slither,low-level-calls,,,,,TRUE,,,,,,,
+slither,naming-convention,,,,,,,,,,,TRUE,
+slither,reentrancy-benign,,,,TRUE,,,,,,,,
+slither,reentrancy-eth,,,,TRUE,,,,,,,,
+slither,reentrancy-no-eth,,,,TRUE,,,,,,,,
+slither,shadowing-abstract,,,,,,,,,,,TRUE,
+slither,shadowing-builtin,,,,,,,,,,,TRUE,
+slither,shadowing-local,,,,,,,,,,,TRUE,
+slither,shadowing-state,,,,,,,,,,,TRUE,
+slither,solc-version,,,,,,,,,,,TRUE,
+slither,suicidal,TRUE,,,,,,,,,,,
+slither,timestamp,,,,,,,,TRUE,,,,
+slither,tx-origin,TRUE,,,,,,,,,,,
+slither,uninitialized-local,,,,,,,,,,TRUE,,
+slither,uninitialized-state,,,,,,,,,,TRUE,,
+slither,uninitialized-storage,,,,,,,,,,TRUE,,
+slither,unused-return,,,,,TRUE,,,,,,,
+slither,unused-state,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_ADDRESS_HARDCODED,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_ARRAY_LENGTH_MANIPULATION,,TRUE,,,,,,,,,,
+smartcheck,SOLIDITY_BALANCE_EQUALITY,,,,,,,,,,TRUE,,
+smartcheck,SOLIDITY_BYTE_ARRAY_INSTEAD_BYTES,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_CALL_WITHOUT_DATA,,,,TRUE,,,,,,,,
+smartcheck,SOLIDITY_DEPRECATED_CONSTRUCTIONS,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_DIV_MUL,,TRUE,,,,,,,,,,
+smartcheck,SOLIDITY_ERC20_APPROVE,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_ERC20_FUNCTIONS_ALWAYS_RETURN_FALSE,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_ERC20_TRANSFER_SHOULD_THROW,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_EXACT_TIME,,,,,,,,TRUE,,,,
+smartcheck,SOLIDITY_EXTRA_GAS_IN_LOOPS,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,,,,,,,,,,TRUE,,
+smartcheck,SOLIDITY_GAS_LIMIT_IN_LOOPS,,,TRUE,,,,,,,,,
+smartcheck,SOLIDITY_INCORRECT_BLOCKHASH,,,,,,,,,,TRUE,,
+smartcheck,SOLIDITY_LOCKED_MONEY,,,,,,,,,,TRUE,,
+smartcheck,SOLIDITY_MSGVALUE_EQUALS_ZERO,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_OVERPOWERED_ROLE,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_PRAGMAS_VERSION,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_REDUNDANT_FALLBACK_REJECT,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_REVERT_REQUIRE,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_SAFEMATH,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_SEND,,,,,TRUE,,,,,,,
+smartcheck,SOLIDITY_SHOULD_NOT_BE_PURE,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_SHOULD_NOT_BE_VIEW,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_SHOULD_RETURN_STRUCT,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_TRANSFER_IN_LOOP,,,TRUE,,,,,,,,,
+smartcheck,SOLIDITY_TX_ORIGIN,TRUE,,,,,,,,,,,
+smartcheck,SOLIDITY_UINT_CANT_BE_NEGATIVE,,TRUE,,,,,,,,,,
+smartcheck,SOLIDITY_UNCHECKED_CALL,,,,,TRUE,,,,,,,
+smartcheck,SOLIDITY_UPGRADE_TO_050,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_USING_INLINE_ASSEMBLY,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_VAR,,TRUE,,,,,,,,,,
+smartcheck,SOLIDITY_VAR_IN_LOOP_FOR,,TRUE,,,,,,,,,,
+smartcheck,SOLIDITY_VISIBILITY,,,,,,,,,,,TRUE,
+smartcheck,SOLIDITY_WRONG_SIGNATURE,,,,,,,,,,,TRUE,
+solhint,indent,,,,,,,,,,,TRUE,
+solhint,max-line-length,,,,,,,,,,,TRUE,
+honeybadger,hidden_state_update,,,,,,,,,,,TRUE,
+honeybadger,uninitialised_struct,,,,,,,,,,TRUE,,
+honeybadger,inheritance_disorder,,,,,,,,,,,TRUE,
+honeybadger,straw_man_contract,,,,TRUE,,,,,,,,
+honeybadger,hidden_transfer,,,,,,,,,,TRUE,,
+honeybadger,balance_disorder,,,,,,,,,,,TRUE,
+honeybadger,type_overflow,,TRUE,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,Include,97,
+,,,,,,,,,,,Ignore,44semgrep,
+semgrep,use-prefix-decrement-not-postfix,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,inefficient-state-variable-increment,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,use-multiple-require,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,array-length-outside-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,state-variable-read-in-a-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,unnecessary-checked-arithmetic-in-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,use-nested-if,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,use-prefix-increment-not-postfix,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,delegatecall-to-arbitrary-address,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,init-variables-with-default-value,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,use-ownable2step,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,use-custom-error-not-require,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,use-short-revert-string,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,incorrect-use-of-blockhash,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+conkas,Reentrancy,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+conkas,Unchecked Low Level Call,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+conkas,Time Manipulation,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+conkas,Transaction Ordering Dependence,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+confuzzius,Assertion Failure,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+confuzzius,Unhandled Exception,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+confuzzius,Transaction Order Dependency,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+confuzzius,Block Dependency,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+confuzzius,Leaking Ether,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+confuzzius,Arbitrary Memory Access,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+confuzzius,Unsafe Delegatecall,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+confuzzius,Unprotected Selfdestruct,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+sfuzz,Exception Disorder,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+sfuzz,Timestamp Dependency,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+sfuzz,Gasless Send,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+sfuzz,Block Number Dependency,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+sfuzz,Freezing Ether,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+sfuzz,Dangerous Delegate Call,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+vandal,UncheckedCall,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+vandal,ReentrantCall,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,arbitrary-send-eth,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,unchecked-lowlevel,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,missing-zero-check,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,reentrancy-unlimited-gas,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,controlled-array-length,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,weak-prng,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,reentrancy-events,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,divide-before-multiply,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,unchecked-send,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,events-access,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,events-maths,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,incorrect-modifier,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,costly-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,constant-function-asm,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,too-many-digits,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,dead-code,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,cache-array-length,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,tautology,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,boolean-equal,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,similar-names,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,unchecked-transfer,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,missing-inheritance,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,return-bomb,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,redundant-statements,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+maian,Not destructible (no self-destruct),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+maian,No Ether leak (no send),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+maian,No Ether lock (Ether refused),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+maian,Ether leak (verified),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+maian,Destructible (verified),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+oyente,Callstack Depth Attack Vulnerability,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+oyente,Re-Entrancy Vulnerability,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+oyente,Transaction-Ordering Dependence (TOD),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,compiler-version,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,reason-string,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,func-visibility,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,avoid-call-value,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,avoid-low-level-calls,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,avoid-sha3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,visibility-modifier-order,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,not-rely-on-time,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,contract-name-camelcase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,var-name-mixedcase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,state-visibility,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,func-name-mixedcase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,avoid-tx-origin,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,payable-fallback,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,check-send-result,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,multiple-sends,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,avoid-throw,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,quotes,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,not-rely-on-block-hash,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,no-unused-vars,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,const-name-snakecase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,no-inline-assembly,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,no-empty-blocks,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,no-complex-fallback,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,avoid-suicide,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,max-states-count,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,event-name-camelcase,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+mythril,Unprotected Ether Withdrawal,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+mythril,Dependence on tx.origin,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+mythril,External Call To User-Supplied Address,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+mythril,Unchecked return value from external call,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+mythril,Multiple Calls in a Single Transaction,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+mythril,Integer Arithmetic Bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+mythril,requirement violation,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+mythril,Write to an arbitrary storage location,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+mythril,Unprotected Selfdestruct,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+ethor-2023,insecure,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+vandal,OriginUsed,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+vandal,CheckedCallStateUpdate,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+osiris,Callstack bug,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+osiris,Truncation bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+osiris,Reentrancy bug,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+osiris,Overflow bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+osiris,Underflow bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+osiris,Concurrency bug,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+osiris,Time dependency bug,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+osiris,Division bugs,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,incorrect-exp,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,pragma,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,variable-scope,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,cyclomatic-complexity,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,function-init-state,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,msg-value-loop,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+slither,mapping-deletion,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+maian,Ether lock (Ether accepted without send),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+maian,Ether lock,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+maian,Ether leak,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+solhint,use-forbidden-name,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+mythril,Locking Ether,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+semgrep,non-payable-constructor,
+solhint,reentrancy,
+mythril,state access after external call,
+conkas,Integer Overflow,
+conkas,Integer Underflow,
+confuzzius,Reentrancy,
+confuzzius,Integer Overflow,
+ethor-2023,secure,
+sfuzz,Reentrancy,
+sfuzz,Integer Underflow,
+sfuzz,Integer Overflow,
