@@ -34,3 +34,6 @@ generated.json
 results/
 dataset/*
 dataset_compiled/*
+
+# File generati da macOS
+.DS_Store
