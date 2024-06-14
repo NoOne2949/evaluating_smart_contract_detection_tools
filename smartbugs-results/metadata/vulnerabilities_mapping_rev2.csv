@@ -208,7 +208,7 @@ slither,mapping-deletion,True,,,,,,,,,,
 mythril,DELEGATECALL to user-supplied address,True,,,,,,,,,,
 mythril,Unprotected Ether Withdrawal,True,,,,,,,,,,
 mythril,Dependence on tx.origin,True,,,,,,,,,,
-mythril,External Call To User-Supplied Address,,,,,,,,,,,True
+mythril,External Call To User-Supplied Address,,,,TRUE,,,,,,,
 mythril,Unchecked return value from external call,,,,,True,,,,,,
 mythril,Multiple Calls in a Single Transaction,,,True,,,,,,,,
 mythril,Integer Arithmetic Bugs,,True,,,,,,,,,
