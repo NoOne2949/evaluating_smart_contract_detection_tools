@@ -24,7 +24,7 @@ manticore,Warning NUMBER instruction used,,,,,,,,,,TRUE,
 manticore,Warning ORIGIN instruction used,TRUE,,,,,,,,,,
 manticore,Warning TIMESTAMP instruction used,,,,,,,,TRUE,,,
 mythril,Call data forwarded with delegatecall(),TRUE,,,,,,,,,,
-mythril,DELEGATECALL to a user-supplied address,TRUE,,,,,,,,,,
+mythril,DELEGATECALL to user-supplied address,TRUE,,,,,,,,,,
 mythril,Dependence on predictable environment variable,,,,,,,,,,TRUE,
 mythril,Dependence on predictable variable,,,,,,,,,,TRUE,
 mythril,Ether send,TRUE,,,,,,,,,,
@@ -240,21 +240,15 @@ solhint,no-complex-fallback
 solhint,avoid-suicide
 solhint,max-states-count
 solhint,event-name-camelcase
-mythril,Transaction Order Dependence (SWC 114)
-mythril,Unprotected Ether Withdrawal (SWC 105)
-mythril,Dependence on tx.origin (SWC 115)
-mythril,External Call To User-Supplied Address (SWC 107)
-mythril,Unchecked return value from external call. (SWC 104)
-mythril,State access after external call (SWC 107)
-mythril,Exception State (SWC 110)
-mythril,Multiple Calls in a Single Transaction (SWC 113)
-mythril,Dependence on predictable environment variable (SWC 116)
-mythril,Integer Arithmetic Bugs (SWC 101)
-mythril,Dependence on predictable environment variable (SWC 120)
-mythril,requirement violation (SWC 123)
-mythril,Delegatecall to user-supplied address (SWC 112)
-mythril,Write to an arbitrary storage location (SWC 124)
-mythril,Unprotected Selfdestruct (SWC 106)
+mythril,Unprotected Ether Withdrawal
+mythril,Dependence on tx.origin
+mythril,External Call To User-Supplied Address
+mythril,Unchecked return value from external call
+mythril,Multiple Calls in a Single Transaction
+mythril,Integer Arithmetic Bugs
+mythril,requirement violation
+mythril,Write to an arbitrary storage location
+mythril,Unprotected Selfdestruct
 ethor-2023,insecure
 vandal,OriginUsed
 vandal,CheckedCallStateUpdate
