@@ -38,8 +38,7 @@ class MetricsCalculator:
         self.metrics['false_negative'] += metrics_obtained['false_negative']
         self.metrics['true_positive'] += metrics_obtained['true_positive']
         self.metrics['true_negative'] += metrics_obtained['true_negative']
-        self.right_vulnerability_found['found'] += vuln_found[0]
-        self.right_vulnerability_found['total'] += vuln_found[1]
+        self.right_vulnerability_found['found'] += vuln_found
         self.single_vulnerability_metrics['access_control'] += single_vuln_metrics['access_control']
         self.single_vulnerability_metrics['arithmetic'] += single_vuln_metrics['arithmetic']
         self.single_vulnerability_metrics['denial_service'] += single_vuln_metrics['denial_service']
@@ -65,14 +64,23 @@ class MetricsCalculator:
 
         self.f1_score = 2 * (self.precision * self.recall) / (self.precision + self.recall)
 
+    def total_vulnerabilities_counter(self, artifact):
+        total_vulnerabilities = 0
+        for row in artifact:
+            row_vuln = row['Tag']
+            if ';' in row_vuln:
+                element = row_vuln.split(';')
+                total_vulnerabilities += len(element) - 1
+        self.right_vulnerability_found['total'] = total_vulnerabilities
+
     def stamp_metrics(self):
         print(f"\nTotal Metrics:")
         print(
             f"Total vulnerabilities found: {self.right_vulnerability_found['found']}/{self.right_vulnerability_found['total']}")
         print(f'True positives: {self.metrics["true_positive"]}')
         print(f'True negatives: {self.metrics["true_negative"]}')
-        print(f'False positives: {self.metrics["false_negative"]}')
-        print(f'False negatives: {self.metrics["false_positive"]}')
+        print(f'False negatives: {self.metrics["false_negative"]}')
+        print(f'False positives: {self.metrics["false_positive"]}')
         print(f'Accuracy: {self.accuracy}')
         print(f'Precision: {self.precision}')
         print(f'Recall: {self.recall}')
