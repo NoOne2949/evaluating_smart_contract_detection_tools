@@ -1,207 +1,218 @@
 Tools,Vulnerability name,access_control,arithmetic,denial_service,reentrancy,unchecked_low_calls,bad_randomness,front_running,time_manipulation,short_addresses,Other,Ignore
-maian,is_lock_vulnerable,,,,,,,,,,TRUE,
-maian,is_prodigal_vulnerable,TRUE,,,,,,,,,,
-maian,is_suicidal_vulnerable,TRUE,,,,,,,,,,
-manticore,Delegatecall to user controlled address,TRUE,,,,,,,,,,
-manticore,Delegatecall to user controlled function,TRUE,,,,,,,,,,
-manticore,INVALID instruction,,,,,,,,,,TRUE,
-manticore,Potential reentrancy vulnerability,,,,TRUE,,,,,,,
-manticore,Potentially reading uninitialized memory at instruction,,,,,,,,,,TRUE,
-manticore,Potentially reading uninitialized storage,,,,,,,,,,TRUE,
-manticore,Reachable ether leak to sender,TRUE,,,,,,,,,,
-manticore,Reachable ether leak to sender via argument,TRUE,,,,,,,,,,
-manticore,Reachable external call to sender,TRUE,,,,,,,,,,
-manticore,Reachable external call to sender via argument,TRUE,,,,,,,,,,
-manticore,Reachable SELFDESTRUCT,TRUE,,,,,,,,,,
-manticore,Reentrancy multi-million ether bug,,,,TRUE,,,,,,,
-manticore,Returned value at CALL instruction is not used,,,,,TRUE,,,,,,
-manticore,Returned value at CALL instruction is not used,,,,,TRUE,,,,,,
-manticore,Unsigned integer overflow at ADD instruction,,TRUE,,,,,,,,,
-manticore,Unsigned integer overflow at MUL instruction,,TRUE,,,,,,,,,
-manticore,Unsigned integer overflow at SUB instruction,,TRUE,,,,,,,,,
-manticore,Warning BLOCKHASH instruction used,,,,,,,,,,TRUE,
-manticore,Warning NUMBER instruction used,,,,,,,,,,TRUE,
-manticore,Warning ORIGIN instruction used,TRUE,,,,,,,,,,
-manticore,Warning TIMESTAMP instruction used,,,,,,,,TRUE,,,
-mythril,Call data forwarded with delegatecall(),TRUE,,,,,,,,,,
-mythril,DELEGATECALL to a user-supplied address,TRUE,,,,,,,,,,
-mythril,Dependence on predictable environment variable,,,,,,,,,,TRUE,
-mythril,Dependence on predictable variable,,,,,,,,,,TRUE,
-mythril,Ether send,TRUE,,,,,,,,,,
-mythril,Exception state,,,,,,,,,,TRUE,
-mythril,Integer Overflow,,TRUE,,,,,,,,,
-mythril,Integer Underflow,,TRUE,,,,,,,,,
-mythril,Message call to external contract,,,,TRUE,,,,,,,
-mythril,Multiple Calls,,,,,,,,,,,TRUE
+maian,is_lock_vulnerable,,,,,,,,,,True,
+maian,is_prodigal_vulnerable,True,,,,,,,,,,
+maian,is_suicidal_vulnerable,True,,,,,,,,,,
+manticore,Delegatecall to user controlled address,True,,,,,,,,,,
+manticore,Delegatecall to user controlled function,True,,,,,,,,,,
+manticore,INVALID instruction,,,,,,,,,,True,
+manticore,Potential reentrancy vulnerability,,,,True,,,,,,,
+manticore,Potentially reading uninitialized memory at instruction,,,,,,,,,,True,
+manticore,Potentially reading uninitialized storage,,,,,,,,,,True,
+manticore,Reachable ether leak to sender,True,,,,,,,,,,
+manticore,Reachable ether leak to sender via argument,True,,,,,,,,,,
+manticore,Reachable external call to sender,True,,,,,,,,,,
+manticore,Reachable external call to sender via argument,True,,,,,,,,,,
+manticore,Reachable SELFDESTRUCT,True,,,,,,,,,,
+manticore,Reentrancy multi-million ether bug,,,,True,,,,,,,
+manticore,Returned value at CALL instruction is not used,,,,,True,,,,,,
+manticore,Returned value at CALL instruction is not used,,,,,True,,,,,,
+manticore,Unsigned integer overflow at ADD instruction,,True,,,,,,,,,
+manticore,Unsigned integer overflow at MUL instruction,,True,,,,,,,,,
+manticore,Unsigned integer overflow at SUB instruction,,True,,,,,,,,,
+manticore,Warning BLOCKHASH instruction used,,,,,,,,,,True,
+manticore,Warning NUMBER instruction used,,,,,,,,,,True,
+manticore,Warning ORIGIN instruction used,True,,,,,,,,,,
+manticore,Warning TIMESTAMP instruction used,,,,,,,,True,,,
+mythril,Call data forwarded with delegatecall(),True,,,,,,,,,,
+mythril,DELEGATECALL to a user-supplied address,True,,,,,,,,,,
+mythril,Dependence on predictable environment variable,,,,,,True,,,,True,
+mythril,Dependence on predictable variable,,,,,,True,,True,,True,
+mythril,Ether send,True,,,,,,,,,,
+mythril,Exception state,,,,,,,,,,True,
+mythril,Integer Overflow,,True,,,,,,,,,
+mythril,Integer Underflow,,True,,,,,,,,,
+mythril,Message call to external contract,,,,True,,,,,,,
+mythril,Multiple Calls,,,TRUE,,,,,,,,True
 mythril,State change after external call,,,,TRUE,,,,,,,
-mythril,Transaction order dependence,,,,,,,TRUE,,,,
-mythril,Unchecked CALL return value,,,,,TRUE,,,,,,
-mythril,Unchecked SUICIDE,TRUE,,,,,,,,,,
-mythril,Use of tx.origin,TRUE,,,,,,,,,,
-osiris,callstack_bug,,,TRUE,,,,,,,,
-osiris,concurrency_bug,,,,,,,,,,,TRUE
-osiris,division_bugs,,TRUE,,,,,,,,,
-osiris,overflow_bugs,,TRUE,,,,,,,,,
-osiris,reentrancy_bug,,,,TRUE,,,,,,,
-osiris,signedness_bugs,,TRUE,,,,,,,,,
-osiris,time_dependency_bug,,,,,,,,TRUE,,,
-osiris,truncation_bugs,,TRUE,,,,,,,,,
-osiris,underflow_bugs,,TRUE,,,,,,,,,
-oyente,Callstack Depth Attack Vulnerability.,,,TRUE,,,,,,,,
-oyente,Integer Overflow.,,TRUE,,,,,,,,,
-oyente,Integer Underflow.,,TRUE,,,,,,,,,
-oyente,Parity Multisig Bug 2.,TRUE,,,,,,,,,,
-oyente,Re-Entrancy Vulnerability.,,,,TRUE,,,,,,,
-oyente,Timestamp Dependency.,,,,,,,,TRUE,,,
-securify,DAO,,,,TRUE,,,,,,,
-securify,DAOConstantGas,,,,TRUE,,,,,,,
-securify,LockedEther,,,,,,,,,,TRUE,
-securify,MissingInputValidation,,,,,,,,,,,TRUE
-securify,RepeatedCall,,,,,,,,,,,TRUE
-securify,TODAmount,,,,,,,TRUE,,,,
-securify,TODReceiver,,,,,,,TRUE,,,,
-securify,TODTransfer,,,,,,,TRUE,,,,
-securify,UnhandledException,,,,,TRUE,,,,,,
-securify,UnrestrictedEtherFlow,TRUE,,,,,,,,,,
-securify,UnrestrictedWrite,TRUE,,,,,,,,,,
-slither,arbitrary-send,TRUE,,,,,,,,,,
-slither,assembly,,,,,,,,,,,TRUE
-slither,calls-loop,,,TRUE,,,,,,,,
-slither,constable-states,,,,,,,,,,,TRUE
-slither,constant-function,,,,,,,,,,,TRUE
-slither,controlled-delegatecall,TRUE,,,,,,,,,,
-slither,deprecated-standards,,,,,,,,,,,TRUE
-slither,erc20-indexed,,,,,,,,,,,TRUE
-slither,erc20-interface,,,,,,,,,,,TRUE
-slither,external-function,,,,,,,,,,,TRUE
-slither,incorrect-equality,,,,,,,,,,TRUE,
-slither,locked-ether,,,,,,,,,,TRUE,
-slither,low-level-calls,,,,,TRUE,,,,,,
-slither,naming-convention,,,,,,,,,,,TRUE
-slither,reentrancy-benign,,,,TRUE,,,,,,,
-slither,reentrancy-eth,,,,TRUE,,,,,,,
-slither,reentrancy-no-eth,,,,TRUE,,,,,,,
-slither,shadowing-abstract,,,,,,,,,,,TRUE
-slither,shadowing-builtin,,,,,,,,,,,TRUE
-slither,shadowing-local,,,,,,,,,,,TRUE
-slither,shadowing-state,,,,,,,,,,,TRUE
-slither,solc-version,,,,,,,,,,,TRUE
-slither,suicidal,TRUE,,,,,,,,,,
-slither,timestamp,,,,,,,,TRUE,,,
-slither,tx-origin,TRUE,,,,,,,,,,
-slither,uninitialized-local,,,,,,,,,,TRUE,
-slither,uninitialized-state,,,,,,,,,,TRUE,
-slither,uninitialized-storage,,,,,,,,,,TRUE,
-slither,unused-return,,,,,TRUE,,,,,,
-slither,unused-state,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_ADDRESS_HARDCODED,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_ARRAY_LENGTH_MANIPULATION,,TRUE,,,,,,,,,
-smartcheck,SOLIDITY_BALANCE_EQUALITY,,,,,,,,,,TRUE,
-smartcheck,SOLIDITY_BYTE_ARRAY_INSTEAD_BYTES,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_CALL_WITHOUT_DATA,,,,TRUE,,,,,,,
-smartcheck,SOLIDITY_DEPRECATED_CONSTRUCTIONS,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_DIV_MUL,,TRUE,,,,,,,,,
-smartcheck,SOLIDITY_ERC20_APPROVE,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_ERC20_FUNCTIONS_ALWAYS_RETURN_FALSE,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_ERC20_TRANSFER_SHOULD_THROW,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_EXACT_TIME,,,,,,,,TRUE,,,
-smartcheck,SOLIDITY_EXTRA_GAS_IN_LOOPS,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,,,,,,,,,,TRUE,
-smartcheck,SOLIDITY_GAS_LIMIT_IN_LOOPS,,,TRUE,,,,,,,,
-smartcheck,SOLIDITY_INCORRECT_BLOCKHASH,,,,,,,,,,TRUE,
-smartcheck,SOLIDITY_LOCKED_MONEY,,,,,,,,,,TRUE,
-smartcheck,SOLIDITY_MSGVALUE_EQUALS_ZERO,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_OVERPOWERED_ROLE,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_PRAGMAS_VERSION,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_REDUNDANT_FALLBACK_REJECT,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_REVERT_REQUIRE,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_SAFEMATH,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_SEND,,,,,TRUE,,,,,,
-smartcheck,SOLIDITY_SHOULD_NOT_BE_PURE,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_SHOULD_NOT_BE_VIEW,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_SHOULD_RETURN_STRUCT,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_TRANSFER_IN_LOOP,,,TRUE,,,,,,,,
-smartcheck,SOLIDITY_TX_ORIGIN,TRUE,,,,,,,,,,
-smartcheck,SOLIDITY_UINT_CANT_BE_NEGATIVE,,TRUE,,,,,,,,,
-smartcheck,SOLIDITY_UNCHECKED_CALL,,,,,TRUE,,,,,,
-smartcheck,SOLIDITY_UPGRADE_TO_050,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_USING_INLINE_ASSEMBLY,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_VAR,,TRUE,,,,,,,,,
-smartcheck,SOLIDITY_VAR_IN_LOOP_FOR,,TRUE,,,,,,,,,
-smartcheck,SOLIDITY_VISIBILITY,,,,,,,,,,,TRUE
-smartcheck,SOLIDITY_WRONG_SIGNATURE,,,,,,,,,,,TRUE
-solhint,indent,,,,,,,,,,,TRUE
-solhint,max-line-length,,,,,,,,,,,TRUE
-honeybadger,hidden_state_update,,,,,,,,,,,TRUE
-honeybadger,uninitialised_struct,,,,,,,,,,TRUE,
-honeybadger,inheritance_disorder,,,,,,,,,,,TRUE
-honeybadger,straw_man_contract,,,,TRUE,,,,,,,
-honeybadger,hidden_transfer,,,,,,,,,,TRUE,
-honeybadger,balance_disorder,,,,,,,,,,,TRUE
-honeybadger,type_overflow,,TRUE,,,,,,,,,
+mythril,Transaction order dependence,,,,,,,True,,,,
+mythril,Unchecked CALL return value,,,,,True,,,,,,
+mythril,Unchecked SUICIDE,True,,,,,,,,,,
+mythril,Use of tx.origin,True,,,,,,,,,,
+osiris,callstack_bug,,,True,,,,,,,,
+osiris,concurrency_bug,,,,,,,,,,,True
+osiris,division_bugs,,True,,,,,,,,,
+osiris,overflow_bugs,,True,,,,,,,,,
+osiris,reentrancy_bug,,,,True,,,,,,,
+osiris,signedness_bugs,,True,,,,,,,,,
+osiris,time_dependency_bug,,,,,,,,True,,,
+osiris,truncation_bugs,,True,,,,,,,,,
+osiris,underflow_bugs,,True,,,,,,,,,
+oyente,Callstack Depth Attack Vulnerability.,,,True,,,,,,,,
+oyente,Integer Overflow.,,True,,,,,,,,,
+oyente,Integer Underflow.,,True,,,,,,,,,
+oyente,Parity Multisig Bug 2.,True,,,,,,,,,,
+oyente,Re-Entrancy Vulnerability.,,,,True,,,,,,,
+oyente,Timestamp Dependency.,,,,,,,,True,,,
+securify,DAO,,,,True,,,,,,,
+securify,DAOConstantGas,,,,True,,,,,,,
+securify,LockedEther,,,,,,,,,,True,
+securify,MissingInputValidation,,,,,,,,,,,True
+securify,RepeatedCall,,,,,,,,,,,True
+securify,TODAmount,,,,,,,True,,,,
+securify,TODReceiver,,,,,,,True,,,,
+securify,TODTransfer,,,,,,,True,,,,
+securify,UnhandledException,,,,,True,,,,,,
+securify,UnrestrictedEtherFlow,True,,,,,,,,,,
+securify,UnrestrictedWrite,True,,,,,,,,,,
+slither,arbitrary-send,True,,,,,,,,,,
+slither,assembly,,,,,,,,,,,True
+slither,calls-loop,,,True,,,,,,,,
+slither,constable-states,,,,,,,,,,,True
+slither,constant-function,,,,,,,,,,,True
+slither,controlled-delegatecall,True,,,,,,,,,,
+slither,deprecated-standards,,,,,,,,,,,True
+slither,erc20-indexed,,,,,,,,,,,True
+slither,erc20-interface,,,,,,,,,,,True
+slither,external-function,,,,,,,,,,,True
+slither,incorrect-equality,,,,,,,,,,True,
+slither,locked-ether,,,,,,,,,,True,
+slither,low-level-calls,,,,,True,,,,,,
+slither,naming-convention,,,,,,,,,,,True
+slither,reentrancy-benign,,,,True,,,,,,,
+slither,reentrancy-eth,,,,True,,,,,,,
+slither,reentrancy-no-eth,,,,True,,,,,,,
+slither,shadowing-abstract,,,,,,,,,,,True
+slither,shadowing-builtin,,,,,,,,,,,True
+slither,shadowing-local,,,,,,,,,,,True
+slither,shadowing-state,,,,,,,,,,,True
+slither,solc-version,,,,,,,,,,,True
+slither,suicidal,True,,,,,,,,,,
+slither,timestamp,,,,,,,,True,,,
+slither,tx-origin,True,,,,,,,,,,
+slither,uninitialized-local,,,,,,,,,,True,
+slither,uninitialized-state,,,,,,,,,,True,
+slither,uninitialized-storage,,,,,,,,,,True,
+slither,unused-return,,,,,True,,,,,,
+slither,unused-state,,,,,,,,,,,True
+smartcheck,SOLIDITY_ADDRESS_HARDCODED,,,,,,,,,,,True
+smartcheck,SOLIDITY_ARRAY_LENGTH_MANIPULATION,,True,,,,,,,,,
+smartcheck,SOLIDITY_BALANCE_EQUALITY,,,,,,,,,,True,
+smartcheck,SOLIDITY_BYTE_ARRAY_INSTEAD_BYTES,,,,,,,,,,,True
+smartcheck,SOLIDITY_CALL_WITHOUT_DATA,,,,True,,,,,,,
+smartcheck,SOLIDITY_DEPRECATED_CONSTRUCTIONS,,,,,,,,,,,True
+smartcheck,SOLIDITY_DIV_MUL,,True,,,,,,,,,
+smartcheck,SOLIDITY_ERC20_APPROVE,,,,,,,,,,,True
+smartcheck,SOLIDITY_ERC20_FUNCTIONS_ALWAYS_RETURN_FALSE,,,,,,,,,,,True
+smartcheck,SOLIDITY_ERC20_TRANSFER_SHOULD_THROW,,,,,,,,,,,True
+smartcheck,SOLIDITY_EXACT_TIME,,,,,,,,True,,,
+smartcheck,SOLIDITY_EXTRA_GAS_IN_LOOPS,,,,,,,,,,,True
+smartcheck,SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN,,,,,,,,,,True,
+smartcheck,SOLIDITY_GAS_LIMIT_IN_LOOPS,,,True,,,,,,,,
+smartcheck,SOLIDITY_INCORRECT_BLOCKHASH,,,,,,,,,,True,
+smartcheck,SOLIDITY_LOCKED_MONEY,,,,,,,,,,True,
+smartcheck,SOLIDITY_MSGVALUE_EQUALS_ZERO,,,,,,,,,,,True
+smartcheck,SOLIDITY_OVERPOWERED_ROLE,,,,,,,,,,,True
+smartcheck,SOLIDITY_PRAGMAS_VERSION,,,,,,,,,,,True
+smartcheck,SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA,,,,,,,,,,,True
+smartcheck,SOLIDITY_REDUNDANT_FALLBACK_REJECT,,,,,,,,,,,True
+smartcheck,SOLIDITY_REVERT_REQUIRE,,,,,,,,,,,True
+smartcheck,SOLIDITY_SAFEMATH,,,,,,,,,,,True
+smartcheck,SOLIDITY_SEND,,,,,True,,,,,,
+smartcheck,SOLIDITY_SHOULD_NOT_BE_PURE,,,,,,,,,,,True
+smartcheck,SOLIDITY_SHOULD_NOT_BE_VIEW,,,,,,,,,,,True
+smartcheck,SOLIDITY_SHOULD_RETURN_STRUCT,,,,,,,,,,,True
+smartcheck,SOLIDITY_TRANSFER_IN_LOOP,,,True,,,,,,,,
+smartcheck,SOLIDITY_TX_ORIGIN,True,,,,,,,,,,
+smartcheck,SOLIDITY_UINT_CANT_BE_NEGATIVE,,True,,,,,,,,,
+smartcheck,SOLIDITY_UNCHECKED_CALL,,,,,True,,,,,,
+smartcheck,SOLIDITY_UPGRADE_TO_050,,,,,,,,,,,True
+smartcheck,SOLIDITY_USING_INLINE_ASSEMBLY,,,,,,,,,,,True
+smartcheck,SOLIDITY_VAR,,True,,,,,,,,,
+smartcheck,SOLIDITY_VAR_IN_LOOP_FOR,,True,,,,,,,,,
+smartcheck,SOLIDITY_VISIBILITY,,,,,,,,,,,True
+smartcheck,SOLIDITY_WRONG_SIGNATURE,,,,,,,,,,,True
+solhint,indent,,,,,,,,,,,True
+solhint,max-line-length,,,,,,,,,,,True
+honeybadger,hidden_state_update,,,,,,,,,,,True
+honeybadger,uninitialised_struct,,,,,,,,,,True,
+honeybadger,inheritance_disorder,,,,,,,,,,,True
+honeybadger,straw_man_contract,,,,True,,,,,,,
+honeybadger,hidden_transfer,,,,,,,,,,True,
+honeybadger,balance_disorder,,,,,,,,,,,True
+honeybadger,type_overflow,,True,,,,,,,,,
 semgrep,use-prefix-decrement-not-postfix,,,,,,,,,,,
 semgrep,inefficient-state-variable-increment,,,,,,,,,,,
-semgrep,use-multiple-require,,,,,,,,,,TRUE,
+semgrep,use-multiple-require,,,,,,,,,,True,
 semgrep,array-length-outside-loop,,,,,,,,,,,
 semgrep,state-variable-read-in-a-loop,,,,,,,,,,,
 semgrep,unnecessary-checked-arithmetic-in-loop,,,,,,,,,,,
-semgrep,use-nested-if,,,,,,,,,,TRUE,
+semgrep,use-nested-if,,,,,,,,,,True,
 semgrep,use-prefix-increment-not-postfix,,,,,,,,,,,
 semgrep,delegatecall-to-arbitrary-address,,,,,,,,,,,
 semgrep,init-variables-with-default-value,,,,,,,,,,,
 semgrep,use-ownable2step,,,,,,,,,,,
 semgrep,use-custom-error-not-require,,,,,,,,,,,
 semgrep,use-short-revert-string,,,,,,,,,,,
-semgrep,incorrect-use-of-blockhash,,,,,,TRUE,,,,,
-conkas,Reentrancy,,,,TRUE,,,,,,,
-conkas,Unchecked Low Level Call,,,,,TRUE,,,,,,
-conkas,Time Manipulation,,,,,,,,TRUE,,,
-conkas,Transaction Ordering Dependence,,,,,,,TRUE,,,,
-confuzzius,Assertion Failure,,,,,,,,,,TRUE,
-confuzzius,Unhandled Exception,,,,,,,,,,TRUE,
-confuzzius,Transaction Order Dependency,,,,,TRUE,,,,,,
+semgrep,incorrect-use-of-blockhash,,,,,,True,,,,,
+conkas,Reentrancy,,,,True,,,,,,,
+conkas,Unchecked Low Level Call,,,,,True,,,,,,
+conkas,Time Manipulation,,,,,,,,True,,,
+conkas,Transaction Ordering Dependence,,,,,,,True,,,,
+confuzzius,Assertion Failure,,,,,,,,,,True,
+confuzzius,Unhandled Exception,,,,,,,,,,True,
+confuzzius,Transaction Order Dependency,,,,,True,,,,,,
 confuzzius,Block Dependency,,,,,,,,,,,
 confuzzius,Leaking Ether,,,,,,,,,,,
-confuzzius,Arbitrary Memory Access,TRUE,,,,,,,,,,
+confuzzius,Arbitrary Memory Access,True,,,,,,,,,,
 confuzzius,Unsafe Delegatecall,,,,,,,,,,,
-confuzzius,Unprotected Selfdestruct,TRUE,,,,,,,,,,
+confuzzius,Unprotected Selfdestruct,True,,,,,,,,,,
 sfuzz,Exception Disorder,,,,,,,,,,,
-sfuzz,Timestamp Dependency,,,,,,,,TRUE,,,
+sfuzz,Timestamp Dependency,,,,,,,,True,,,
 sfuzz,Gasless Send,,,,,,,,,,,
 sfuzz,Block Number Dependency,,,,,,,,,,,
 sfuzz,Freezing Ether,,,,,,,,,,,
 sfuzz,Dangerous Delegate Call,,,,,,,,,,,
-vandal,UncheckedCall,,,,,TRUE,,,,,,
-vandal,ReentrantCall,,,,TRUE,,,,,,,
-slither,arbitrary-send-eth,TRUE,,,,,,,,,,
-slither,unchecked-lowlevel,,,,,TRUE,,,,,,
-slither,missing-zero-check,TRUE,,,,,,,,,,
-slither,reentrancy-unlimited-gas,,,,,,,,,,,TRUE
-slither,controlled-array-length,TRUE,,,,,,,,,,
-slither,weak-prng,,,,,,TRUE,,,,,
-slither,reentrancy-events,,,,TRUE,,,,,,,
-slither,divide-before-multiply,,TRUE,,,,,,,,,
-slither,unchecked-send,,,,,TRUE,,,,,,
-slither,events-access,,,,,,,,,,,TRUE
-slither,events-maths,,,,,,,,,,,TRUE
-slither,incorrect-modifier,,,,,,,,,,,TRUE
-slither,costly-loop,,,TRUE,,,,,,,,
-slither,constant-function-asm,,,,,,,,,,,TRUE
-slither,too-many-digits,,,,,,,,,,,TRUE
-slither,dead-code,,,,,,,,,,,TRUE
-slither,cache-array-length,,,,,,,,,,,TRUE
-slither,tautology,,TRUE,,,,,,,,,
-slither,boolean-equal,,,,,,,,,,,TRUE
-slither,similar-names,,,,,,,,,,,TRUE
-slither,unchecked-transfer,,,,,TRUE,,,,,,
-slither,missing-inheritance,,,,,,,,,,,TRUE
-slither,return-bomb,,,TRUE,,,,,,,,
-slither,redundant-statements,,,,,,,,,,,TRUE
-slither,incorrect-exp,,TRUE,,,,,,,,,
-slither,pragma,,,,,,,,,,,TRUE
-slither,variable-scope,,,,,,,,,,TRUE,
+vandal,UncheckedCall,,,,,True,,,,,,
+vandal,ReentrantCall,,,,True,,,,,,,
+slither,arbitrary-send-eth,True,,,,,,,,,,
+slither,unchecked-lowlevel,,,,,True,,,,,,
+slither,missing-zero-check,True,,,,,,,,,,
+slither,reentrancy-unlimited-gas,,,,,,,,,,,True
+slither,controlled-array-length,True,,,,,,,,,,
+slither,weak-prng,,,,,,True,,,,,
+slither,reentrancy-events,,,,True,,,,,,,
+slither,divide-before-multiply,,True,,,,,,,,,
+slither,unchecked-send,,,,,True,,,,,,
+slither,events-access,,,,,,,,,,,True
+slither,events-maths,,,,,,,,,,,True
+slither,incorrect-modifier,,,,,,,,,,,True
+slither,costly-loop,,,True,,,,,,,,
+slither,constant-function-asm,,,,,,,,,,,True
+slither,too-many-digits,,,,,,,,,,,True
+slither,dead-code,,,,,,,,,,,True
+slither,cache-array-length,,,,,,,,,,,True
+slither,tautology,,True,,,,,,,,,
+slither,boolean-equal,,,,,,,,,,,True
+slither,similar-names,,,,,,,,,,,True
+slither,unchecked-transfer,,,,,True,,,,,,
+slither,missing-inheritance,,,,,,,,,,,True
+slither,return-bomb,,,True,,,,,,,,
+slither,redundant-statements,,,,,,,,,,,True
+slither,incorrect-exp,,True,,,,,,,,,
+slither,pragma,,,,,,,,,,,True
+slither,variable-scope,,,,,,,,,,True,
 slither,cyclomatic-complexity,,,,,,,,,,,
-slither,function-init-state,,,,,,,,,,,TRUE
-slither,msg-value-loop,,TRUE,,,,,,,,,
-slither,mapping-deletion,TRUE,,,,,,,,,,
+slither,function-init-state,,,,,,,,,,,True
+slither,msg-value-loop,,True,,,,,,,,,
+slither,mapping-deletion,True,,,,,,,,,,
+mythril,DELEGATECALL to user-supplied address,True,,,,,,,,,,
+mythril,Unprotected Ether Withdrawal,TRUE,,,,,,,,,,
+mythril,Dependence on tx.origin,TRUE,,,,,,,,,,
+mythril,External Call To User-Supplied Address,,,,,,,,,,,True
+mythril,Unchecked return value from external call,,,,,TRUE,,,,,,
+mythril,Multiple Calls in a Single Transaction,,,TRUE,,,,,,,,
+mythril,Integer Arithmetic Bugs,,TRUE,,,,,,,,,
+mythril,requirement violation,,,,,,,,,,,TRUE
+mythril,Write to an arbitrary storage location,TRUE,,,,,,,,,,
+mythril,Unprotected Selfdestruct,TRUE,,,,,,,,,,
+mythril,Locking Ether,,,,,,,,,,TRUE,TRUE
