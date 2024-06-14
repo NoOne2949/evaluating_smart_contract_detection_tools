@@ -3,12 +3,12 @@ import pandas as pd
 # Read the CSV files
 csv1 = pd.read_csv('vulnerabilities_mapping.csv', engine="python")
 csv2 = pd.read_csv('vulnerabilities_mapping_rev2.csv')
-
+tool="smartcheck"
 # Filter rows where Tools is 'slither' in csv1
-slither_rows_csv1 = csv1[csv1['Tools'] == 'mythril']
+slither_rows_csv1 = csv1[csv1['Tools'] == tool]
 
 # Check for descriptions in csv2
-existing_descriptions_csv2 = csv2[csv2['Tools'] == 'mythril']['Vulnerability name'].tolist()
+existing_descriptions_csv2 = csv2[csv2['Tools'] == tool]['Vulnerability name'].tolist()
 
 # Find rows in csv1 where description is not in csv2
 new_rows = slither_rows_csv1[~slither_rows_csv1['Vulnerability name'].isin(existing_descriptions_csv2)]

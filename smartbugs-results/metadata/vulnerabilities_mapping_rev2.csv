@@ -32,8 +32,8 @@ mythril,Exception state,,,,,,,,,,True,
 mythril,Integer Overflow,,True,,,,,,,,,
 mythril,Integer Underflow,,True,,,,,,,,,
 mythril,Message call to external contract,,,,True,,,,,,,
-mythril,Multiple Calls,,,TRUE,,,,,,,,True
-mythril,State change after external call,,,,TRUE,,,,,,,
+mythril,Multiple Calls,,,True,,,,,,,,True
+mythril,State change after external call,,,,True,,,,,,,
 mythril,Transaction order dependence,,,,,,,True,,,,
 mythril,Unchecked CALL return value,,,,,True,,,,,,
 mythril,Unchecked SUICIDE,True,,,,,,,,,,
@@ -206,13 +206,14 @@ slither,function-init-state,,,,,,,,,,,True
 slither,msg-value-loop,,True,,,,,,,,,
 slither,mapping-deletion,True,,,,,,,,,,
 mythril,DELEGATECALL to user-supplied address,True,,,,,,,,,,
-mythril,Unprotected Ether Withdrawal,TRUE,,,,,,,,,,
-mythril,Dependence on tx.origin,TRUE,,,,,,,,,,
+mythril,Unprotected Ether Withdrawal,True,,,,,,,,,,
+mythril,Dependence on tx.origin,True,,,,,,,,,,
 mythril,External Call To User-Supplied Address,,,,,,,,,,,True
-mythril,Unchecked return value from external call,,,,,TRUE,,,,,,
-mythril,Multiple Calls in a Single Transaction,,,TRUE,,,,,,,,
-mythril,Integer Arithmetic Bugs,,TRUE,,,,,,,,,
-mythril,requirement violation,,,,,,,,,,,TRUE
-mythril,Write to an arbitrary storage location,TRUE,,,,,,,,,,
-mythril,Unprotected Selfdestruct,TRUE,,,,,,,,,,
-mythril,Locking Ether,,,,,,,,,,TRUE,TRUE
+mythril,Unchecked return value from external call,,,,,True,,,,,,
+mythril,Multiple Calls in a Single Transaction,,,True,,,,,,,,
+mythril,Integer Arithmetic Bugs,,True,,,,,,,,,
+mythril,requirement violation,,,,,,,,,,,True
+mythril,Write to an arbitrary storage location,True,,,,,,,,,,
+mythril,Unprotected Selfdestruct,True,,,,,,,,,,
+mythril,Locking Ether,,,,,,,,,,True,True
+mythril,state access after external call,,,,,,,,,,,True
