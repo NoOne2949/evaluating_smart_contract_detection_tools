@@ -47,12 +47,12 @@ osiris,signedness_bugs,,TRUE,,,,,,,,,
 osiris,time_dependency_bug,,,,,,,,TRUE,,,
 osiris,truncation_bugs,,TRUE,,,,,,,,,
 osiris,underflow_bugs,,TRUE,,,,,,,,,
-oyente,Callstack Depth Attack Vulnerability.,,,TRUE,,,,,,,,
-oyente,Integer Overflow.,,TRUE,,,,,,,,,
-oyente,Integer Underflow.,,TRUE,,,,,,,,,
-oyente,Parity Multisig Bug 2.,TRUE,,,,,,,,,,
-oyente,Re-Entrancy Vulnerability.,,,,TRUE,,,,,,,
-oyente,Timestamp Dependency.,,,,,,,,TRUE,,,
+oyente,Callstack Depth Attack Vulnerability,,,TRUE,,,,,,,,
+oyente,Integer Overflow,,TRUE,,,,,,,,,
+oyente,Integer Underflow,,TRUE,,,,,,,,,
+oyente,Parity Multisig Bug 2,TRUE,,,,,,,,,,
+oyente,Re-Entrancy Vulnerability,,,,TRUE,,,,,,,
+oyente,Timestamp Dependency,,,,,,,,TRUE,,,
 securify,DAO,,,,TRUE,,,,,,,
 securify,DAOConstantGas,,,,TRUE,,,,,,,
 securify,LockedEther,,,,,,,,,,TRUE,
@@ -272,3 +272,14 @@ maian,Ether lock,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 maian,Ether leak,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 solhint,use-forbidden-name,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 mythril,Locking Ether,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+semgrep,non-payable-constructor
+solhint,reentrancy
+mythril,state access after external call
+conkas,Integer Overflow
+conkas,Integer Underflow
+confuzzius,Reentrancy
+confuzzius,Integer Overflow
+ethor-2023,secure
+sfuzz,Reentrancy
+sfuzz,Integer Underflow
+sfuzz,Integer Overflow
