@@ -17,7 +17,7 @@ def aggregate_artifacts():
     with open(artifacts_file, "r") as af:
         reader = csv.DictReader(af)
         for row in reader:
-            artifacts_data[row["id"]] = row["address"]
+            artifacts_data[row["id"]] = {"address": row["address"], "code": row["code"]}
 
     # Read the labelling data
     with open(labelling_data_file, "r") as lf:
@@ -31,11 +31,12 @@ def aggregate_artifacts():
         artifact_id = row["artifact_id"]
         if artifact_id in artifacts_data:
             combined_row = row.copy()
-            combined_row["address"] = artifacts_data[artifact_id]
+            combined_row["address"] = artifacts_data[artifact_id]["address"]
+            combined_row["code"] = artifacts_data[artifact_id]["code"]
             aggregated_data.append(combined_row)
 
-    # Define the headers for the output file (all labelling headers + file)
-    fieldnames = ["address"] + [field for field in labelling_data[0].keys()]
+    # Define the headers for the output file (all labelling headers + address + code)
+    fieldnames = ["address", "code"] + [field for field in labelling_data[0].keys()]
 
     # Write the aggregated data to the output file
     with open(output_file, "w", newline='') as of:
@@ -43,3 +44,7 @@ def aggregate_artifacts():
         writer.writeheader()
         for row in aggregated_data:
             writer.writerow(row)
+
+
+# Call the function to execute the aggregation
+aggregate_artifacts()
