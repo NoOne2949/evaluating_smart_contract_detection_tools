@@ -74,7 +74,7 @@ class MetricsCalculator:
         self.right_vulnerability_found['total'] = total_vulnerabilities
 
     def stamp_metrics(self, tool_name):
-        print(f"Total vulnerabilities found by {tool_name}: {self.right_vulnerability_found['found']}/"
+        print(f"\nTotal vulnerabilities found by {tool_name}: {self.right_vulnerability_found['found']}/"
               f"{self.right_vulnerability_found['total']}")
         print(f'True positives: {self.metrics["true_positive"]}')
         print(f'True negatives: {self.metrics["true_negative"]}')
