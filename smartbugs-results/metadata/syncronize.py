@@ -3,7 +3,7 @@ import pandas as pd
 # Read the CSV files
 csv1 = pd.read_csv('vulnerabilities_mapping.csv', engine="python")
 csv2 = pd.read_csv('vulnerabilities_mapping_rev2.csv')
-tool="confuzzius"
+tool="vandal"
 # Filter rows where Tools is 'slither' in csv1
 slither_rows_csv1 = csv1[csv1['Tools'] == tool]
 
