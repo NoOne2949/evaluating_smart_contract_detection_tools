@@ -15,6 +15,11 @@ data = np.array([
     [9.0, 3.0]
 ])
 
+tagged_vulnerabilities_sbr=[]
+tagged_vulnerabilities_sbc=[]
+tagged_vulnerabilities_zeus_v=[]
+tagged_vulnerabilities_zeus_s=[]
+
 # Determine the optimal number of clusters using the elbow method
 sse = []
 k_range = range(1, 10)
