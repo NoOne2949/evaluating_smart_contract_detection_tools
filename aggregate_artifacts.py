@@ -2,8 +2,8 @@ import csv
 import sys
 
 artifacts_file = "csvs/Artifacts.csv"
-labelling_data_file = "csvs/LabelingData.csv"
-output_file = "csvs/AggregatedArtifacts.csv"
+labelling_data_file = "csvs/Filtered_Manual_analysis.csv"
+output_file = "csvs/SmartBugs_Result_Manual_analysis.csv"
 
 
 def aggregate_artifacts():

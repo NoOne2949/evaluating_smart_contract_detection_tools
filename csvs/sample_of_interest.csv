@@ -82,11 +82,6 @@ smartbugs_results,no,0xb600799213100f3bd7d7f60345e950b566727d65
 smartbugs_results,97: Time manipulation;,0xf665ebcae51c0d9b9a9f1878a21e88a611318f48
 smartbugs_results,28: Arithmetic; 75: Arithmetic;,0xe5f7379718cf3e84385c09f3927237874ec0b4bc
 smartbugs_results,39: Access control; 45: Time manipulation;  284: Unchecked; 313: Arithmetic; 314: Arithmetic; 315: Arithmetic;,0x7a2ed6b8566e0a0a1342ffc56dc952cbe329a12b
-smartbugs_results,39: Access control; 45: Time manipulation;  284: Unchecked; 313: Arithmetic; 314: Arithmetic; 315: Arithmetic;,0x7a2ed6b8566e0a0a1342ffc56dc952cbe329a12b
-smartbugs_results,39: Access control; 45: Time manipulation;  284: Unchecked; 313: Arithmetic; 314: Arithmetic; 315: Arithmetic;,0x7a2ed6b8566e0a0a1342ffc56dc952cbe329a12b
-smartbugs_results,39: Access control; 45: Time manipulation;  284: Unchecked; 313: Arithmetic; 314: Arithmetic; 315: Arithmetic;,0x7a2ed6b8566e0a0a1342ffc56dc952cbe329a12b
-smartbugs_results,39: Access control; 45: Time manipulation;  284: Unchecked; 313: Arithmetic; 314: Arithmetic; 315: Arithmetic;,0x7a2ed6b8566e0a0a1342ffc56dc952cbe329a12b
-smartbugs_results,39: Access control; 45: Time manipulation;  284: Unchecked; 313: Arithmetic; 314: Arithmetic; 315: Arithmetic;,0x7a2ed6b8566e0a0a1342ffc56dc952cbe329a12b
 smartbugs_results,no,0xdc9f5b24b910addcb2e3be7ff75caf20e1fcdcf3
 smartbugs_results,64: Time manipulation; 18: Arithmetic;,0x043a0f6f167c81d6bc22066c0525fe88a2da3c5a
 smartbugs_results,no,0x869ed845f8d4b436ffe778adc0e9ab253e53f0f2
@@ -643,7 +638,6 @@ smartbugs_results,42: DOS;,0xd31b8e0219bd83678978f6db531d9a3f45608894
 smartbugs_results,765: Time manipulation; 744: Time manipulation; 814: Time manipulation; 825: Time manipulation;,0x1c96f2547ef02abbcf6b5af99c9d9b186c9ca98e
 smartbugs_results,no,0xec37c3bc79f4ec07e5055ef7a42a629d49ec4879
 smartbugs_results,132: Arithmetic;,0xa32cd833344f831bc6dc074ab63f39d97cf8f32c
-smartbugs_results,132: Arithmetic;,0xa32cd833344f831bc6dc074ab63f39d97cf8f32c
 smartbugs_results,50: Arithmetic; 60: Arithmetic;,0xc4a9f69bcd373565038c6f0884864c931650394f
 smartbugs_results,48: Arithmetic; 57: Arithmetic;,0x9a047528f22a24c50519ec60a0537e554b246a33
 smartbugs_results,no,0x7c85d043bde79c85ef113a35793b8fb324991f3e
@@ -821,7 +815,6 @@ smartbugs_results,"210: Arithmetic,",0xd676d271c12c743ee8a8253f32cb7227cf547f51
 smartbugs_results,118: Arithmetic;,0xad7d6f3caeab82428ba4c5e779419e06c7725a8a
 smartbugs_results,no,0x26ac9e871f1c095018151710448a0bc90f638178
 smartbugs_results,351: DOS; 360: Arithmetic; 364: Arithmetic; 365: Arithmetic; 366: Arithmetic;,0x5070832e17e2042754ccd86f28b9d21fcb0e1567
-smartbugs_results,351: DOS; 360: Arithmetic; 364: Arithmetic; 365: Arithmetic; 366: Arithmetic;,0x5070832e17e2042754ccd86f28b9d21fcb0e1567
 smartbugs_results,no,0xefbfc3f373c9cc5c0375403177d71bcc387d3597
 smartbugs_results,130: Arithmetic;148: Arithmetic;,0xe0d41eb7b810e9bf9f309099b9766421b043d197
 smartbugs_results,58: DOS;,0xaaf73499dbcf94652402957735e4b4555ce3302b
@@ -965,7 +958,6 @@ smartbugs_results,30: Arithmetic;,0x940e7d8fb34921c3c5bbb8b9792b1a0e4688fe9b
 smartbugs_results,123: Time manipulation; 331: Time manipulation;,0xe88b508cbfe9cc110d4aa7a77a93a0c8f06ab6a0
 smartbugs_results,no,0x18dadca4f799b3009582343c87f146df20ca8c9c
 smartbugs_results,no,0x7348d402fcc22d37894fe874ff0b423fdcbfac58
-smartbugs_results,no,0x1d456c2978009ac29a264673a4411db0789cd256
 smartbugs_results,no,0x1d456c2978009ac29a264673a4411db0789cd256
 smartbugs_results,205: Time manipulation;,0x10c5f1edac69c65333c0059b0c9dbc60ef57835b
 smartbugs_results,no,0xdf0b5bbf51f94c3e3cea3446d28a5bd1c84c5271
@@ -1310,7 +1302,6 @@ smartbugs_results,285: Time manipulation; 325: Arithmetic; 326: Arithmetic;,0x6e
 smartbugs_results,63: Time manipulation; 62: Time manipulation; 64: Arithmetic;  66: Arithmetic; 69: Access control;,0x96d619298ee99c1f34462a38e192ac3d9eea127f
 smartbugs_results,no,0x733ca597ea4d8b602956cae2730524dc5a1a1db2
 smartbugs_results,no,0x2f13fa06c0efd2a5c4cf2175a0467084672e648b
-smartbugs_results,no,0x2f13fa06c0efd2a5c4cf2175a0467084672e648b
 smartbugs_results,7: Access control;,0xe3ec74dbce6ee1d8680e38714b67ab5535c95bdb
 smartbugs_results,no,0xaa0d2f41334885994ca2206707da843230f5a347
 smartbugs_results,81: DOS; 92: DOS; 334:DOS; 363: DOS;,0x6d69fcb28c9fcc9e9d39e3608190b24f4df295e7
@@ -1423,7 +1414,6 @@ smartbugs_results,50: Arithmetic; 60: Arithmetic; 118: Arithmetic; 119: Arithmet
 smartbugs_results,243: Time manipulation; 247: Time manipulation; 479: Time manipulation; 480: Time manipulation; 535: DOS; 331: DOS; 122: DOS;,0x6ab1453ae2cdfb7524decfc71bc9105bf2a58d5a
 smartbugs_results,253: Time manipulation; 262: Time manipulation; 287: Time manipulation; 360: Time manipulation; 361: Time manipulation; 378: Time manipulation; 498: Time manipulation; 503: Time manipulation; 511: Time manipulation;,0xac5a4f78924d74518338a6c19bae24dbe7da44f5
 smartbugs_results,16: Arithmetic; 17: Arithmetic; 19: Arithmetic;,0xe34443095f78099675b165f07559e9b48450c77e
-smartbugs_results,16: Arithmetic; 17: Arithmetic; 19: Arithmetic;,0xe34443095f78099675b165f07559e9b48450c77e
 smartbugs_results,no,0x663374c6e95090803695c430bb06f5f39281a12e
 smartbugs_results,253: Time manipulation;  255: Time manipulation;  257: Time manipulation;  259: Time manipulation; 384: Arithmetic;,0xd7cf8eae66f26e13a400772a054b19fb3d98c269
 smartbugs_results,no,0x00762285775b9e01981e0a24112b0761aa17fece
@@ -1471,7 +1461,6 @@ smartbugs_results,127: Arithmetic;  145: Arithmetic;,0x33adb1613254c57ca2dad0617
 smartbugs_results,no,0x1133fcf62407ec316816ec69e0ee2b4910b9a27d
 smartbugs_results,382: Time manipulation; 383: Time manipulation;,0x41d9384dc97470bd2afa06db0c1be4f872519eec
 smartbugs_results,493: Time manipulation; 494: Time manipulation; 506: Time manipulation; 661: Time manipulation; 743: Time manipulation;,0xec2b3c865c35b725c4787cedd0ed09276da31ada
-smartbugs_results,264: Arithmetic; 265: Arithmetic; ,0x21ca8ee818f008692d3a6abd1a1beda5aaecf0e3
 smartbugs_results,264: Arithmetic; 265: Arithmetic; ,0x21ca8ee818f008692d3a6abd1a1beda5aaecf0e3
 smartbugs_results,no,0x71f2ea939984349838578fbd20fd25e649c1d6a3
 smartbugs_results,283: Time manipulation;,0x9a60e133d8382904563a7ce9490ef53f92ff4c01
