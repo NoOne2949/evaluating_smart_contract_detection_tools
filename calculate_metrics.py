@@ -1,5 +1,22 @@
+from parse_vulnerability import parse_artifact_vulnerability, strip_vulnerability
+
+right_vulnerability_found = {
+    'access_control': 0,
+    'arithmetic': 0,
+    'denial_service': 0,
+    'reentrancy': 0,
+    'unchecked_low_calls': 0,
+    'bad_randomness': 0,
+    'front_running': 0,
+    'time_manipulation': 0,
+    'short_addresses': 0,
+    'total': 0
+}
+
+
 class MetricsCalculator:
     def __init__(self):
+        self.found = 0
         self.accuracy = 0
         self.precision = 0
         self.recall = 0
@@ -22,10 +39,6 @@ class MetricsCalculator:
             'time_manipulation': 0,
             'short_addresses': 0
         }
-        self.right_vulnerability_found = {
-            'found': 0,
-            'total': 0
-        }
 
     def get_metrics(self):
         return self.metrics
@@ -38,7 +51,7 @@ class MetricsCalculator:
         self.metrics['false_negative'] += metrics_obtained['false_negative']
         self.metrics['true_positive'] += metrics_obtained['true_positive']
         self.metrics['true_negative'] += metrics_obtained['true_negative']
-        self.right_vulnerability_found['found'] += vuln_found
+        self.found += vuln_found
         self.single_vulnerability_metrics['access_control'] += single_vuln_metrics['access_control']
         self.single_vulnerability_metrics['arithmetic'] += single_vuln_metrics['arithmetic']
         self.single_vulnerability_metrics['denial_service'] += single_vuln_metrics['denial_service']
@@ -64,18 +77,9 @@ class MetricsCalculator:
 
         self.f1_score = 2 * (self.precision * self.recall) / (self.precision + self.recall)
 
-    def total_vulnerabilities_counter(self, artifact):
-        total_vulnerabilities = 0
-        for row in artifact:
-            row_vuln = row['Tag']
-            if ';' in row_vuln:
-                element = row_vuln.split(';')
-                total_vulnerabilities += len(element) - 1
-        self.right_vulnerability_found['total'] = total_vulnerabilities
-
     def stamp_metrics(self, tool_name):
-        print(f"\nTotal vulnerabilities found by {tool_name}: {self.right_vulnerability_found['found']}/"
-              f"{self.right_vulnerability_found['total']}")
+        print(f"\nTotal vulnerabilities found by {tool_name}: {self.found}/"
+              f"{right_vulnerability_found['total']}")
         print(f'True positives: {self.metrics["true_positive"]}')
         print(f'True negatives: {self.metrics["true_negative"]}')
         print(f'False negatives: {self.metrics["false_negative"]}')
@@ -85,4 +89,24 @@ class MetricsCalculator:
         print(f'Recall: {self.recall}')
         print(f'F1 Score: {self.f1_score}')
         for single_vulnerability_metric in self.single_vulnerability_metrics:
-            print(f'{single_vulnerability_metric}: {self.single_vulnerability_metrics[single_vulnerability_metric]}')
+            print(f'{single_vulnerability_metric}: {self.single_vulnerability_metrics[single_vulnerability_metric]}/'
+                  f'{right_vulnerability_found[single_vulnerability_metric]}')
+
+
+def total_vulnerabilities_counter(artifact):
+    mapped = []
+    for row in artifact:
+        artifact_vulnerabilities = strip_vulnerability(row['Tag'])
+        for vuln in artifact_vulnerabilities:
+            mapped.append(parse_artifact_vulnerability(vuln[1]))
+    for single_type_vulnerability_metric in mapped:
+        if not (single_type_vulnerability_metric in 'other'):
+            right_vulnerability_found[single_type_vulnerability_metric] += 1
+
+    total_vulnerabilities = 0
+    for row in artifact:
+        row_vuln = row['Tag']
+        if ';' in row_vuln:
+            element = row_vuln.split(';')
+            total_vulnerabilities += len(element) - 1
+    right_vulnerability_found['total'] = total_vulnerabilities
