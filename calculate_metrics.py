@@ -96,16 +96,16 @@ class MetricsCalculator:
 def total_vulnerabilities_counter(artifact):
     mapped = []
     for row in artifact:
-        artifact_vulnerabilities = strip_vulnerability(row['Tag'])
+        artifact_vulnerabilities = strip_vulnerability(row['tag'])
         for vuln in artifact_vulnerabilities:
-            mapped.append(parse_artifact_vulnerability(vuln[1]))
+            mapped.append(vuln[1])
     for single_type_vulnerability_metric in mapped:
         if not (single_type_vulnerability_metric in 'other'):
             right_vulnerability_found[single_type_vulnerability_metric] += 1
 
     total_vulnerabilities = 0
     for row in artifact:
-        row_vuln = row['Tag']
+        row_vuln = row['tag']
         if ';' in row_vuln:
             element = row_vuln.split(';')
             total_vulnerabilities += len(element) - 1
