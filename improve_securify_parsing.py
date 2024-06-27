@@ -7,7 +7,7 @@ root_folder = '/home/kevin/PycharmProjects/tesi/results/securify'
 def iterate_file():
     for subdir, _, files in os.walk(root_folder):
         for file in files:
-            if file == 'live.json':
+            if file == 'results.json':
                 extract_violations(os.path.join(subdir, file))
 
 
@@ -16,16 +16,20 @@ def extract_violations(file_path):
         data = json.load(file)
 
     # Iterare attraverso patternResults
-    pattern_results = data.get('patternResults', {})
+    keys = list(data.keys())
     violations_set = set()
+    for key in keys:
+        results = data[key].get('results', {})
 
-    print(f"\nFOUND IN FILE {file_path}")
-    for pattern, details in pattern_results.items():
-        violations = details.get('violations', [])
-        if violations:
-            for line in violations:
-                print(f"Violazione: {pattern}, Linea: {line}")
-                violations_set.add((pattern, line))
+        print(f"\nFOUND IN FILE {file_path}")
+        for violation, details in results.items():
+            violations = details.get('violations', [])
+            print(f"\t{violation}")
+            if violations:
+                for line in violations:
+                    print(f"Violazione: {violation}, Linea: {line}")
+                    violations_set.add((violation, line))
+    print(violations_set)
     update_result(file_path, violations_set)
 
 
