@@ -1,4 +1,4 @@
-from parse_vulnerability import parse_artifact_vulnerability, strip_vulnerability
+from parse_vulnerability import strip_vulnerability
 
 right_vulnerability_found = {
     'access_control': 0,
@@ -94,19 +94,17 @@ class MetricsCalculator:
 
 
 def total_vulnerabilities_counter(artifact):
-    mapped = []
     for row in artifact:
         artifact_vulnerabilities = strip_vulnerability(row['tag'])
         for vuln in artifact_vulnerabilities:
-            mapped.append(vuln[1])
-    for single_type_vulnerability_metric in mapped:
-        if not (single_type_vulnerability_metric in 'other'):
-            right_vulnerability_found[single_type_vulnerability_metric] += 1
+            vuln_name = vuln[1]
+            if vuln_name != 'other':
+                right_vulnerability_found[vuln_name] += 1
 
     total_vulnerabilities = 0
     for row in artifact:
         row_vuln = row['tag']
         if ';' in row_vuln:
-            element = row_vuln.split(';')
-            total_vulnerabilities += len(element) - 1
+            elements = row_vuln.split(';')
+            total_vulnerabilities += len(elements) - 1
     right_vulnerability_found['total'] = total_vulnerabilities
