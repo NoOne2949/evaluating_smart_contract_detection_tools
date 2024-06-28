@@ -335,13 +335,13 @@ oyente,0x39cfd754c85023648bf003bea2dd498c5612abfa,72: Integer Overflow,72: arith
 oyente,integer_overflow_benign_1,17: Integer Underflow,17: arithmetic
 oyente,etheraffle,81: Integer Overflow; 121: Transaction-Ordering Dependence (TOD); 93: Transaction-Ordering Dependence (TOD),81: arithmetic; 121: front_running; 93: front_running
 oyente,unchecked_return_value,no,no
-oyente,wallet_04_confused_sign,24: Integer Overflow; 32: Integer Underflow; 31: Transaction-Ordering Dependence (TOD); 39: Transaction-Ordering Dependence (TOD),24: arithmetic; 32: arithmetic; 31: front_running; 39: front_running
+oyente,wallet_04_confused_sign,24: Integer Overflow; 32: Integer Underflow; 39: Transaction-Ordering Dependence (TOD); 31: Transaction-Ordering Dependence (TOD),24: arithmetic; 32: arithmetic; 39: front_running; 31: front_running
 oyente,0xec329ffc97d75fe03428ae155fc7793431487f63,30: Callstack Depth Attack Vulnerability; 28: Integer Overflow; 30: Callstack Depth Attack Vulnerability; 66: Integer Overflow,30: denial_service; 28: arithmetic; 30: denial_service; 66: arithmetic
 oyente,0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01,72: Integer Overflow,72: arithmetic
 oyente,0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f,87: Integer Overflow; 83: Integer Underflow; 54: Re-Entrancy Vulnerability,87: arithmetic; 83: arithmetic; 54: reentrancy; 54: reentrancy
 oyente,0xe4eabdca81e31d9acbc4af76b30f532b6ed7f3bf,44: Callstack Depth Attack Vulnerability; 38: Integer Overflow; 35: Transaction-Ordering Dependence (TOD),44: denial_service; 38: arithmetic; 35: front_running
 oyente,0x2972d548497286d18e92b5fa1f8f9139e5653fd2,14: Callstack Depth Attack Vulnerability; 9: Integer Overflow,14: denial_service; 9: arithmetic
-oyente,eth_tx_order_dependence_minimal,23: Transaction-Ordering Dependence (TOD); 31: Transaction-Ordering Dependence (TOD),23: front_running; 31: front_running
+oyente,eth_tx_order_dependence_minimal,31: Transaction-Ordering Dependence (TOD); 23: Transaction-Ordering Dependence (TOD),31: front_running; 23: front_running
 oyente,integer_overflow_mul,no,no
 oyente,0xdb1c55f6926e7d847ddf8678905ad871a68199d2,39: Callstack Depth Attack Vulnerability; 33: Integer Overflow; 30: Transaction-Ordering Dependence (TOD),39: denial_service; 33: arithmetic; 30: front_running
 oyente,0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c,14: Callstack Depth Attack Vulnerability; 12: Integer Overflow; 14: Callstack Depth Attack Vulnerability; 33: Integer Overflow,14: denial_service; 12: arithmetic; 14: denial_service; 33: arithmetic
@@ -352,10 +352,10 @@ oyente,ERC20,no,no
 oyente,integer_overflow_multitx_onefunc_feasible,22: Integer Underflow,22: arithmetic
 oyente,name_registrar,17: Integer Overflow,17: arithmetic
 oyente,0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f,41: Re-Entrancy Vulnerability; 68: Integer Overflow; 64: Integer Underflow,41: reentrancy; 41: reentrancy; 68: arithmetic; 64: arithmetic
-oyente,0x5aa88d2901c68fda244f1d0584400368d2c8e739,29: Callstack Depth Attack Vulnerability; 23: Integer Overflow; 38: Transaction-Ordering Dependence (TOD); 20: Transaction-Ordering Dependence (TOD),29: denial_service; 23: arithmetic; 38: front_running; 20: front_running
+oyente,0x5aa88d2901c68fda244f1d0584400368d2c8e739,29: Callstack Depth Attack Vulnerability; 23: Integer Overflow; 20: Transaction-Ordering Dependence (TOD); 38: Transaction-Ordering Dependence (TOD),29: denial_service; 23: arithmetic; 20: front_running; 38: front_running
 oyente,integer_overflow_1,14: Integer Overflow,14: arithmetic
 oyente,send_loop,no,no
-oyente,0x3e013fc32a54c4c5b6991ba539dcd0ec4355c859,29: Callstack Depth Attack Vulnerability; 23: Integer Overflow; 38: Transaction-Ordering Dependence (TOD); 20: Transaction-Ordering Dependence (TOD),29: denial_service; 23: arithmetic; 38: front_running; 20: front_running
+oyente,0x3e013fc32a54c4c5b6991ba539dcd0ec4355c859,29: Callstack Depth Attack Vulnerability; 23: Integer Overflow; 20: Transaction-Ordering Dependence (TOD); 38: Transaction-Ordering Dependence (TOD),29: denial_service; 23: arithmetic; 20: front_running; 38: front_running
 oyente,0x0cbe050f75bc8f8c2d6c0d249fea125fd6e1acc9,no,no
 oyente,0xb620cee6b52f96f3c6b253e6eea556aa2d214a99,110: Integer Overflow; 86: Integer Underflow; 133: Re-Entrancy Vulnerability; 100: Transaction-Ordering Dependence (TOD); 106: Transaction-Ordering Dependence (TOD),110: arithmetic; 86: arithmetic; 133: reentrancy; 133: reentrancy; 100: front_running; 106: front_running
 oyente,etherpot_lotto,141: Callstack Depth Attack Vulnerability; 128: Integer Overflow,141: denial_service; 128: arithmetic
@@ -365,11 +365,11 @@ oyente,spank_chain_payment,91: Integer Overflow; 198: Integer Overflow; 233: Int
 oyente,blackjack,135: Integer Overflow,135: arithmetic
 oyente,0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7,25: Callstack Depth Attack Vulnerability; 20: Integer Overflow; 25: Re-Entrancy Vulnerability,25: denial_service; 20: arithmetic; 25: reentrancy; 25: reentrancy
 oyente,tokensalechallenge,25: Integer Overflow,25: arithmetic
-oyente,wallet_03_wrong_constructor,24: Integer Overflow; 30: Transaction-Ordering Dependence (TOD); 38: Transaction-Ordering Dependence (TOD),24: arithmetic; 30: front_running; 38: front_running
+oyente,wallet_03_wrong_constructor,24: Integer Overflow; 38: Transaction-Ordering Dependence (TOD); 30: Transaction-Ordering Dependence (TOD),24: arithmetic; 38: front_running; 30: front_running
 oyente,governmental_survey,35: Integer Underflow,35: arithmetic
 oyente,0x7a4349a749e59a5736efb7826ee3496a2dfd5489,44: Callstack Depth Attack Vulnerability; 38: Integer Overflow; 35: Transaction-Ordering Dependence (TOD),44: denial_service; 38: arithmetic; 35: front_running
 oyente,0x70f9eddb3931491aab1aeafbc1e7f1ca2a012db4,29: Callstack Depth Attack Vulnerability; 26: Integer Overflow; 23: Transaction-Ordering Dependence (TOD),29: denial_service; 26: arithmetic; 23: front_running
-oyente,0xe09b1ab8111c2729a76f16de96bc86a7af837928,150: Callstack Depth Attack Vulnerability; 142: Integer Overflow; 287: Integer Underflow; 313: Transaction-Ordering Dependence (TOD); 295: Transaction-Ordering Dependence (TOD),150: denial_service; 142: arithmetic; 287: arithmetic; 313: front_running; 295: front_running
+oyente,0xe09b1ab8111c2729a76f16de96bc86a7af837928,150: Callstack Depth Attack Vulnerability; 142: Integer Overflow; 287: Integer Underflow; 295: Transaction-Ordering Dependence (TOD); 313: Transaction-Ordering Dependence (TOD),150: denial_service; 142: arithmetic; 287: arithmetic; 295: front_running; 313: front_running
 oyente,proxy,17: Integer Overflow,17: arithmetic
 oyente,crypto_roulette,no,no
 oyente,simple_dao,19: Callstack Depth Attack Vulnerability; 13: Integer Overflow; 19: Re-Entrancy Vulnerability,19: denial_service; 13: arithmetic; 19: reentrancy; 19: reentrancy
@@ -381,7 +381,7 @@ oyente,incorrect_constructor_name3,no,no
 oyente,0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4,65: Integer Overflow; 61: Integer Underflow; 38: Re-Entrancy Vulnerability,65: arithmetic; 61: arithmetic; 38: reentrancy; 38: reentrancy
 oyente,0xf70d589d76eebdd7c12cc5eec99f8f6fa4233b9e,44: Callstack Depth Attack Vulnerability; 38: Integer Overflow; 35: Transaction-Ordering Dependence (TOD),44: denial_service; 38: arithmetic; 35: front_running
 oyente,0x663e4229142a27f00bafb5d087e1e730648314c3,1496: Callstack Depth Attack Vulnerability; 1326: Integer Overflow; 1381: Integer Underflow; 516: Integer Overflow; 1152: Callstack Depth Attack Vulnerability; 392: Integer Overflow; 697: Integer Underflow; 385: Integer Overflow; 1152: Callstack Depth Attack Vulnerability; 907: Integer Overflow; 697: Integer Underflow; 2467: Callstack Depth Attack Vulnerability; 2429: Integer Overflow; 697: Integer Underflow; 1152: Callstack Depth Attack Vulnerability; 392: Integer Overflow; 697: Integer Underflow; 392: Integer Overflow; 697: Integer Underflow; 1496: Callstack Depth Attack Vulnerability; 1235: Integer Overflow; 1808: Integer Underflow; 1594: Integer Overflow; 1381: Integer Underflow; 1235: Integer Overflow; 1381: Integer Underflow; 1496: Transaction-Ordering Dependence (TOD),1496: denial_service; 1326: arithmetic; 1381: arithmetic; 516: arithmetic; 1152: denial_service; 392: arithmetic; 697: arithmetic; 385: arithmetic; 1152: denial_service; 907: arithmetic; 697: arithmetic; 2467: denial_service; 2429: arithmetic; 697: arithmetic; 1152: denial_service; 392: arithmetic; 697: arithmetic; 392: arithmetic; 697: arithmetic; 1496: denial_service; 1235: arithmetic; 1808: arithmetic; 1594: arithmetic; 1381: arithmetic; 1235: arithmetic; 1381: arithmetic; 1496: front_running
-oyente,odds_and_evens,38: Callstack Depth Attack Vulnerability; 36: Integer Overflow; 41: Transaction-Ordering Dependence (TOD); 50: Transaction-Ordering Dependence (TOD),38: denial_service; 36: arithmetic; 41: front_running; 50: front_running
+oyente,odds_and_evens,38: Callstack Depth Attack Vulnerability; 36: Integer Overflow; 50: Transaction-Ordering Dependence (TOD); 41: Transaction-Ordering Dependence (TOD),38: denial_service; 36: arithmetic; 50: front_running; 41: front_running
 oyente,overflow_single_tx,36: Integer Overflow; 30: Integer Underflow,36: arithmetic; 30: arithmetic
 oyente,0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e,213: Callstack Depth Attack Vulnerability; 202: Integer Overflow; 153: Integer Underflow,213: denial_service; 202: arithmetic; 153: arithmetic
 oyente,dos_address,no,no
@@ -417,7 +417,7 @@ oyente,list_dos,39: Callstack Depth Attack Vulnerability; 16: Integer Overflow; 
 oyente,king_of_the_ether_throne,118: Callstack Depth Attack Vulnerability; 69: Integer Overflow; 69: Integer Underflow; 110: Transaction-Ordering Dependence (TOD); 174: Transaction-Ordering Dependence (TOD),118: denial_service; 69: arithmetic; 69: arithmetic; 110: front_running; 174: front_running
 oyente,FibonacciBalance,no,no
 oyente,0xf2570186500a46986f3139f65afedc2afe4f445d,no,no
-oyente,smart_billions,339: Integer Overflow; 364: Integer Underflow; 372: Transaction-Ordering Dependence (TOD); 382: Transaction-Ordering Dependence (TOD),339: arithmetic; 364: arithmetic; 372: front_running; 382: front_running
+oyente,smart_billions,339: Integer Overflow; 364: Integer Underflow; 382: Transaction-Ordering Dependence (TOD); 372: Transaction-Ordering Dependence (TOD),339: arithmetic; 364: arithmetic; 382: front_running; 372: front_running
 oyente,short_address_example,21: Integer Overflow,21: arithmetic
 oyente,0xbaa3de6504690efb064420d89e871c27065cdd52,14: Callstack Depth Attack Vulnerability; 12: Integer Overflow; 14: Callstack Depth Attack Vulnerability; 33: Integer Overflow,14: denial_service; 12: arithmetic; 14: denial_service; 33: arithmetic
 oyente,0x806a6bd219f162442d992bdc4ee6eba1f2c5a707,44: Callstack Depth Attack Vulnerability; 38: Integer Overflow; 35: Transaction-Ordering Dependence (TOD),44: denial_service; 38: arithmetic; 35: front_running
@@ -449,7 +449,7 @@ oyente,guess_the_random_number,no,no
 oyente,reentrancy_insecure,Error/Fail,Error/Fail
 oyente,0xa46edd6a9a93feec36576ee5048146870ea2c3ae,16: Callstack Depth Attack Vulnerability; 11: Integer Overflow,16: denial_service; 11: arithmetic
 oyente,mapping_write,no,no
-oyente,0x19cf8481ea15427a98ba3cdd6d9e14690011ab10,329: Integer Overflow; 153: Integer Underflow; 439: Transaction-Ordering Dependence (TOD); 433: Transaction-Ordering Dependence (TOD),329: arithmetic; 153: arithmetic; 439: front_running; 433: front_running
+oyente,0x19cf8481ea15427a98ba3cdd6d9e14690011ab10,329: Integer Overflow; 153: Integer Underflow; 433: Transaction-Ordering Dependence (TOD); 439: Transaction-Ordering Dependence (TOD),329: arithmetic; 153: arithmetic; 433: front_running; 439: front_running
 oyente,etherstore,17: Integer Overflow; 27: Re-Entrancy Vulnerability; 25: Timestamp Dependency,17: arithmetic; 27: reentrancy; 27: reentrancy; 25: time_manipulation
 oyente,ether_lotto,no,no
 oyente,dos_number,9: Integer Overflow,9: arithmetic
@@ -1449,147 +1449,147 @@ solhint,reentrance,Error/Fail,Error/Fail
 solhint,lottopollo,Error/Fail,Error/Fail
 solhint,integer_overflow_multitx_multifunc_feasible,Error/Fail,Error/Fail
 solhint,0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b,Error/Fail,Error/Fail
-securify,0x958a8f594101d2c0485a52319f29b2647f2ebc06,54: UnhandledException; 36: MissingInputValidation,54: unchecked_low_calls
+securify,0x958a8f594101d2c0485a52319f29b2647f2ebc06,37: MissingInputValidation; 55: UnhandledException,55: unchecked_low_calls
 securify,0x4320e6f8c05b27ab4707cd1f6d5ce6f3e4b3a5a1,Error/Fail,Error/Fail
 securify,multiowned_vulnerable,Error/Fail,Error/Fail
-securify,0x7d09edb07d23acb532a82be3da5c17d9d85806b4,209: UnhandledException; 197: DAO; 209: DAO; 209: TODAmount; 186: TODAmount; 197: UnhandledException,209: unchecked_low_calls; 197: reentrancy; 209: reentrancy; 209: front_running; 186: front_running; 197: unchecked_low_calls
+securify,0x7d09edb07d23acb532a82be3da5c17d9d85806b4,210: TODAmount; 198: DAO; 187: TODAmount; 210: DAO; 198: UnhandledException; 210: UnhandledException,210: front_running; 198: reentrancy; 187: front_running; 210: reentrancy; 198: unchecked_low_calls; 210: unchecked_low_calls
 securify,0x7541b76cb60f4c60af330c208b0623b7f54bf615,Error/Fail,Error/Fail
 securify,rubixi,Error/Fail,Error/Fail
-securify,lucky_doubler,73: UnhandledException; 118: UnhandledException; 101: UnhandledException; 59: UnhandledException; 118: TODReceiver; 101: DAOConstantGas; 118: TODAmount,73: unchecked_low_calls; 118: unchecked_low_calls; 101: unchecked_low_calls; 59: unchecked_low_calls; 118: front_running; 101: reentrancy; 118: front_running
-securify,0x941d225236464a25eb18076df7da6a91d0f95e9e,10: MissingInputValidation; 43: DAO; 6: DAO,43: reentrancy; 6: reentrancy
-securify,0xe82f0742a71a02b9e9ffc142fdcb6eb1ed06fb87,38: UnhandledException; 29: TODReceiver; 20: TODAmount; 29: TODAmount; 19: TODReceiver; 19: TODAmount,38: unchecked_low_calls; 29: front_running; 20: front_running; 29: front_running; 19: front_running; 19: front_running
-securify,0x8c7777c45481dba411450c228cb692ac3d550344,10: MissingInputValidation; 1: DAO; 40: DAO,1: reentrancy; 40: reentrancy
-securify,0x4b71ad9c1a84b9b643aa54fdd66e2dec96e8b152,16: UnhandledException,16: unchecked_low_calls
-securify,timelock,11: MissingInputValidation; 12: MissingInputValidation; 19: MissingInputValidation,no
+securify,lucky_doubler,119: TODReceiver; 74: UnhandledException; 119: UnhandledException; 119: TODAmount; 102: DAOConstantGas; 102: UnhandledException; 60: UnhandledException,119: front_running; 74: unchecked_low_calls; 119: unchecked_low_calls; 119: front_running; 102: reentrancy; 102: unchecked_low_calls; 60: unchecked_low_calls
+securify,0x941d225236464a25eb18076df7da6a91d0f95e9e,44: DAO; 7: DAO; 11: MissingInputValidation,44: reentrancy; 7: reentrancy
+securify,0xe82f0742a71a02b9e9ffc142fdcb6eb1ed06fb87,39: UnhandledException; 30: TODReceiver; 30: TODAmount; 20: TODReceiver; 20: TODAmount; 21: TODAmount,39: unchecked_low_calls; 30: front_running; 30: front_running; 20: front_running; 20: front_running; 21: front_running
+securify,0x8c7777c45481dba411450c228cb692ac3d550344,41: DAO; 2: DAO; 11: MissingInputValidation,41: reentrancy; 2: reentrancy
+securify,0x4b71ad9c1a84b9b643aa54fdd66e2dec96e8b152,17: UnhandledException,17: unchecked_low_calls
+securify,timelock,12: MissingInputValidation; 13: MissingInputValidation; 20: MissingInputValidation,no
 securify,0x39cfd754c85023648bf003bea2dd498c5612abfa,Error/Fail,Error/Fail
 securify,integer_overflow_benign_1,no,no
 securify,etheraffle,Error/Fail,Error/Fail
-securify,unchecked_return_value,10: MissingInputValidation; 16: UnhandledException; 14: MissingInputValidation,16: unchecked_low_calls
-securify,wallet_04_confused_sign,30: DAOConstantGas; 38: TODAmount; 36: MissingInputValidation,30: reentrancy; 38: front_running
-securify,0xec329ffc97d75fe03428ae155fc7793431487f63,-1: UnhandledException; 50: UnhandledException; 29: UnhandledException; 20: MissingInputValidation,-1: unchecked_low_calls; 50: unchecked_low_calls; 29: unchecked_low_calls
+securify,unchecked_return_value,17: UnhandledException; 15: MissingInputValidation; 11: MissingInputValidation,17: unchecked_low_calls
+securify,wallet_04_confused_sign,31: DAOConstantGas; 37: MissingInputValidation; 39: TODAmount,31: reentrancy; 39: front_running
+securify,0xec329ffc97d75fe03428ae155fc7793431487f63,51: UnhandledException; 30: UnhandledException; 21: MissingInputValidation; 0: UnhandledException,51: unchecked_low_calls; 30: unchecked_low_calls; 0: unchecked_low_calls
 securify,0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01,Error/Fail,Error/Fail
 securify,0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f,Error/Fail,Error/Fail
-securify,0xe4eabdca81e31d9acbc4af76b30f532b6ed7f3bf,34: TODAmount; 24: TODAmount; 25: TODAmount; 43: UnhandledException; 34: TODReceiver; 24: TODReceiver,34: front_running; 24: front_running; 25: front_running; 43: unchecked_low_calls; 34: front_running; 24: front_running
+securify,0xe4eabdca81e31d9acbc4af76b30f532b6ed7f3bf,26: TODAmount; 44: UnhandledException; 35: TODReceiver; 35: TODAmount; 25: TODReceiver; 25: TODAmount,26: front_running; 44: unchecked_low_calls; 35: front_running; 35: front_running; 25: front_running; 25: front_running
 securify,0x2972d548497286d18e92b5fa1f8f9139e5653fd2,Error/Fail,Error/Fail
-securify,eth_tx_order_dependence_minimal,30: DAOConstantGas; 22: TODTransfer; 30: TODAmount; 22: DAOConstantGas; 22: TODReceiver; 30: TODTransfer; 22: TODAmount,30: reentrancy; 22: front_running; 30: front_running; 22: reentrancy; 22: front_running; 30: front_running; 22: front_running
-securify,integer_overflow_mul,14: MissingInputValidation,no
+securify,eth_tx_order_dependence_minimal,31: TODTransfer; 23: TODReceiver; 23: TODAmount; 31: DAOConstantGas; 31: TODAmount; 23: TODTransfer; 23: DAOConstantGas,31: front_running; 23: front_running; 23: front_running; 31: reentrancy; 31: front_running; 23: front_running; 23: reentrancy
+securify,integer_overflow_mul,15: MissingInputValidation,no
 securify,0xdb1c55f6926e7d847ddf8678905ad871a68199d2,Error/Fail,Error/Fail
 securify,0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c,Error/Fail,Error/Fail
 securify,roulette,no,no
 securify,0x4e73b32ed6c35f570686b89848e5f39f20ecc106,Error/Fail,Error/Fail
 securify,0x9d06cbafa865037a01d322d3f4222fa3e04e5488,Error/Fail,Error/Fail
 securify,ERC20,no,no
-securify,integer_overflow_multitx_onefunc_feasible,15: MissingInputValidation,no
-securify,name_registrar,16: MissingInputValidation; 17: MissingInputValidation; 19: MissingInputValidation,no
+securify,integer_overflow_multitx_onefunc_feasible,16: MissingInputValidation,no
+securify,name_registrar,17: MissingInputValidation; 18: MissingInputValidation; 20: MissingInputValidation,no
 securify,0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f,Error/Fail,Error/Fail
-securify,0x5aa88d2901c68fda244f1d0584400368d2c8e739,19: TODAmount; 28: UnhandledException; 37: TODAmount; 31: MissingInputValidation,19: front_running; 28: unchecked_low_calls; 37: front_running
-securify,integer_overflow_1,11: MissingInputValidation,no
+securify,0x5aa88d2901c68fda244f1d0584400368d2c8e739,29: UnhandledException; 20: TODAmount; 32: MissingInputValidation; 38: TODAmount,29: unchecked_low_calls; 20: front_running; 38: front_running
+securify,integer_overflow_1,12: MissingInputValidation,no
 securify,send_loop,Error/Fail,Error/Fail
 securify,0x3e013fc32a54c4c5b6991ba539dcd0ec4355c859,Error/Fail,Error/Fail
-securify,0x0cbe050f75bc8f8c2d6c0d249fea125fd6e1acc9,9: MissingInputValidation; 11: UnhandledException,11: unchecked_low_calls
+securify,0x0cbe050f75bc8f8c2d6c0d249fea125fd6e1acc9,12: UnhandledException; 10: MissingInputValidation,12: unchecked_low_calls
 securify,0xb620cee6b52f96f3c6b253e6eea556aa2d214a99,Error/Fail,Error/Fail
 securify,etherpot_lotto,no,no
 securify,modifier_reentrancy,Error/Fail,Error/Fail
 securify,random_number_generator,no,no
 securify,spank_chain_payment,Error/Fail,Error/Fail
 securify,blackjack,Error/Fail,Error/Fail
-securify,0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7,24: DAO; 16: MissingInputValidation; 24: UnhandledException,24: reentrancy; 24: unchecked_low_calls
+securify,0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7,17: MissingInputValidation; 25: UnhandledException; 25: DAO,25: unchecked_low_calls; 25: reentrancy
 securify,tokensalechallenge,Error/Fail,Error/Fail
-securify,wallet_03_wrong_constructor,29: DAOConstantGas; 37: TODTransfer; 37: TODAmount; 35: MissingInputValidation,29: reentrancy; 37: front_running; 37: front_running
-securify,governmental_survey,34: TODAmount; 33: DAOConstantGas; 34: TODTransfer; 33: TODReceiver; 33: TODAmount; 34: UnhandledException; 33: TODTransfer; 34: DAOConstantGas; 44: MissingInputValidation; 33: UnhandledException; 14: MissingInputValidation,34: front_running; 33: reentrancy; 34: front_running; 33: front_running; 33: front_running; 34: unchecked_low_calls; 33: front_running; 34: reentrancy; 33: unchecked_low_calls
-securify,0x7a4349a749e59a5736efb7826ee3496a2dfd5489,34: TODAmount; 24: TODAmount; 25: TODAmount; 43: UnhandledException; 34: TODReceiver; 24: TODReceiver,34: front_running; 24: front_running; 25: front_running; 43: unchecked_low_calls; 34: front_running; 24: front_running
-securify,0x70f9eddb3931491aab1aeafbc1e7f1ca2a012db4,28: UnhandledException; 22: TODReceiver; 22: TODAmount; 16: TODAmount; 15: TODReceiver; 15: TODAmount,28: unchecked_low_calls; 22: front_running; 22: front_running; 16: front_running; 15: front_running; 15: front_running
+securify,wallet_03_wrong_constructor,30: DAOConstantGas; 36: MissingInputValidation; 38: TODAmount; 38: TODTransfer,30: reentrancy; 38: front_running; 38: front_running
+securify,governmental_survey,45: MissingInputValidation; 35: TODTransfer; 35: DAOConstantGas; 34: TODTransfer; 35: UnhandledException; 15: MissingInputValidation; 34: DAOConstantGas; 34: UnhandledException; 35: TODAmount; 34: TODReceiver; 34: TODAmount,35: front_running; 35: reentrancy; 34: front_running; 35: unchecked_low_calls; 34: reentrancy; 34: unchecked_low_calls; 35: front_running; 34: front_running; 34: front_running
+securify,0x7a4349a749e59a5736efb7826ee3496a2dfd5489,26: TODAmount; 44: UnhandledException; 35: TODReceiver; 35: TODAmount; 25: TODReceiver; 25: TODAmount,26: front_running; 44: unchecked_low_calls; 35: front_running; 35: front_running; 25: front_running; 25: front_running
+securify,0x70f9eddb3931491aab1aeafbc1e7f1ca2a012db4,17: TODAmount; 23: TODReceiver; 23: TODAmount; 29: UnhandledException; 16: TODReceiver; 16: TODAmount,17: front_running; 23: front_running; 23: front_running; 29: unchecked_low_calls; 16: front_running; 16: front_running
 securify,0xe09b1ab8111c2729a76f16de96bc86a7af837928,Error/Fail,Error/Fail
 securify,proxy,no,no
-securify,crypto_roulette,46: TODTransfer; 46: TODAmount,46: front_running; 46: front_running
-securify,simple_dao,23: MissingInputValidation; 18: UnhandledException; 9: MissingInputValidation; 18: DAO; 11: MissingInputValidation,18: unchecked_low_calls; 18: reentrancy
-securify,0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839,49: MissingInputValidation; 93: TODTransfer; 20: MissingInputValidation; 13: MissingInputValidation; 38: MissingInputValidation; 50: UnhandledException; 93: DAO; 86: MissingInputValidation; 43: UnhandledException; 50: MissingInputValidation; 75: MissingInputValidation,93: front_running; 50: unchecked_low_calls; 93: reentrancy; 43: unchecked_low_calls
-securify,0xf29ebe930a539a60279ace72c707cba851a57707,15: UnhandledException; 16: TODAmount,15: unchecked_low_calls; 16: front_running
+securify,crypto_roulette,47: TODAmount; 47: TODTransfer,47: front_running; 47: front_running
+securify,simple_dao,12: MissingInputValidation; 19: UnhandledException; 24: MissingInputValidation; 19: DAO; 10: MissingInputValidation,19: unchecked_low_calls; 19: reentrancy
+securify,0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839,87: MissingInputValidation; 51: MissingInputValidation; 51: UnhandledException; 76: MissingInputValidation; 21: MissingInputValidation; 44: UnhandledException; 94: DAO; 50: MissingInputValidation; 14: MissingInputValidation; 94: TODTransfer; 39: MissingInputValidation,51: unchecked_low_calls; 44: unchecked_low_calls; 94: reentrancy; 94: front_running
+securify,0xf29ebe930a539a60279ace72c707cba851a57707,17: TODAmount; 16: UnhandledException,17: front_running; 16: unchecked_low_calls
 securify,0x89c1b3807d4c67df034fffb62f3509561218d30b,Error/Fail,Error/Fail
-securify,lotto,26: UnhandledException; 19: TODTransfer; 19: UnhandledException; 19: DAOConstantGas; 19: TODReceiver; 26: TODAmount; 26: TODTransfer,26: unchecked_low_calls; 19: front_running; 19: unchecked_low_calls; 19: reentrancy; 19: front_running; 26: front_running; 26: front_running
-securify,incorrect_constructor_name3,28: TODReceiver; 28: TODTransfer; 28: TODAmount,28: front_running; 28: front_running; 28: front_running
-securify,0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4,10: MissingInputValidation; 37: DAO,37: reentrancy
-securify,0xf70d589d76eebdd7c12cc5eec99f8f6fa4233b9e,34: TODAmount; 24: TODAmount; 25: TODAmount; 43: UnhandledException; 34: TODReceiver; 24: TODReceiver,34: front_running; 24: front_running; 25: front_running; 43: unchecked_low_calls; 34: front_running; 24: front_running
+securify,lotto,20: TODReceiver; 27: TODTransfer; 20: TODTransfer; 27: UnhandledException; 20: DAOConstantGas; 20: UnhandledException; 27: TODAmount,20: front_running; 27: front_running; 20: front_running; 27: unchecked_low_calls; 20: reentrancy; 20: unchecked_low_calls; 27: front_running
+securify,incorrect_constructor_name3,29: TODReceiver; 29: TODAmount; 29: TODTransfer,29: front_running; 29: front_running; 29: front_running
+securify,0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4,38: DAO; 11: MissingInputValidation,38: reentrancy
+securify,0xf70d589d76eebdd7c12cc5eec99f8f6fa4233b9e,26: TODAmount; 44: UnhandledException; 35: TODReceiver; 35: TODAmount; 25: TODReceiver; 25: TODAmount,26: front_running; 44: unchecked_low_calls; 35: front_running; 35: front_running; 25: front_running; 25: front_running
 securify,0x663e4229142a27f00bafb5d087e1e730648314c3,Error/Fail,Error/Fail
 securify,odds_and_evens,Error/Fail,Error/Fail
-securify,overflow_single_tx,15: MissingInputValidation; 21: MissingInputValidation; 27: MissingInputValidation,no
-securify,0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e,212: UnhandledException; 200: DAO; 212: DAO; 212: TODAmount; 189: TODAmount; 200: UnhandledException,212: unchecked_low_calls; 200: reentrancy; 212: reentrancy; 212: front_running; 189: front_running; 200: unchecked_low_calls
+securify,overflow_single_tx,28: MissingInputValidation; 16: MissingInputValidation; 22: MissingInputValidation,no
+securify,0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e,190: TODAmount; 213: TODAmount; 201: DAO; 213: DAO; 201: UnhandledException; 213: UnhandledException,190: front_running; 213: front_running; 201: reentrancy; 213: reentrancy; 201: unchecked_low_calls; 213: unchecked_low_calls
 securify,dos_address,no,no
 securify,arbitrary_location_write_simple,no,no
 securify,simple_suicide,no,no
-securify,0x524960d55174d912768678d8c606b4d50b79d7b1,20: UnhandledException,20: unchecked_low_calls
+securify,0x524960d55174d912768678d8c606b4d50b79d7b1,21: UnhandledException,21: unchecked_low_calls
 securify,0x561eac93c92360949ab1f1403323e6db345cbf31,Error/Fail,Error/Fail
-securify,mishandled,13: UnhandledException,13: unchecked_low_calls
-securify,reentrancy_dao,17: DAO,17: reentrancy
+securify,mishandled,14: UnhandledException,14: unchecked_low_calls
+securify,reentrancy_dao,18: DAO,18: reentrancy
 securify,open_address_lottery,no,no
 securify,0x610495793564aed0f9c7fc48dc4c7c9151d34fd6,Error/Fail,Error/Fail
 securify,0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77,Error/Fail,Error/Fail
-securify,0x52d2e0f9b01101a59b38a3d05c80b7618aeed984,26: UnhandledException; -1: UnhandledException; -1: TODAmount; 21: TODAmount,26: unchecked_low_calls; -1: unchecked_low_calls; -1: front_running; 21: front_running
+securify,0x52d2e0f9b01101a59b38a3d05c80b7618aeed984,22: TODAmount; 0: UnhandledException; 0: TODAmount; 27: UnhandledException,22: front_running; 0: unchecked_low_calls; 0: front_running; 27: unchecked_low_calls
 securify,dos_simple,no,no
-securify,0xe894d54dca59cb53fe9cbc5155093605c7068220,16: UnhandledException,16: unchecked_low_calls
-securify,FindThisHash,17: UnrestrictedEtherFlow,17: access_control
-securify,0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2,44: UnhandledException; 35: TODReceiver; 25: TODReceiver; 26: TODAmount; 35: TODAmount; 25: TODAmount,44: unchecked_low_calls; 35: front_running; 25: front_running; 26: front_running; 35: front_running; 25: front_running
+securify,0xe894d54dca59cb53fe9cbc5155093605c7068220,17: UnhandledException,17: unchecked_low_calls
+securify,FindThisHash,18: UnrestrictedEtherFlow,18: access_control
+securify,0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2,36: TODAmount; 45: UnhandledException; 36: TODReceiver; 26: TODReceiver; 26: TODAmount; 27: TODAmount,36: front_running; 45: unchecked_low_calls; 36: front_running; 26: front_running; 26: front_running; 27: front_running
 securify,0xb37f18af15bafb869a065b61fc83cfc44ed9cc27,Error/Fail,Error/Fail
-securify,overflow_simple_add,11: MissingInputValidation,no
-securify,reentrancy_cross_function,13: MissingInputValidation; 23: DAO,23: reentrancy
-securify,integer_overflow_mapping_sym_1,13: MissingInputValidation,no
-securify,reentrancy_simple,11: MissingInputValidation; 23: DAO,23: reentrancy
+securify,overflow_simple_add,12: MissingInputValidation,no
+securify,reentrancy_cross_function,24: DAO; 14: MissingInputValidation,24: reentrancy
+securify,integer_overflow_mapping_sym_1,14: MissingInputValidation,no
+securify,reentrancy_simple,12: MissingInputValidation; 24: DAO,24: reentrancy
 securify,0x7a8721a9d64c74da899424c1b52acbf58ddc9782,Error/Fail,Error/Fail
-securify,unprotected0,24: MissingInputValidation,no
-securify,integer_overflow_add,14: MissingInputValidation,no
+securify,unprotected0,25: MissingInputValidation,no
+securify,integer_overflow_add,15: MissingInputValidation,no
 securify,BECToken,Error/Fail,Error/Fail
 securify,0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8,Error/Fail,Error/Fail
 securify,0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e,Error/Fail,Error/Fail
 securify,lottery,no,no
-securify,incorrect_constructor_name2,29: TODAmount; 29: TODReceiver; 29: TODTransfer,29: front_running; 29: front_running; 29: front_running
+securify,incorrect_constructor_name2,30: TODReceiver; 30: TODAmount; 30: TODTransfer,30: front_running; 30: front_running; 30: front_running
 securify,timed_crowdsale,no,no
 securify,list_dos,no,no
-securify,king_of_the_ether_throne,109: UnhandledException; 117: TODAmount; 173: UnhandledException; 131: UnhandledException; 131: DAOConstantGas; 131: TODReceiver; 173: TODReceiver; 117: UnhandledException,109: unchecked_low_calls; 117: front_running; 173: unchecked_low_calls; 131: unchecked_low_calls; 131: reentrancy; 131: front_running; 173: front_running; 117: unchecked_low_calls
+securify,king_of_the_ether_throne,174: UnhandledException; 132: DAOConstantGas; 132: UnhandledException; 174: TODReceiver; 132: TODReceiver; 118: UnhandledException; 118: TODAmount; 110: UnhandledException,174: unchecked_low_calls; 132: reentrancy; 132: unchecked_low_calls; 174: front_running; 132: front_running; 118: unchecked_low_calls; 118: front_running; 110: unchecked_low_calls
 securify,FibonacciBalance,Error/Fail,Error/Fail
-securify,0xf2570186500a46986f3139f65afedc2afe4f445d,17: UnhandledException,17: unchecked_low_calls
-securify,smart_billions,406: DAOConstantGas; 381: TODAmount; -1: TODAmount; 321: DAOConstantGas; -1: DAOConstantGas; 371: DAOConstantGas,406: reentrancy; 381: front_running; -1: front_running; 321: reentrancy; -1: reentrancy; 371: reentrancy
+securify,0xf2570186500a46986f3139f65afedc2afe4f445d,18: UnhandledException,18: unchecked_low_calls
+securify,smart_billions,322: DAOConstantGas; 0: DAOConstantGas; 372: DAOConstantGas; 382: TODAmount; 407: DAOConstantGas; 0: TODAmount,322: reentrancy; 0: reentrancy; 372: reentrancy; 382: front_running; 407: reentrancy; 0: front_running
 securify,short_address_example,no,no
-securify,0xbaa3de6504690efb064420d89e871c27065cdd52,38: TODTransfer; 13: UnhandledException; 1: MissingInputValidation; 10: MissingInputValidation; 19: MissingInputValidation; 11: UnhandledException,38: front_running; 13: unchecked_low_calls; 11: unchecked_low_calls
-securify,0x806a6bd219f162442d992bdc4ee6eba1f2c5a707,34: TODAmount; 24: TODAmount; 25: TODAmount; 43: UnhandledException; 34: TODReceiver; 24: TODReceiver,34: front_running; 24: front_running; 25: front_running; 43: unchecked_low_calls; 34: front_running; 24: front_running
+securify,0xbaa3de6504690efb064420d89e871c27065cdd52,2: MissingInputValidation; 20: MissingInputValidation; 12: UnhandledException; 11: MissingInputValidation; 39: TODTransfer; 14: UnhandledException,12: unchecked_low_calls; 39: front_running; 14: unchecked_low_calls
+securify,0x806a6bd219f162442d992bdc4ee6eba1f2c5a707,26: TODAmount; 44: UnhandledException; 35: TODReceiver; 35: TODAmount; 25: TODReceiver; 25: TODAmount,26: front_running; 44: unchecked_low_calls; 35: front_running; 35: front_running; 25: front_running; 25: front_running
 securify,0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3,Error/Fail,Error/Fail
 securify,token,Error/Fail,Error/Fail
-securify,phishable,17: MissingInputValidation; 20: TODAmount,20: front_running
-securify,incorrect_constructor_name1,31: TODTransfer; 31: TODReceiver; 31: TODAmount,31: front_running; 31: front_running; 31: front_running
-securify,0x4051334adc52057aca763453820cb0e045076ef3,15: UnhandledException,15: unchecked_low_calls
-securify,reentrancy_bonus,18: DAO; 22: MissingInputValidation; 15: MissingInputValidation,18: reentrancy
-securify,0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c,18: UnhandledException,18: unchecked_low_calls
-securify,etherbank,9: MissingInputValidation; 20: DAO,20: reentrancy
-securify,0xcead721ef5b11f1a7b530171aab69b16c5e66b6e,49: MissingInputValidation; 28: DAO,28: reentrancy
-securify,insecure_transfer,9: MissingInputValidation; 12: MissingInputValidation,no
+securify,phishable,18: MissingInputValidation; 21: TODAmount,21: front_running
+securify,incorrect_constructor_name1,32: TODReceiver; 32: TODAmount; 32: TODTransfer,32: front_running; 32: front_running; 32: front_running
+securify,0x4051334adc52057aca763453820cb0e045076ef3,16: UnhandledException,16: unchecked_low_calls
+securify,reentrancy_bonus,23: MissingInputValidation; 19: DAO; 16: MissingInputValidation,19: reentrancy
+securify,0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c,19: UnhandledException,19: unchecked_low_calls
+securify,etherbank,21: DAO; 10: MissingInputValidation,21: reentrancy
+securify,0xcead721ef5b11f1a7b530171aab69b16c5e66b6e,29: DAO; 50: MissingInputValidation,29: reentrancy
+securify,insecure_transfer,13: MissingInputValidation; 10: MissingInputValidation,no
 securify,0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8,Error/Fail,Error/Fail
-securify,wallet_02_refund_nosub,29: DAOConstantGas; 42: TODAmount; 40: MissingInputValidation,29: reentrancy; 42: front_running
+securify,wallet_02_refund_nosub,30: DAOConstantGas; 41: MissingInputValidation; 43: TODAmount,30: reentrancy; 43: front_running
 securify,0xa1fceeff3acc57d257b917e30c4df661401d6431,Error/Fail,Error/Fail
-securify,integer_overflow_minimal,14: MissingInputValidation,no
-securify,0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12,10: MissingInputValidation; 39: DAO,39: reentrancy
-securify,0xf015c35649c82f5467c9c74b7f28ee67665aad68,49: MissingInputValidation; 28: DAO,28: reentrancy
+securify,integer_overflow_minimal,15: MissingInputValidation,no
+securify,0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12,40: DAO; 11: MissingInputValidation,40: reentrancy
+securify,0xf015c35649c82f5467c9c74b7f28ee67665aad68,29: DAO; 50: MissingInputValidation,29: reentrancy
 securify,parity_wallet_bug_2,no,no
-securify,mycontract,20: UnrestrictedEtherFlow; 17: MissingInputValidation,20: access_control
-securify,auction,22: TODReceiver; 22: TODTransfer; 22: TODAmount,22: front_running; 22: front_running; 22: front_running
+securify,mycontract,18: MissingInputValidation; 21: UnrestrictedEtherFlow,21: access_control
+securify,auction,23: TODAmount; 23: TODTransfer; 23: TODReceiver,23: front_running; 23: front_running; 23: front_running
 securify,0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888,Error/Fail,Error/Fail
 securify,0xd5967fed03e85d1cce44cab284695b41bc675b5c,Error/Fail,Error/Fail
-securify,0x8fd1e427396ddb511533cf9abdbebd0a7e08da35,49: MissingInputValidation; 20: MissingInputValidation; 13: MissingInputValidation; 38: MissingInputValidation; 102: MissingInputValidation; 86: MissingInputValidation; 43: UnhandledException; 50: MissingInputValidation; 1: UnhandledException; 75: MissingInputValidation,43: unchecked_low_calls; 1: unchecked_low_calls
+securify,0x8fd1e427396ddb511533cf9abdbebd0a7e08da35,103: MissingInputValidation; 87: MissingInputValidation; 51: MissingInputValidation; 76: MissingInputValidation; 21: MissingInputValidation; 44: UnhandledException; 50: MissingInputValidation; 2: UnhandledException; 14: MissingInputValidation; 39: MissingInputValidation,44: unchecked_low_calls; 2: unchecked_low_calls
 securify,parity_wallet_bug_1,Error/Fail,Error/Fail
-securify,0x78c2a1e91b52bca4130b6ed9edd9fbcfd4671c37,44: UnhandledException; 35: TODReceiver; 25: TODReceiver; 26: TODAmount; 35: TODAmount; 25: TODAmount,44: unchecked_low_calls; 35: front_running; 25: front_running; 26: front_running; 35: front_running; 25: front_running
-securify,guess_the_random_number,25: UnrestrictedEtherFlow,25: access_control
+securify,0x78c2a1e91b52bca4130b6ed9edd9fbcfd4671c37,36: TODAmount; 45: UnhandledException; 36: TODReceiver; 26: TODReceiver; 26: TODAmount; 27: TODAmount,36: front_running; 45: unchecked_low_calls; 36: front_running; 26: front_running; 26: front_running; 27: front_running
+securify,guess_the_random_number,26: UnrestrictedEtherFlow,26: access_control
 securify,reentrancy_insecure,no,no
-securify,0xa46edd6a9a93feec36576ee5048146870ea2c3ae,15: UnhandledException,15: unchecked_low_calls
-securify,mapping_write,27: TODAmount,27: front_running
+securify,0xa46edd6a9a93feec36576ee5048146870ea2c3ae,16: UnhandledException,16: unchecked_low_calls
+securify,mapping_write,28: TODAmount,28: front_running
 securify,0x19cf8481ea15427a98ba3cdd6d9e14690011ab10,Error/Fail,Error/Fail
-securify,etherstore,26: DAO; 12: MissingInputValidation; 13: MissingInputValidation,26: reentrancy
+securify,etherstore,27: DAO; 13: MissingInputValidation; 14: MissingInputValidation,27: reentrancy
 securify,ether_lotto,Error/Fail,Error/Fail
 securify,dos_number,no,no
-securify,old_blockhash,23: MissingInputValidation,no
-securify,0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6,108: TODAmount; 74: UnhandledException; -1: TODAmount; 72: TODAmount; 70: UnhandledException; 11: TODAmount; 11: MissingInputValidation; 87: MissingInputValidation; 36: TODAmount; 68: TODAmount; 74: TODAmount; 12: MissingInputValidation; 86: MissingInputValidation; 72: UnhandledException; 70: TODAmount; 68: UnhandledException; 56: MissingInputValidation,108: front_running; 74: unchecked_low_calls; -1: front_running; 72: front_running; 70: unchecked_low_calls; 11: front_running; 36: front_running; 68: front_running; 74: front_running; 72: unchecked_low_calls; 70: front_running; 68: unchecked_low_calls
-securify,0x93c32845fae42c83a70e5f06214c8433665c2ab5,49: MissingInputValidation; 28: DAO,28: reentrancy
-securify,0xd2018bfaa266a9ec0a1a84b061640faa009def76,34: TODAmount; 24: TODAmount; 25: TODAmount; 43: UnhandledException; 34: TODReceiver; 24: TODReceiver,34: front_running; 24: front_running; 25: front_running; 43: unchecked_low_calls; 34: front_running; 24: front_running
-securify,reentrance,23: DAO; 10: MissingInputValidation; 16: MissingInputValidation; 12: MissingInputValidation; 23: UnhandledException,23: reentrancy; 23: unchecked_low_calls
-securify,lottopollo,16: UnhandledException; 13: UnhandledException; 16: TODAmount; 16: TODReceiver,16: unchecked_low_calls; 13: unchecked_low_calls; 16: front_running; 16: front_running
-securify,integer_overflow_multitx_multifunc_feasible,19: MissingInputValidation,no
+securify,old_blockhash,24: MissingInputValidation,no
+securify,0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6,75: TODAmount; 13: MissingInputValidation; 87: MissingInputValidation; 71: UnhandledException; 12: MissingInputValidation; 57: MissingInputValidation; 71: TODAmount; 73: UnhandledException; 12: TODAmount; 109: TODAmount; 88: MissingInputValidation; 0: TODAmount; 69: TODAmount; 69: UnhandledException; 75: UnhandledException; 37: TODAmount; 73: TODAmount,75: front_running; 71: unchecked_low_calls; 71: front_running; 73: unchecked_low_calls; 12: front_running; 109: front_running; 0: front_running; 69: front_running; 69: unchecked_low_calls; 75: unchecked_low_calls; 37: front_running; 73: front_running
+securify,0x93c32845fae42c83a70e5f06214c8433665c2ab5,29: DAO; 50: MissingInputValidation,29: reentrancy
+securify,0xd2018bfaa266a9ec0a1a84b061640faa009def76,26: TODAmount; 44: UnhandledException; 35: TODReceiver; 35: TODAmount; 25: TODReceiver; 25: TODAmount,26: front_running; 44: unchecked_low_calls; 35: front_running; 35: front_running; 25: front_running; 25: front_running
+securify,reentrance,13: MissingInputValidation; 24: DAO; 11: MissingInputValidation; 17: MissingInputValidation; 24: UnhandledException,24: reentrancy; 24: unchecked_low_calls
+securify,lottopollo,17: UnhandledException; 17: TODAmount; 14: UnhandledException; 17: TODReceiver,17: unchecked_low_calls; 17: front_running; 14: unchecked_low_calls; 17: front_running
+securify,integer_overflow_multitx_multifunc_feasible,20: MissingInputValidation,no
 securify,0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b,Error/Fail,Error/Fail
 mythril,0x958a8f594101d2c0485a52319f29b2647f2ebc06,Error/Fail,Error/Fail
 mythril,0x4320e6f8c05b27ab4707cd1f6d5ce6f3e4b3a5a1,Error/Fail,Error/Fail
