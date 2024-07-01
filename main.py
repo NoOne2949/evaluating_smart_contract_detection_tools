@@ -7,7 +7,8 @@ def menu():
     print("\n\nMenu:")
     print("1. Compile dataset files")
     print("2. Parse analysis results")
-    print("3. Confront tool analysis")
+    print("3. Confront tool analysis - WITH ARITHMETIC")
+    print("4. Confront tool analysis - WITHOUT ARITHMETIC")
     print("0. Exit")
     choice = input("-: ")
 
@@ -18,7 +19,13 @@ def menu():
         results_file_path = 'results/'
         process_json_files(results_file_path)
     elif choice == '3':
-        confront_vulnerability()
+        artifacts_file = "csvs/sample_of_interest.csv"
+        vulnerability_log = "vulnerabilities_log.csv"
+        confront_vulnerability(artifacts_file, vulnerability_log)
+    elif choice == '4':
+        artifacts_file = "csvs/sample_of_interest_without_arithmetic.csv"
+        vulnerability_log = "vulnerabilities_log_without_arithmetic.csv"
+        confront_vulnerability(artifacts_file, vulnerability_log)
     elif choice == '0':
         print("Exiting...")
         return
