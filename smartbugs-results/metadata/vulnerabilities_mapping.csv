@@ -278,3 +278,20 @@ solhint,reentrancy,,,,True,,,,,,,,
 semgrep,non-payable-constructor
 ethor-2023,secure
 ethor-2023,insecure
+slither,arbitrary-send-erc20
+slither,constant-function-state
+confuzzius,Locking Ether
+madmax,UnboundedMassOp
+semgrep,non-optimal-variables-swap
+semgrep,use-abi-encodecall-instead-of-encodewithselector
+semgrep,erc20-public-transfer
+mythril,strict ether balance check
+slither,unimplemented-functions
+slither,void-cst
+slither,write-after-write
+slither,erc721-interface
+slither,reused-constructor
+slither,assert-state-change
+slither,boolean-cst
+osiris,Signedness bugs
+maian,Destructible
