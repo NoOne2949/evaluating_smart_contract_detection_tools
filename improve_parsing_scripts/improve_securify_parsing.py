@@ -47,7 +47,7 @@ def update_result(file_path, violations_set):
         findings_list.append({
             'filename': os.path.basename(general_dir),
             'name': violation[0],
-            'line': violation[1],
+            'line': int(violation[1] + 1),
         })
     data['findings'] = findings_list
     print(f"UPDATED DATA: {data}")
