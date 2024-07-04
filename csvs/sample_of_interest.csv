@@ -93,7 +93,7 @@ smartbugs_results,28: arithmetic; 027: time_manipulation;,0xd45b6c680fe0f8b0410d
 smartbugs_results,no,0x78fd5d570ad8d2a8af142118cd044010ca0ad9e5
 smartbugs_results,no,0xac7abdd94cecf22538e20fcda3ad9b3519cc7046
 smartbugs_results,no,0xd785a221bede80d79b6b8e106144e0694d0ecce6
-smartbugs_results,166: arithmetic; 168: time_manipulation; 171: time_manipulation; 169: arithmetic; a72: arithmetic;,0x65302d3a313cf7b0bc7badbf0b9b07a4f176ed10
+smartbugs_results,166: arithmetic; 168: time_manipulation; 171: time_manipulation; 169: arithmetic; 72: arithmetic;,0x65302d3a313cf7b0bc7badbf0b9b07a4f176ed10
 smartbugs_results,no,0xdb2c5078a3e3f4c723568c2230155bcd43a8bc6c
 smartbugs_results,403: time_manipulation; 404: time_manipulation; 405: time_manipulation;,0x1389d3485a6d440f23855e538e3656230cf25d0f
 smartbugs_results,415: reentrancy; 455: time_manipulation;,0xe80d11c3be89ae67eb1f57f6240ad4523e8308b5
