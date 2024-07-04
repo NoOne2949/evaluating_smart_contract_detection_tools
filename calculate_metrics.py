@@ -95,7 +95,7 @@ def total_vulnerabilities_counter(artifact):
         artifact_vulnerabilities = strip_vulnerability(row['tag'])
         for vuln in artifact_vulnerabilities:
             vuln_name = vuln[1]
-            if vuln_name != 'other':
+            if vuln_name != 'other' and vuln_name != 'no':
                 right_vulnerability_found[vuln_name] += 1
 
     total_vulnerabilities = 0
@@ -103,5 +103,8 @@ def total_vulnerabilities_counter(artifact):
         row_vuln = row['tag']
         if ';' in row_vuln:
             elements = row_vuln.split(';')
-            total_vulnerabilities += len(elements) - 1
+            if 'no' in elements:
+                print(row_vuln)
+            else:
+                total_vulnerabilities += len(elements) - 1
     right_vulnerability_found['total'] = total_vulnerabilities
