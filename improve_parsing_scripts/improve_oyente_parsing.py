@@ -2,28 +2,29 @@ import json
 import os
 import re
 
-root_folder = '/home/kevin/PycharmProjects/tesi/results/oyente'
 
-
-def iterate_file():
+def iterate_file(root_folder):
     for subdir, _, files in os.walk(root_folder):
         for file in files:
-            if file == 'result.log':
+            if file == 'result.log' and file is not None:
                 extract_violations(os.path.join(subdir, file))
 
 
 def extract_violations(file_path):
-    with open(file_path, 'r') as file:
-        data = file.readlines()
+    try:
+        with open(file_path, 'r') as file:
+            data = file.readlines()
 
-    violations_set = set()
-    for row in data:
-        if 'Warning: Transaction-Ordering Dependency.' in row:
-            match = re.search(r':(\d+):(\d+):', row)
-            if match:
-                line = match.group(1)
-                violations_set.add(("Transaction-Ordering Dependence (TOD)", line))
-    update_vulnerabilites(file_path, violations_set)
+        violations_set = set()
+        for row in data:
+            if 'Warning: Transaction-Ordering Dependency.' in row:
+                match = re.search(r':(\d+):(\d+):', row)
+                if match:
+                    line = match.group(1)
+                    violations_set.add(("Transaction-Ordering Dependence (TOD)", line))
+        update_vulnerabilites(file_path, violations_set)
+    except FileNotFoundError:
+        print(f'File not found: {file_path}')
 
 
 def update_vulnerabilites(file_path, violations_set):
@@ -59,4 +60,6 @@ def update_vulnerabilites(file_path, violations_set):
 
 
 if __name__ == '__main__':
-    iterate_file()
+
+    root_folder = ""
+    iterate_file(root_folder)
