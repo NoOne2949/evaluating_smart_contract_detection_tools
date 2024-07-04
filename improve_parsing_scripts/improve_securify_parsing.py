@@ -1,10 +1,8 @@
 import json
 import os
 
-root_folder = '/home/kevin/PycharmProjects/tesi/results/securify'
 
-
-def iterate_file():
+def iterate_file(root_folder):
     for subdir, _, files in os.walk(root_folder):
         for file in files:
             if file == 'results.json':
@@ -56,4 +54,5 @@ def update_result(file_path, violations_set):
 
 
 if __name__ == '__main__':
-    iterate_file()
+    root_folder = ''
+    iterate_file(root_folder)
