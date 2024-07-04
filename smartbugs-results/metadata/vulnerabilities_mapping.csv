@@ -295,3 +295,4 @@ slither,assert-state-change
 slither,boolean-cst
 osiris,Signedness bugs
 maian,Destructible
+madmax,OverflowLoopIterator
