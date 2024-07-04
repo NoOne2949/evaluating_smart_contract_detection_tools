@@ -1,4 +1,7 @@
 import csv
+import sys
+
+csv.field_size_limit(sys.maxsize)
 
 sample_file = 'csvs/sample_of_interest.csv'
 sample_without_arithmetic_file = 'csvs/sample_of_interest_without_arithmetic.csv'
