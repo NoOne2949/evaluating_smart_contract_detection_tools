@@ -1500,149 +1500,149 @@ smartbugs_results,939: denial_service;,0x1a7badbc3a718aacd2723a73d01f34daf5b69da
 smartbugs_results,no,0xcf0010af06edff540af798d06e866d95cbdc8488
 smartbugs_results,no,0x12565fd1436926beb0fff522d63be551240a4594
 smartbugs_results,527: denial_service;,0xcaec691284cb2d0cc5bd8987700fec8006a139fc
-smartbugs_curated,31: access_control;  38: access_control;,FibonacciBalance.sol
-smartbugs_curated,27: access_control;,arbitrary_location_write_simple.sol
-smartbugs_curated,20: access_control;,incorrect_constructor_name1.sol
-smartbugs_curated,18: access_control;,incorrect_constructor_name2.sol
-smartbugs_curated,17: access_control;,incorrect_constructor_name3.sol
-smartbugs_curated,20: access_control;,mapping_write.sol
-smartbugs_curated,38: access_control;,multiowned_vulnerable.sol
-smartbugs_curated,20: access_control;,mycontract.sol
-smartbugs_curated,223: access_control;  437: access_control;,parity_wallet_bug_1.sol
-smartbugs_curated,226: access_control;  233: access_control;,parity_wallet_bug_2.sol
-smartbugs_curated,20: access_control;,phishable.sol
-smartbugs_curated,19: access_control;,proxy.sol
-smartbugs_curated,23: access_control;,rubixi.sol
-smartbugs_curated,12: access_control;,simple_suicide.sol
-smartbugs_curated,25: access_control;,unprotected0.sol
-smartbugs_curated,36: access_control;,wallet_02_refund_nosub.sol
-smartbugs_curated,19: access_control;,wallet_03_wrong_constructor.sol
-smartbugs_curated,30: access_control;,wallet_04_confused_sign.sol
-smartbugs_curated,no,BECToken.sol
-smartbugs_curated,no,insecure_transfer.sol
-smartbugs_curated,no,integer_overflow_1.sol
-smartbugs_curated,no,integer_overflow_add.sol
-smartbugs_curated,no,integer_overflow_benign_1.sol
-smartbugs_curated,no,integer_overflow_mapping_sym_1.sol
-smartbugs_curated,no,integer_overflow_minimal.sol
-smartbugs_curated,no,integer_overflow_mul.sol
-smartbugs_curated,no,integer_overflow_multitx_multifunc_feasible.sol
-smartbugs_curated,no,integer_overflow_multitx_onefunc_feasible.sol
-smartbugs_curated,no,overflow_simple_add.sol
-smartbugs_curated,no,overflow_single_tx.sol
-smartbugs_curated,no,timelock.sol
-smartbugs_curated,no,token.sol
-smartbugs_curated,no,tokensalechallenge.sol
-smartbugs_curated,17: bad_randomness;  19: bad_randomness;  21: bad_randomness;,blackjack.sol
-smartbugs_curated,49: bad_randomness;  99: bad_randomness;  101: bad_randomness;  103: bad_randomness;  114: bad_randomness;  158: bad_randomness;,etheraffle.sol
-smartbugs_curated,15: bad_randomness;,guess_the_random_number.sol
-smartbugs_curated,38: bad_randomness;  42: bad_randomness;,lottery.sol
-smartbugs_curated,127: bad_randomness;  132: bad_randomness;,lucky_doubler.sol
-smartbugs_curated,35: bad_randomness;,old_blockhash.sol
-smartbugs_curated,12: bad_randomness;  18: bad_randomness;  20: bad_randomness;  22: bad_randomness;,random_number_generator.sol
-smartbugs_curated,523: bad_randomness;  560: bad_randomness;  700: bad_randomness;  702: bad_randomness;  704: bad_randomness;  706: bad_randomness;  708: bad_randomness;  710: bad_randomness;  712: bad_randomness;  714: bad_randomness;  716: bad_randomness;  718: bad_randomness;,smart_billions.sol
-smartbugs_curated,23: denial_service;,auction.sol
-smartbugs_curated,16: denial_service;,dos_address.sol
-smartbugs_curated,18: denial_service;,dos_number.sol
-smartbugs_curated,17: denial_service;,dos_simple.sol
-smartbugs_curated,46: denial_service;  48: denial_service;,list_dos.sol
-smartbugs_curated,24: denial_service;,send_loop.sol
-smartbugs_curated,110: front_running;  113: front_running;,ERC20.sol
-smartbugs_curated,17: front_running;,FindThisHash.sol
-smartbugs_curated,23: front_running;  31: front_running;,eth_tx_order_dependence_minimal.sol
-smartbugs_curated,25: front_running;  28: front_running;,odds_and_evens.sol
-smartbugs_curated,no,crypto_roulette.sol
-smartbugs_curated,no,name_registrar.sol
-smartbugs_curated,no,open_address_lottery.sol
-smartbugs_curated,54: reentrancy;,0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol
-smartbugs_curated,38: reentrancy;,0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4.sol
-smartbugs_curated,55: reentrancy;,0x4320e6f8c05b27ab4707cd1f6d5ce6f3e4b3a5a1.sol
-smartbugs_curated,54: reentrancy;,0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol
-smartbugs_curated,54: reentrancy;,0x561eac93c92360949ab1f1403323e6db345cbf31.sol
-smartbugs_curated,94: reentrancy;,0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839.sol
-smartbugs_curated,29: reentrancy;,0x7541b76cb60f4c60af330c208b0623b7f54bf615.sol
-smartbugs_curated,52: reentrancy;,0x7a8721a9d64c74da899424c1b52acbf58ddc9782.sol
-smartbugs_curated,29: reentrancy;,0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol
-smartbugs_curated,41: reentrancy;,0x8c7777c45481dba411450c228cb692ac3d550344.sol
-smartbugs_curated,29: reentrancy;,0x93c32845fae42c83a70e5f06214c8433665c2ab5.sol
-smartbugs_curated,44: reentrancy;,0x941d225236464a25eb18076df7da6a91d0f95e9e.sol
-smartbugs_curated,63: reentrancy;,0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol
-smartbugs_curated,54: reentrancy;,0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol
-smartbugs_curated,40: reentrancy;,0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12.sol
-smartbugs_curated,38: reentrancy;,0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol
-smartbugs_curated,41: reentrancy;,0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol
-smartbugs_curated,63: reentrancy;,0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888.sol
-smartbugs_curated,29: reentrancy;,0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol
-smartbugs_curated,29: reentrancy;,0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol
-smartbugs_curated,21: reentrancy;,etherbank.sol
-smartbugs_curated,27: reentrancy;,etherstore.sol
-smartbugs_curated,15: reentrancy;,modifier_reentrancy.sol
-smartbugs_curated,24: reentrancy;,reentrance.sol
-smartbugs_curated,28: reentrancy;,reentrancy_bonus.sol
-smartbugs_curated,24: reentrancy;,reentrancy_cross_function.sol
-smartbugs_curated,18: reentrancy;,reentrancy_dao.sol
-smartbugs_curated,17: reentrancy;,reentrancy_insecure.sol
-smartbugs_curated,24: reentrancy;,reentrancy_simple.sol
-smartbugs_curated,19: reentrancy;,simple_dao.sol
-smartbugs_curated,426: reentrancy;  430: reentrancy;,spank_chain_payment.sol
-smartbugs_curated,18: short_addresses;,short_address_example.sol
-smartbugs_curated,43: time_manipulation;,ether_lotto.sol
-smartbugs_curated,27: time_manipulation;,governmental_survey.sol
-smartbugs_curated,13: time_manipulation;  27: time_manipulation;,lottopollo.sol
-smartbugs_curated,18: time_manipulation;  20: time_manipulation;,roulette.sol
-smartbugs_curated,13: time_manipulation;,timed_crowdsale.sol
-smartbugs_curated,201: unchecked_low_calls;  213: unchecked_low_calls;,0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol
-smartbugs_curated,12: unchecked_low_calls;,0x0cbe050f75bc8f8c2d6c0d249fea125fd6e1acc9.sol
-smartbugs_curated,439: unchecked_low_calls;  465: unchecked_low_calls;,0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol
-smartbugs_curated,14: unchecked_low_calls;,0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol
-smartbugs_curated,44: unchecked_low_calls;  97: unchecked_low_calls;,0x39cfd754c85023648bf003bea2dd498c5612abfa.sol
-smartbugs_curated,44: unchecked_low_calls;  97: unchecked_low_calls;,0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01.sol
-smartbugs_curated,29: unchecked_low_calls;,0x3e013fc32a54c4c5b6991ba539dcd0ec4355c859.sol
-smartbugs_curated,45: unchecked_low_calls;,0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol
-smartbugs_curated,16: unchecked_low_calls;,0x4051334adc52057aca763453820cb0e045076ef3.sol
-smartbugs_curated,19: unchecked_low_calls;,0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol
-smartbugs_curated,17: unchecked_low_calls;,0x4b71ad9c1a84b9b643aa54fdd66e2dec96e8b152.sol
-smartbugs_curated,21: unchecked_low_calls;,0x524960d55174d912768678d8c606b4d50b79d7b1.sol
-smartbugs_curated,27: unchecked_low_calls;,0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol
-smartbugs_curated,29: unchecked_low_calls;,0x5aa88d2901c68fda244f1d0584400368d2c8e739.sol
-smartbugs_curated,33: unchecked_low_calls;,0x610495793564aed0f9c7fc48dc4c7c9151d34fd6.sol
-smartbugs_curated,44: unchecked_low_calls;,0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839.sol
-smartbugs_curated,1152: unchecked_low_calls;  1496: unchecked_low_calls;  2467: unchecked_low_calls;,0x663e4229142a27f00bafb5d087e1e730648314c3.sol
-smartbugs_curated,29: unchecked_low_calls;,0x70f9eddb3931491aab1aeafbc1e7f1ca2a012db4.sol
-smartbugs_curated,45: unchecked_low_calls;,0x78c2a1e91b52bca4130b6ed9edd9fbcfd4671c37.sol
-smartbugs_curated,44: unchecked_low_calls;,0x7a4349a749e59a5736efb7826ee3496a2dfd5489.sol
-smartbugs_curated,198: unchecked_low_calls;  210: unchecked_low_calls;,0x7d09edb07d23acb532a82be3da5c17d9d85806b4.sol
-smartbugs_curated,44: unchecked_low_calls;,0x806a6bd219f162442d992bdc4ee6eba1f2c5a707.sol
-smartbugs_curated,56: unchecked_low_calls;,0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol
-smartbugs_curated,162: unchecked_low_calls;  175: unchecked_low_calls;  180: unchecked_low_calls;  192: unchecked_low_calls;,0x89c1b3807d4c67df034fffb62f3509561218d30b.sol
-smartbugs_curated,44: unchecked_low_calls;  97: unchecked_low_calls;,0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol
-smartbugs_curated,55: unchecked_low_calls;,0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol
-smartbugs_curated,54: unchecked_low_calls;  65: unchecked_low_calls;,0x9d06cbafa865037a01d322d3f4222fa3e04e5488.sol
-smartbugs_curated,31: unchecked_low_calls;,0xa1fceeff3acc57d257b917e30c4df661401d6431.sol
-smartbugs_curated,16: unchecked_low_calls;,0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol
-smartbugs_curated,69: unchecked_low_calls;  71: unchecked_low_calls;  73: unchecked_low_calls;  75: unchecked_low_calls;  102: unchecked_low_calls;,0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol
-smartbugs_curated,14: unchecked_low_calls;,0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol
-smartbugs_curated,33: unchecked_low_calls;,0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol
-smartbugs_curated,100: unchecked_low_calls;  106: unchecked_low_calls;  133: unchecked_low_calls;,0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol
-smartbugs_curated,25: unchecked_low_calls;,0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol
-smartbugs_curated,14: unchecked_low_calls;,0xbaa3de6504690efb064420d89e871c27065cdd52.sol
-smartbugs_curated,14: unchecked_low_calls;,0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol
-smartbugs_curated,44: unchecked_low_calls;,0xd2018bfaa266a9ec0a1a84b061640faa009def76.sol
-smartbugs_curated,16: unchecked_low_calls;,0xd5967fed03e85d1cce44cab284695b41bc675b5c.sol
-smartbugs_curated,39: unchecked_low_calls;,0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol
-smartbugs_curated,150: unchecked_low_calls;,0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol
-smartbugs_curated,44: unchecked_low_calls;,0xe4eabdca81e31d9acbc4af76b30f532b6ed7f3bf.sol
-smartbugs_curated,39: unchecked_low_calls;,0xe82f0742a71a02b9e9ffc142fdcb6eb1ed06fb87.sol
-smartbugs_curated,17: unchecked_low_calls;,0xe894d54dca59cb53fe9cbc5155093605c7068220.sol
-smartbugs_curated,30: unchecked_low_calls;,0xec329ffc97d75fe03428ae155fc7793431487f63.sol
-smartbugs_curated,18: unchecked_low_calls;,0xf2570186500a46986f3139f65afedc2afe4f445d.sol
-smartbugs_curated,16: unchecked_low_calls;,0xf29ebe930a539a60279ace72c707cba851a57707.sol
-smartbugs_curated,44: unchecked_low_calls;,0xf70d589d76eebdd7c12cc5eec99f8f6fa4233b9e.sol
-smartbugs_curated,109: unchecked_low_calls;  141: unchecked_low_calls;,etherpot_lotto.sol
-smartbugs_curated,110: unchecked_low_calls;  118: unchecked_low_calls;  132: unchecked_low_calls;  174: unchecked_low_calls;,king_of_the_ether_throne.sol
-smartbugs_curated,20: unchecked_low_calls;  27: unchecked_low_calls;,lotto.sol
-smartbugs_curated,14: unchecked_low_calls;,mishandled.sol
-smartbugs_curated,17: unchecked_low_calls;,unchecked_return_value.sol
+smartbugs_curated,31: access_control;  38: access_control;,FibonacciBalance
+smartbugs_curated,27: access_control;,arbitrary_location_write_simple
+smartbugs_curated,20: access_control;,incorrect_constructor_name1
+smartbugs_curated,18: access_control;,incorrect_constructor_name2
+smartbugs_curated,17: access_control;,incorrect_constructor_name3
+smartbugs_curated,20: access_control;,mapping_write
+smartbugs_curated,38: access_control;,multiowned_vulnerable
+smartbugs_curated,20: access_control;,mycontract
+smartbugs_curated,223: access_control;  437: access_control;,parity_wallet_bug_1
+smartbugs_curated,226: access_control;  233: access_control;,parity_wallet_bug_2
+smartbugs_curated,20: access_control;,phishable
+smartbugs_curated,19: access_control;,proxy
+smartbugs_curated,23: access_control;,rubixi
+smartbugs_curated,12: access_control;,simple_suicide
+smartbugs_curated,25: access_control;,unprotected0
+smartbugs_curated,36: access_control;,wallet_02_refund_nosub
+smartbugs_curated,19: access_control;,wallet_03_wrong_constructor
+smartbugs_curated,30: access_control;,wallet_04_confused_sign
+smartbugs_curated,no,BECToken
+smartbugs_curated,no,insecure_transfer
+smartbugs_curated,no,integer_overflow_1
+smartbugs_curated,no,integer_overflow_add
+smartbugs_curated,no,integer_overflow_benign_1
+smartbugs_curated,no,integer_overflow_mapping_sym_1
+smartbugs_curated,no,integer_overflow_minimal
+smartbugs_curated,no,integer_overflow_mul
+smartbugs_curated,no,integer_overflow_multitx_multifunc_feasible
+smartbugs_curated,no,integer_overflow_multitx_onefunc_feasible
+smartbugs_curated,no,overflow_simple_add
+smartbugs_curated,no,overflow_single_tx
+smartbugs_curated,no,timelock
+smartbugs_curated,no,token
+smartbugs_curated,no,tokensalechallenge
+smartbugs_curated,17: bad_randomness;  19: bad_randomness;  21: bad_randomness;,blackjack
+smartbugs_curated,49: bad_randomness;  99: bad_randomness;  101: bad_randomness;  103: bad_randomness;  114: bad_randomness;  158: bad_randomness;,etheraffle
+smartbugs_curated,15: bad_randomness;,guess_the_random_number
+smartbugs_curated,38: bad_randomness;  42: bad_randomness;,lottery
+smartbugs_curated,127: bad_randomness;  132: bad_randomness;,lucky_doubler
+smartbugs_curated,35: bad_randomness;,old_blockhash
+smartbugs_curated,12: bad_randomness;  18: bad_randomness;  20: bad_randomness;  22: bad_randomness;,random_number_generator
+smartbugs_curated,523: bad_randomness;  560: bad_randomness;  700: bad_randomness;  702: bad_randomness;  704: bad_randomness;  706: bad_randomness;  708: bad_randomness;  710: bad_randomness;  712: bad_randomness;  714: bad_randomness;  716: bad_randomness;  718: bad_randomness;,smart_billions
+smartbugs_curated,23: denial_service;,auction
+smartbugs_curated,16: denial_service;,dos_address
+smartbugs_curated,18: denial_service;,dos_number
+smartbugs_curated,17: denial_service;,dos_simple
+smartbugs_curated,46: denial_service;  48: denial_service;,list_dos
+smartbugs_curated,24: denial_service;,send_loop
+smartbugs_curated,110: front_running;  113: front_running;,ERC20
+smartbugs_curated,17: front_running;,FindThisHash
+smartbugs_curated,23: front_running;  31: front_running;,eth_tx_order_dependence_minimal
+smartbugs_curated,25: front_running;  28: front_running;,odds_and_evens
+smartbugs_curated,no,crypto_roulette
+smartbugs_curated,no,name_registrar
+smartbugs_curated,no,open_address_lottery
+smartbugs_curated,54: reentrancy;,0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f
+smartbugs_curated,38: reentrancy;,0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4
+smartbugs_curated,55: reentrancy;,0x4320e6f8c05b27ab4707cd1f6d5ce6f3e4b3a5a1
+smartbugs_curated,54: reentrancy;,0x4e73b32ed6c35f570686b89848e5f39f20ecc106
+smartbugs_curated,54: reentrancy;,0x561eac93c92360949ab1f1403323e6db345cbf31
+smartbugs_curated,94: reentrancy;,0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839
+smartbugs_curated,29: reentrancy;,0x7541b76cb60f4c60af330c208b0623b7f54bf615
+smartbugs_curated,52: reentrancy;,0x7a8721a9d64c74da899424c1b52acbf58ddc9782
+smartbugs_curated,29: reentrancy;,0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3
+smartbugs_curated,41: reentrancy;,0x8c7777c45481dba411450c228cb692ac3d550344
+smartbugs_curated,29: reentrancy;,0x93c32845fae42c83a70e5f06214c8433665c2ab5
+smartbugs_curated,44: reentrancy;,0x941d225236464a25eb18076df7da6a91d0f95e9e
+smartbugs_curated,63: reentrancy;,0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b
+smartbugs_curated,54: reentrancy;,0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8
+smartbugs_curated,40: reentrancy;,0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12
+smartbugs_curated,38: reentrancy;,0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e
+smartbugs_curated,41: reentrancy;,0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f
+smartbugs_curated,63: reentrancy;,0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888
+smartbugs_curated,29: reentrancy;,0xcead721ef5b11f1a7b530171aab69b16c5e66b6e
+smartbugs_curated,29: reentrancy;,0xf015c35649c82f5467c9c74b7f28ee67665aad68
+smartbugs_curated,21: reentrancy;,etherbank
+smartbugs_curated,27: reentrancy;,etherstore
+smartbugs_curated,15: reentrancy;,modifier_reentrancy
+smartbugs_curated,24: reentrancy;,reentrance
+smartbugs_curated,28: reentrancy;,reentrancy_bonus
+smartbugs_curated,24: reentrancy;,reentrancy_cross_function
+smartbugs_curated,18: reentrancy;,reentrancy_dao
+smartbugs_curated,17: reentrancy;,reentrancy_insecure
+smartbugs_curated,24: reentrancy;,reentrancy_simple
+smartbugs_curated,19: reentrancy;,simple_dao
+smartbugs_curated,426: reentrancy;  430: reentrancy;,spank_chain_payment
+smartbugs_curated,18: short_addresses;,short_address_example
+smartbugs_curated,43: time_manipulation;,ether_lotto
+smartbugs_curated,27: time_manipulation;,governmental_survey
+smartbugs_curated,13: time_manipulation;  27: time_manipulation;,lottopollo
+smartbugs_curated,18: time_manipulation;  20: time_manipulation;,roulette
+smartbugs_curated,13: time_manipulation;,timed_crowdsale
+smartbugs_curated,201: unchecked_low_calls;  213: unchecked_low_calls;,0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e
+smartbugs_curated,12: unchecked_low_calls;,0x0cbe050f75bc8f8c2d6c0d249fea125fd6e1acc9
+smartbugs_curated,439: unchecked_low_calls;  465: unchecked_low_calls;,0x19cf8481ea15427a98ba3cdd6d9e14690011ab10
+smartbugs_curated,14: unchecked_low_calls;,0x2972d548497286d18e92b5fa1f8f9139e5653fd2
+smartbugs_curated,44: unchecked_low_calls;  97: unchecked_low_calls;,0x39cfd754c85023648bf003bea2dd498c5612abfa
+smartbugs_curated,44: unchecked_low_calls;  97: unchecked_low_calls;,0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01
+smartbugs_curated,29: unchecked_low_calls;,0x3e013fc32a54c4c5b6991ba539dcd0ec4355c859
+smartbugs_curated,45: unchecked_low_calls;,0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2
+smartbugs_curated,16: unchecked_low_calls;,0x4051334adc52057aca763453820cb0e045076ef3
+smartbugs_curated,19: unchecked_low_calls;,0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c
+smartbugs_curated,17: unchecked_low_calls;,0x4b71ad9c1a84b9b643aa54fdd66e2dec96e8b152
+smartbugs_curated,21: unchecked_low_calls;,0x524960d55174d912768678d8c606b4d50b79d7b1
+smartbugs_curated,27: unchecked_low_calls;,0x52d2e0f9b01101a59b38a3d05c80b7618aeed984
+smartbugs_curated,29: unchecked_low_calls;,0x5aa88d2901c68fda244f1d0584400368d2c8e739
+smartbugs_curated,33: unchecked_low_calls;,0x610495793564aed0f9c7fc48dc4c7c9151d34fd6
+smartbugs_curated,44: unchecked_low_calls;,0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839
+smartbugs_curated,1152: unchecked_low_calls;  1496: unchecked_low_calls;  2467: unchecked_low_calls;,0x663e4229142a27f00bafb5d087e1e730648314c3
+smartbugs_curated,29: unchecked_low_calls;,0x70f9eddb3931491aab1aeafbc1e7f1ca2a012db4
+smartbugs_curated,45: unchecked_low_calls;,0x78c2a1e91b52bca4130b6ed9edd9fbcfd4671c37
+smartbugs_curated,44: unchecked_low_calls;,0x7a4349a749e59a5736efb7826ee3496a2dfd5489
+smartbugs_curated,198: unchecked_low_calls;  210: unchecked_low_calls;,0x7d09edb07d23acb532a82be3da5c17d9d85806b4
+smartbugs_curated,44: unchecked_low_calls;,0x806a6bd219f162442d992bdc4ee6eba1f2c5a707
+smartbugs_curated,56: unchecked_low_calls;,0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8
+smartbugs_curated,162: unchecked_low_calls;  175: unchecked_low_calls;  180: unchecked_low_calls;  192: unchecked_low_calls;,0x89c1b3807d4c67df034fffb62f3509561218d30b
+smartbugs_curated,44: unchecked_low_calls;  97: unchecked_low_calls;,0x8fd1e427396ddb511533cf9abdbebd0a7e08da35
+smartbugs_curated,55: unchecked_low_calls;,0x958a8f594101d2c0485a52319f29b2647f2ebc06
+smartbugs_curated,54: unchecked_low_calls;  65: unchecked_low_calls;,0x9d06cbafa865037a01d322d3f4222fa3e04e5488
+smartbugs_curated,31: unchecked_low_calls;,0xa1fceeff3acc57d257b917e30c4df661401d6431
+smartbugs_curated,16: unchecked_low_calls;,0xa46edd6a9a93feec36576ee5048146870ea2c3ae
+smartbugs_curated,69: unchecked_low_calls;  71: unchecked_low_calls;  73: unchecked_low_calls;  75: unchecked_low_calls;  102: unchecked_low_calls;,0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6
+smartbugs_curated,14: unchecked_low_calls;,0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77
+smartbugs_curated,33: unchecked_low_calls;,0xb37f18af15bafb869a065b61fc83cfc44ed9cc27
+smartbugs_curated,100: unchecked_low_calls;  106: unchecked_low_calls;  133: unchecked_low_calls;,0xb620cee6b52f96f3c6b253e6eea556aa2d214a99
+smartbugs_curated,25: unchecked_low_calls;,0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7
+smartbugs_curated,14: unchecked_low_calls;,0xbaa3de6504690efb064420d89e871c27065cdd52
+smartbugs_curated,14: unchecked_low_calls;,0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c
+smartbugs_curated,44: unchecked_low_calls;,0xd2018bfaa266a9ec0a1a84b061640faa009def76
+smartbugs_curated,16: unchecked_low_calls;,0xd5967fed03e85d1cce44cab284695b41bc675b5c
+smartbugs_curated,39: unchecked_low_calls;,0xdb1c55f6926e7d847ddf8678905ad871a68199d2
+smartbugs_curated,150: unchecked_low_calls;,0xe09b1ab8111c2729a76f16de96bc86a7af837928
+smartbugs_curated,44: unchecked_low_calls;,0xe4eabdca81e31d9acbc4af76b30f532b6ed7f3bf
+smartbugs_curated,39: unchecked_low_calls;,0xe82f0742a71a02b9e9ffc142fdcb6eb1ed06fb87
+smartbugs_curated,17: unchecked_low_calls;,0xe894d54dca59cb53fe9cbc5155093605c7068220
+smartbugs_curated,30: unchecked_low_calls;,0xec329ffc97d75fe03428ae155fc7793431487f63
+smartbugs_curated,18: unchecked_low_calls;,0xf2570186500a46986f3139f65afedc2afe4f445d
+smartbugs_curated,16: unchecked_low_calls;,0xf29ebe930a539a60279ace72c707cba851a57707
+smartbugs_curated,44: unchecked_low_calls;,0xf70d589d76eebdd7c12cc5eec99f8f6fa4233b9e
+smartbugs_curated,109: unchecked_low_calls;  141: unchecked_low_calls;,etherpot_lotto
+smartbugs_curated,110: unchecked_low_calls;  118: unchecked_low_calls;  132: unchecked_low_calls;  174: unchecked_low_calls;,king_of_the_ether_throne
+smartbugs_curated,20: unchecked_low_calls;  27: unchecked_low_calls;,lotto
+smartbugs_curated,14: unchecked_low_calls;,mishandled
+smartbugs_curated,17: unchecked_low_calls;,unchecked_return_value
 zeus_vulnerable,7: access_control;,0xe47014f16c55ddd3add5b68b951e10fcea7da686
 zeus_vulnerable,166: unchecked_low_calls;,0x032747313c4e914b5fce356ab8dc4df551972dcd
 zeus_vulnerable,30: unchecked_low_calls;  36: unchecked_low_calls;  52: unchecked_low_calls;,0x5158cf97c3e001b402ccb0f9063736ee8d6dad5a
@@ -1652,40 +1652,40 @@ zeus_vulnerable,83: reentrancy;  72: unchecked_low_calls;,0xe19e5f100d6a31169b5d
 zeus_vulnerable,31: unchecked_low_calls;  65: unchecked_low_calls;,0xfd2487cc0e5dce97f08be1bc8ef1dce8d5988b4d
 zeus_vulnerable,no,0x125c0260feec92471d1a144f3cdce185a565f374
 zeus_vulnerable,no,0x18429dedafbb65443edf60402294df5c01aee1da
-zeus_vulnerable,FP;,0x3a09769f27a6e4b01bc58b1273bcaa8159033ec5
+zeus_vulnerable,no;,0x3a09769f27a6e4b01bc58b1273bcaa8159033ec5
 zeus_vulnerable,no,0x50ae8d7c70c33d1f40b36c75fe9f560646134dd5
 zeus_vulnerable,no,0x740e6b6f0a0165e8bb3d1cdf94862bdffbded22e
 zeus_vulnerable,no,0x9220d625bd6bea95c865b3c4faf273bfbd6bc48a
-zeus_vulnerable,FP;,0x41dfc15cf7143b859a681dc50dcb3767f44b6e0b
-zeus_vulnerable,FP;,0x4a7fd82c5c173be7d41541b76c43e26553b0f28b
-zeus_vulnerable,FP;,0x673f0dec1416803a39d50760c697fb26f4c539b0
-zeus_vulnerable,FP;,0x9ae98746EB8a0aeEe5fF2b6B15875313a986f103
-zeus_vulnerable,FP;,0xd6362516C7D7934fA2dceC4Be8fd4FcA79e98bc5
-zeus_vulnerable,FP;,0xF74A6e92588eE0a524b44b251E0b47d1A15824f7
+zeus_vulnerable,no;,0x41dfc15cf7143b859a681dc50dcb3767f44b6e0b
+zeus_vulnerable,no;,0x4a7fd82c5c173be7d41541b76c43e26553b0f28b
+zeus_vulnerable,no;,0x673f0dec1416803a39d50760c697fb26f4c539b0
+zeus_vulnerable,no;,0x9ae98746EB8a0aeEe5fF2b6B15875313a986f103
+zeus_vulnerable,no;,0xd6362516C7D7934fA2dceC4Be8fd4FcA79e98bc5
+zeus_vulnerable,no;,0xF74A6e92588eE0a524b44b251E0b47d1A15824f7
 zeus_vulnerable,38: unchecked_low_calls;,0x7fe180e63198e50057c3f2817d058e8904c650e3
-zeus_vulnerable,FP;,0xbf04a03a4ad0455b450888099eb43a1780feb10d
+zeus_vulnerable,no;,0xbf04a03a4ad0455b450888099eb43a1780feb10d
 zeus_vulnerable,no,0x6846b938f9be9f1eeeb9bfd853636c805f8f54d3
 zeus_vulnerable,no,0x8e66ffe69b3f8d78f2a696e40c02f7454c0a01d9
 zeus_vulnerable,307: time_manipulation;,0x9473bc8bb575ffc15cb2179cd9398bdf5730bf55
 zeus_vulnerable,no,0x95c2906debbb9203ff7007f26c2f00a936c77b5d
-zeus_vulnerable,FP;,0xd2f7bba33a3b81792c0f9cc2de6d9266002a5591
+zeus_vulnerable,no;,0xd2f7bba33a3b81792c0f9cc2de6d9266002a5591
 zeus_vulnerable,no,0xf77ac34cd0ed42f2b5d8cfcf4fa0f4bb1b80b9d8
 zeus_vulnerable,35: unchecked_low_calls;  32: unchecked_low_calls;,0x385e817b0083724672cb998a7afcf6da05bc0c7f
 zeus_vulnerable,no,0x4f529990b7f3d1fb4152736155e431c96fd86294
 zeus_vulnerable, 80: time_manipulation;,0x72a68Fb6d91Ed8Dc47B564e088E518C6D4a6FF44
 zeus_vulnerable, 96: front_running;,0x352F448408b612BBAC57D81C785F839e0c386698
 zeus_vulnerable,33: unchecked_low_calls;  36: unchecked_low_calls;  40: unchecked_low_calls;,0x472d4827266f0e83d12feb52f785c7e22ab5f0b6
-zeus_vulnerable,FP;,0x17683235257f2089E3E4aCC9497f25386a529507
-zeus_vulnerable,FP;,0x709c7134053510fce03b464982eab6e3d89728a5
+zeus_vulnerable,no;,0x17683235257f2089E3E4aCC9497f25386a529507
+zeus_vulnerable,no;,0x709c7134053510fce03b464982eab6e3d89728a5
 zeus_vulnerable,40: unchecked_low_calls;,0x75aa81161e07483f6ca199fef46c13eb13d190be
 zeus_vulnerable,24: unchecked_low_calls;,0x8b099BDCfea93FAeCFAC13D0dBc1D08c4e1EC595
 zeus_vulnerable,38: unchecked_low_calls;  46: unchecked_low_calls;,0xa1c1983aa3599657a74cf5a563e880eedc57ae4f
 zeus_vulnerable,119: access_control;,0xAA93338eF3B64A50Dcfb2EbA57A1eb4Ad59D955b
 zeus_vulnerable,31: time_manipulation;  38: unchecked_low_calls;,0xca16790e9bb125392960e78befff1d4df4cb5b58
-zeus_vulnerable,FP;,0x015A06a433353f8db634dF4eDdF0C109882A15AB
+zeus_vulnerable,no;,0x015A06a433353f8db634dF4eDdF0C109882A15AB
 zeus_vulnerable, 46: unchecked_low_calls;,0x40360631db85eddab268dd1b6ffea4377733e125
-zeus_vulnerable,FP;,0x675283432d53531e11eD459C51FB508B7C9585Fb
-zeus_vulnerable,FP;,0x9d31FF892f984a83e8b342a5Ece8e8911Ed909e0
+zeus_vulnerable,no;,0x675283432d53531e11eD459C51FB508B7C9585Fb
+zeus_vulnerable,no;,0x9d31FF892f984a83e8b342a5Ece8e8911Ed909e0
 zeus_vulnerable,30: unchecked_low_calls;  39: unchecked_low_calls;,0xb0ceaa9cc523332cbef9fc606221cc0bc2d0872d
 zeus_vulnerable,53: time_manipulation;  54: time_manipulation;,0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40
 zeus_vulnerable,84: time_manipulation;,0x723dff0e27cc38b80556f5e05dfdbdcb721654d7
@@ -1694,12 +1694,12 @@ zeus_vulnerable,no,0x131288b47c92409d0778d0aa2fbb8367e3399d33
 zeus_vulnerable,no,0x940e7d8fb34921c3c5bbb8b9792b1a0e4688fe9b
 zeus_vulnerable,no,0xb84005872b407999a4a97f91d5ef40baaf1b9dc2
 zeus_vulnerable,11: front_running;,0xD35e6F3B26F8992a7F023Ad878e13A82ddEd2232
-zeus_vulnerable,FP;,0x3bb2bb5c6c9c9b7f4ef430b47dc7e026310042ea
-zeus_vulnerable,FP;,0x44691b39d1a75dc4e0a0346cbb15e310e6ed1e86
-zeus_vulnerable,FP;,0x4a56ebd89b2750bf42ddec1cd3845938983be0d2
-zeus_vulnerable,FP;,0x5385d02f3a254ca716c144c7c333553a2e6ec931
-zeus_vulnerable,FP;,0x5f0281910af44bfb5fc7e86a404d0304b0e042f1
-zeus_vulnerable,FP;,0xd70994d7020df8052a1124561ff548f3b88744d8
+zeus_vulnerable,no;,0x3bb2bb5c6c9c9b7f4ef430b47dc7e026310042ea
+zeus_vulnerable,no;,0x44691b39d1a75dc4e0a0346cbb15e310e6ed1e86
+zeus_vulnerable,no;,0x4a56ebd89b2750bf42ddec1cd3845938983be0d2
+zeus_vulnerable,no;,0x5385d02f3a254ca716c144c7c333553a2e6ec931
+zeus_vulnerable,no;,0x5f0281910af44bfb5fc7e86a404d0304b0e042f1
+zeus_vulnerable,no;,0xd70994d7020df8052a1124561ff548f3b88744d8
 zeus_vulnerable,62: unchecked_low_calls;  70: time_manipulation;,0x0d47d4aea9da60953fd4ae5c47d2165977c7fbea
 zeus_vulnerable,no,0x77eec19c8ba79b1c7c79311ec810cbf88d924751
 zeus_vulnerable,75: time_manipulation;,0x1d77340D3819007BbfD7fdD37C22BD3b5c311350
@@ -1707,7 +1707,7 @@ zeus_vulnerable,111: unchecked_low_calls;,0x3398080b81a1cff1429af347ce2b17fc28de
 zeus_vulnerable,108: unchecked_low_calls;,0x559b52b6a30Ba913A7e8F85C4A6Aa443a0FE66ab
 zeus_vulnerable,231: time_manipulation;,0x7698392fff47d8d4cee21295ad1f31b6ced9ad66
 zeus_vulnerable, 89: time_manipulation;,0x9bfe61748ba9b71789de234d2bdc8fa21047d3cb
-zeus_vulnerable,FP;,0xd6ec04c0f9587cb822c315f662954af8c2174d66
+zeus_vulnerable,no;,0xd6ec04c0f9587cb822c315f662954af8c2174d66
 zeus_vulnerable,111: unchecked_low_calls;,0xe3282094d332d26f7Dfca853899eC1736f0295ce
 zeus_vulnerable,no,0xe736091fc36f1ad476f5e4e03e4425940822d3ba
 zeus_vulnerable,151: time_manipulation;,0x493f121b6f769fc8dbfb47ab834b13561d835009
@@ -1718,27 +1718,27 @@ zeus_vulnerable,no,0x4b19f307dda1be6bc17c999bc29e24633155c990
 zeus_vulnerable,62: unchecked_low_calls;,0x8e0806b4e7aa1e74d798124756bcf1263cd830d0
 zeus_vulnerable,no,0x143E8bD26D95b230680C25300F93eF56F86eCCAC
 zeus_vulnerable, 179: time_manipulation;,0x65bBC91459aAAd9603ef1345c6Bb6396dd6772B9
-zeus_vulnerable,FP;,0x98a31890002355fbe5231c60db4b1b6c28f45e90
-zeus_vulnerable,FP;,0xabea74917283a8662865894c7d6cfecafd85ceb6
+zeus_vulnerable,no;,0x98a31890002355fbe5231c60db4b1b6c28f45e90
+zeus_vulnerable,no;,0xabea74917283a8662865894c7d6cfecafd85ceb6
 zeus_vulnerable,179: unchecked_low_calls;  249: unchecked_low_calls;  216: unchecked_low_calls;,0xAF6D36e6A376CDa44a5Ce9280507e5E24132C143
 zeus_vulnerable, 186: time_manipulation;,0xCE3b5fFca16ffF926c890f0885A3e90cEb89db0A
 zeus_vulnerable, 179: unchecked_low_calls;  169: front_running;  179: time_manipulation;,0xd8d4E59fabb7D8A1D013D577689cB612A8e5F826
 zeus_vulnerable, 181: front_running;  187: time_manipulation;,0xF0d8af9125dE2761B42DBB0B1014bF232219a1c5
 zeus_vulnerable,no,0xF1c1648f6F0EdbCF7d898441b88E489CfaAce11D
-zeus_vulnerable,FP;,0x488b7b5ed8ee6fa28c0cb3a0ee7351573070601d
-zeus_vulnerable,FP;,0x9ab2b9bd7c70ba12757eadcda5a9626ac247fadf
+zeus_vulnerable,no;,0x488b7b5ed8ee6fa28c0cb3a0ee7351573070601d
+zeus_vulnerable,no;,0x9ab2b9bd7c70ba12757eadcda5a9626ac247fadf
 zeus_vulnerable,89: time_manipulation;,0xc1f9de7df87eb7a933192e4e9178b0b07472f65c
 zeus_vulnerable,44: front_running;,0x7d3ae940eb73dc9131758ad2e326c7d863b0916a
-zeus_vulnerable,FP;,0x2dc0170450e66af2d3f5c56aa0b20ec4a254902e
+zeus_vulnerable,no;,0x2dc0170450e66af2d3f5c56aa0b20ec4a254902e
 zeus_vulnerable,94: time_manipulation;  106: time_manipulation;,0x362bb67f7fdbdd0dbba4bce16da6a284cf484ed6
 zeus_vulnerable,no,0x3eab9a2fa76f16cdc46e707ff928f7995886dee0
 zeus_vulnerable,136: bad_randomness;,0x93eeabbe86d19bda39ea2d1049baf2c0878ded23
-zeus_vulnerable,FP;,0xaf2b8e6114da000176c506f77b173251c16b511d
+zeus_vulnerable,no;,0xaf2b8e6114da000176c506f77b173251c16b511d
 zeus_vulnerable,91: unchecked_low_calls;  90: access_control;,0xc7dfe4304bd4c9dd6ed414443c077fc06501e9ac
 zeus_vulnerable, 30: unchecked_low_calls;  83: unchecked_low_calls;  75: unchecked_low_calls;  106: unchecked_low_calls;  117: unchecked_low_calls;,0x5b2ff75d7eaa47db475707dae12a688102ef4290
 zeus_vulnerable,26: bad_randomness;,0x6a6581a884c4729586479307e5694bf836617517
 zeus_vulnerable,10: denial_service;,0x15e745a2e3b677ec6421291b212d3917b3738dee
-zeus_vulnerable,FP;,0x705f04a4f1e7a1e23caea390b8903bd43d96e18e
+zeus_vulnerable,no;,0x705f04a4f1e7a1e23caea390b8903bd43d96e18e
 zeus_vulnerable,83: unchecked_low_calls;  64: front_running;,0x02e01e9a73ed2cb24b32628c935256e455b0a078
 zeus_vulnerable, 199: time_manipulation;,0x5A5eFF38DA95b0D58b6C616f2699168B480953C9
 zeus_vulnerable,32: unchecked_low_calls;  55: unchecked_low_calls;  65: unchecked_low_calls;,0x8f13a1d43408b6434dd10e161361386f3952d665
@@ -1782,7 +1782,7 @@ zeus_vulnerable,no,0x83b6ad8e37ab7a4f71da533a35271484270ec6c2
 zeus_vulnerable,54: access_control;  56: time_manipulation;  67: time_manipulation;,0x9e611784170b297091de56eb50162548d9b54d87
 zeus_vulnerable,27: access_control;  60: unchecked_low_calls;,0x9ffa45c5943a0203ee462c48c8b97064abbe28f3
 zeus_vulnerable, 106: time_manipulation;  111: time_manipulation;,0xf66ca56fc0cf7b5d9918349150026be80b327892
-zeus_vulnerable,FP;,0xfac50f760d114de38bf0a6d44f31a9c22f778db3
+zeus_vulnerable,no;,0xfac50f760d114de38bf0a6d44f31a9c22f778db3
 zeus_vulnerable,82: unchecked_low_calls;  91: unchecked_low_calls;  142: unchecked_low_calls;  162: unchecked_low_calls;  104: access_control;,0x007d42b9192b8C087b0D3E6ef73AAE48E74b41c1
 zeus_vulnerable,30: unchecked_low_calls;  36: unchecked_low_calls;  52: unchecked_low_calls;  63: unchecked_low_calls;,0x02B2101903eB6a51518E63e84B785180859FDa9d
 zeus_vulnerable,29: unchecked_low_calls;  35: unchecked_low_calls;,0x062524205ca7ecf27f4a851edec93c7ad72f427b
@@ -1863,7 +1863,7 @@ zeus_vulnerable,33: unchecked_low_calls;  56: unchecked_low_calls;  66: unchecke
 zeus_vulnerable, 65: unchecked_low_calls;,0x3ac26f27595effeb5e426bd093081ec30ebdd545
 zeus_vulnerable,no,0x498e950892260b0e9dfd5895d7501f340e92d263
 zeus_vulnerable,no,0xf9735dc96a98f68ac8fe6fccf1e7b9876ddb6b47
-zeus_vulnerable,FP;,0xff3216f86a723f2c23b03b5cd1f622eb1a204159
+zeus_vulnerable,no;,0xff3216f86a723f2c23b03b5cd1f622eb1a204159
 zeus_vulnerable,no,0x3cf853facae392c3e4310ab805da30a1da508609
 zeus_vulnerable,no,0x4fd997ed7c10dbd04e95d3730cd77d79513076f2
 zeus_vulnerable,no,0x51dce38369b7d57d367fa1b738723a626f15b8ff
@@ -1887,31 +1887,31 @@ zeus_vulnerable,no,0xe1e8eabd8fcf08ed50ae1f2ed4710c1a1f38542c
 zeus_vulnerable,no,0xe3c61a3bff7cb03ddd422258006fddd5ba1ed0fe
 zeus_vulnerable,no,0x022de2e28a61f9d197f8966dd0fc8f7ddf70f2dc
 zeus_vulnerable,no,0xb78e82956b6037e13b83c287aa9047f748c0f55a
-zeus_vulnerable,FP;,0x6e01ee36b522a824609b7f7dfb5e4aa8fbb48934
+zeus_vulnerable,no;,0x6e01ee36b522a824609b7f7dfb5e4aa8fbb48934
 zeus_vulnerable,no,0x142eba6cd4e1977fba4a440c882ee460654d1766
-zeus_vulnerable,FP;,0x1654d540616bfb3f13973ed6019e43005be43219
+zeus_vulnerable,no;,0x1654d540616bfb3f13973ed6019e43005be43219
 zeus_vulnerable,no,0x1b27996479b11abc8a8d0447deb3fb0183788484
-zeus_vulnerable,FP;,0x4c24fd04063e8b1c881e5ec0f46208d66d010c64
+zeus_vulnerable,no;,0x4c24fd04063e8b1c881e5ec0f46208d66d010c64
 zeus_vulnerable,no,0x5d39fcebe89ab0397947881539fd6dc7d99c6a87
 zeus_vulnerable,no,0x60f0ee673e413e1c134d1497eeecce8ddd2fdd74
-zeus_vulnerable,FP;,0x693399aae96a88b966b05394774cfb7b880355b4
+zeus_vulnerable,no;,0x693399aae96a88b966b05394774cfb7b880355b4
 zeus_vulnerable,85: unchecked_low_calls;,0x81a47e985b7a133728e97efc7f9ec3654b6e73f0
 zeus_vulnerable,no,0x8b807cf49ca593c4678811211df2992e64f2f3ef
-zeus_vulnerable,FP;,0x911d71eed45dbc20059004f8476fe149105bf1dc
+zeus_vulnerable,no;,0x911d71eed45dbc20059004f8476fe149105bf1dc
 zeus_vulnerable,no,0x9c794584b2f482653937b529647924606446e7f4
-zeus_vulnerable,FP;,0xabcdd0dbc5ba15804f5de963bd60491e48c3ef0b
-zeus_vulnerable,FP;,0xbFb0Cfd13dbB56c2dbf69EAe33255f0EF1fC7955
+zeus_vulnerable,no;,0xabcdd0dbc5ba15804f5de963bd60491e48c3ef0b
+zeus_vulnerable,no;,0xbFb0Cfd13dbB56c2dbf69EAe33255f0EF1fC7955
 zeus_vulnerable, 53: time_manipulation;  58: time_manipulation;,0xf2b8e10e7b230cc55040a7a90be75c933719c507
-zeus_vulnerable,FP;,0x949bEd886c739f1A3273629b3320db0C5024c719
+zeus_vulnerable,no;,0x949bEd886c739f1A3273629b3320db0C5024c719
 zeus_vulnerable,no,0xD8912C10681D8B21Fd3742244f44658dBA12264E
-zeus_vulnerable,FP;,0xf77089f2F00fca83501705b711Cbb10a0De77628
-zeus_vulnerable,FP;,0x89d64bc7e46bdc49a89652ae9bb167418cbad62e
-zeus_vulnerable,FP;,0xd9f7cd813983bd89d18015cc3022f7b9b97d26d4
+zeus_vulnerable,no;,0xf77089f2F00fca83501705b711Cbb10a0De77628
+zeus_vulnerable,no;,0x89d64bc7e46bdc49a89652ae9bb167418cbad62e
+zeus_vulnerable,no;,0xd9f7cd813983bd89d18015cc3022f7b9b97d26d4
 zeus_vulnerable,no,0x384e762dAd922B22a0d06f4D1229582473D2DEe6
-zeus_vulnerable,FP;,0xdda65daa223aaae4add64e4e390cda7101c4ab41
+zeus_vulnerable,no;,0xdda65daa223aaae4add64e4e390cda7101c4ab41
 zeus_vulnerable,70: reentrancy;,0x9053d234a1ff2290f087a1ca9460e3263121e580
-zeus_vulnerable,FP;,0x6ff323e36bfdb20502b23780695f4e77e36cde95
-zeus_vulnerable,FP;,0xE197529709D7cBaf31756C6d9B8742718E17FCA5
+zeus_vulnerable,no;,0x6ff323e36bfdb20502b23780695f4e77e36cde95
+zeus_vulnerable,no;,0xE197529709D7cBaf31756C6d9B8742718E17FCA5
 zeus_vulnerable,47: reentrancy;  48: reentrancy;  55: reentrancy;  64: reentrancy;,0x35bd607db942fe1f10ce12b309e3a67e16660fe1
 zeus_vulnerable,69: reentrancy;,0x33098a5e8f5e932831434748cdad425487b9aaf1
 zeus_vulnerable,112: reentrancy;  125: reentrancy;,0x45d147c800d401350b24fc1cd5fbc98040b177c8
