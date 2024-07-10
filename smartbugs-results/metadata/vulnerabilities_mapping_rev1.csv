@@ -140,40 +140,40 @@ honeybadger,straw_man_contract,,,,True,,,,,,,
 honeybadger,hidden_transfer,,,,,,,,,,True,
 honeybadger,balance_disorder,,,,,,,,,,,True
 honeybadger,type_overflow,,True,,,,,,,,,
-semgrep,use-prefix-decrement-not-postfix,,,,,,,,,,,
-semgrep,inefficient-state-variable-increment,,,,,,,,,,,
-semgrep,use-multiple-require,,,,,,,,,,,
-semgrep,array-length-outside-loop,,,,,,,,,,,
-semgrep,state-variable-read-in-a-loop,,,,,,,,,,,
-semgrep,unnecessary-checked-arithmetic-in-loop,,,,,,,,,,,
-semgrep,use-nested-if,,,,,,,,,,,
-semgrep,use-prefix-increment-not-postfix,,,,,,,,,,,
-semgrep,delegatecall-to-arbitrary-address,,,,,,,,,,,
-semgrep,init-variables-with-default-value,,,,,,,,,,,
-semgrep,use-ownable2step,,,,,,,,,,,
-semgrep,use-custom-error-not-require,,,,,,,,,,,
-semgrep,use-short-revert-string,,,,,,,,,,,
-semgrep,incorrect-use-of-blockhash,,,,,,,,,,,
+semgrep,use-prefix-decrement-not-postfix,,,,,,,,,,,True
+semgrep,inefficient-state-variable-increment,,,,,,,,,,,True
+semgrep,use-multiple-require,,,,,,,,,,,True
+semgrep,array-length-outside-loop,,,,,,,,,,,True
+semgrep,state-variable-read-in-a-loop,,,,,,,,,,,True
+semgrep,unnecessary-checked-arithmetic-in-loop,,,,,,,,,,,True
+semgrep,use-nested-if,,,,,,,,,,,True
+semgrep,use-prefix-increment-not-postfix,,,,,,,,,,,True
+semgrep,delegatecall-to-arbitrary-address,True,,,,,,,,,,
+semgrep,init-variables-with-default-value,,,,,,,,,,,True
+semgrep,use-ownable2step,,,,,,,,,,,True
+semgrep,use-custom-error-not-require,,,,,,,,,,,True
+semgrep,use-short-revert-string,,,,,,,,,,,True
+semgrep,incorrect-use-of-blockhash,,,,,,True,,,,,
 conkas,Reentrancy,,,,True,,,,,,,
 conkas,Unchecked Low Level Call,,,,,True,,,,,,
 conkas,Time Manipulation,,,,,,,,True,,,
-conkas,Transaction Ordering Dependence,,,,,,,,,,,
-confuzzius,Assertion Failure,,,,,,,,,,,
-confuzzius,Unhandled Exception,,,,,,,,,,,
-confuzzius,Transaction Order Dependency,,,,,,,,,,,
-confuzzius,Block Dependency,,,,,,,,,,,
-confuzzius,Leaking Ether,,,,,,,,,,,
-confuzzius,Arbitrary Memory Access,,,,,,,,,,,
-confuzzius,Unsafe Delegatecall,,,,,,,,,,,
-confuzzius,Unprotected Selfdestruct,,,,,,,,,,,
-sfuzz,Exception Disorder,,,,,,,,,,,
-sfuzz,Timestamp Dependency,,,,,,,,,,,
-sfuzz,Gasless Send,,,,,,,,,,,
-sfuzz,Block Number Dependency,,,,,,,,,,,
-sfuzz,Freezing Ether,,,,,,,,,,,
-sfuzz,Dangerous Delegate Call,,,,,,,,,,,
-vandal,UncheckedCall,,,,,,,,,,,
-vandal,ReentrantCall,,,,,,,,,,,
+conkas,Transaction Ordering Dependence,,,,,,,True,,,,
+confuzzius,Assertion Failure,,,,,,,,,,,True
+confuzzius,Unhandled Exception,,,,,,,,,,,True
+confuzzius,Transaction Order Dependency,,,,,,,True,,,,
+confuzzius,Block Dependency,,,,,,,,True,,,
+confuzzius,Leaking Ether,,,,,,,,,,,True
+confuzzius,Arbitrary Memory Access,True,,,,,,,,,,
+confuzzius,Unsafe Delegatecall,True,,,,,,,,,,
+confuzzius,Unprotected Selfdestruct,True,,,,,,,,,,
+sfuzz,Exception Disorder,,,,,,,,,,,True
+sfuzz,Timestamp Dependency,,,,,,,,True,,,
+sfuzz,Gasless Send,,,,,,,,,,,True
+sfuzz,Block Number Dependency,,,,,,,,True,,,
+sfuzz,Freezing Ether,,,,,,,,,,,True
+sfuzz,Dangerous Delegate Call,True,,,,,,,,,,
+vandal,UncheckedCall,,,,,True,,,,,,
+vandal,ReentrantCall,,,,True,,,,,,,
 slither,arbitrary-send-eth,True,,,,,,,,,,
 slither,unchecked-lowlevel,,,,,True,,,,,,
 slither,missing-zero-check,True,,,,,,,,,,
@@ -198,61 +198,61 @@ slither,unchecked-transfer,True,,,,,,,,,,
 slither,missing-inheritance,,,,,,,,,,,True
 slither,return-bomb,,,,,True,,,,,,
 slither,redundant-statements,,,,,,,,,,,True
-maian,Not destructible (no self-destruct),,,,,,,,,,,
-maian,No Ether leak (no send),,,,,,,,,,,
-maian,No Ether lock (Ether refused),,,,,,,,,,,
-maian,Ether leak (verified),,,,,,,,,,,
-maian,Destructible (verified),,,,,,,,,,,
-oyente,Callstack Depth Attack Vulnerability,,,,,,,,,,,
-oyente,Re-Entrancy Vulnerability,,,,,,,,,,,
-oyente,Transaction-Ordering Dependence (TOD),,,,,,,,,,,
-solhint,compiler-version,,,,,,,,,,,
-solhint,reason-string,,,,,,,,,,,
-solhint,func-visibility,,,,,,,,,,,
-solhint,avoid-call-value,,,,,,,,,,,
-solhint,avoid-low-level-calls,,,,,,,,,,,
-solhint,avoid-sha3,,,,,,,,,,,
-solhint,visibility-modifier-order,,,,,,,,,,,
-solhint,not-rely-on-time,,,,,,,,,,,
-solhint,contract-name-camelcase,,,,,,,,,,,
-solhint,var-name-mixedcase,,,,,,,,,,,
-solhint,state-visibility,,,,,,,,,,,
-solhint,func-name-mixedcase,,,,,,,,,,,
-solhint,avoid-tx-origin,,,,,,,,,,,
-solhint,payable-fallback,,,,,,,,,,,
-solhint,check-send-result,,,,,,,,,,,
-solhint,multiple-sends,,,,,,,,,,,
-solhint,avoid-throw,,,,,,,,,,,
-solhint,quotes,,,,,,,,,,,
-solhint,not-rely-on-block-hash,,,,,,,,,,,
-solhint,no-unused-vars,,,,,,,,,,,
-solhint,const-name-snakecase,,,,,,,,,,,
-solhint,no-inline-assembly,,,,,,,,,,,
-solhint,no-empty-blocks,,,,,,,,,,,
-solhint,no-complex-fallback,,,,,,,,,,,
-solhint,avoid-suicide,,,,,,,,,,,
-solhint,max-states-count,,,,,,,,,,,
-solhint,event-name-camelcase,,,,,,,,,,,
-mythril,Unprotected Ether Withdrawal,,,,,,,,,,,
-mythril,Dependence on tx.origin,,,,,,,,,,,
-mythril,External Call To User-Supplied Address,,,,,,,,,,,
-mythril,Unchecked return value from external call,,,,,,,,,,,
-mythril,Multiple Calls in a Single Transaction,,,,,,,,,,,
-mythril,Integer Arithmetic Bugs,,,,,,,,,,,
-mythril,requirement violation,,,,,,,,,,,
-mythril,Write to an arbitrary storage location,,,,,,,,,,,
-mythril,Unprotected Selfdestruct,,,,,,,,,,,
+maian,Not destructible (no self-destruct),,,,,,,,,,,True
+maian,No Ether leak (no send),,,,,,,,,,,True
+maian,No Ether lock (Ether refused),,,,,,,,,,,True
+maian,Ether leak (verified),,,,,,,,,,,True
+maian,Destructible (verified),True,,,,,,,,,,
+oyente,Callstack Depth Attack Vulnerability,,,True,,,,,,,,
+oyente,Re-Entrancy Vulnerability,,,,True,,,,,,,
+oyente,Transaction-Ordering Dependence (TOD),,,,,,,True,,,,
+solhint,compiler-version,,,,,,,,,,,True
+solhint,reason-string,,,,,,,,,,,True
+solhint,func-visibility,True,,,,,,,,,,
+solhint,avoid-call-value,,,,,True,,,,,,
+solhint,avoid-low-level-calls,,,,,True,,,,,,
+solhint,avoid-sha3,,,,,,,,,,,True
+solhint,visibility-modifier-order,,,,,,,,,,,True
+solhint,not-rely-on-time,,,,,,,,True,,,
+solhint,contract-name-camelcase,,,,,,,,,,,True
+solhint,var-name-mixedcase,,,,,,,,,,,True
+solhint,state-visibility,,,,,,,,,,,True
+solhint,func-name-mixedcase,,,,,,,,,,,True
+solhint,avoid-tx-origin,True,,,,,,,,,,
+solhint,payable-fallback,True,,,,,,,,,,
+solhint,check-send-result,,,,,True,,,,,,
+solhint,multiple-sends,,,,,True,,,,,,
+solhint,avoid-throw,,,,,,,,,,,True
+solhint,quotes,,,,,,,,,,,True
+solhint,not-rely-on-block-hash,,,,,,,,True,,,
+solhint,no-unused-vars,,,,,,,,,,,True
+solhint,const-name-snakecase,,,,,,,,,,,True
+solhint,no-inline-assembly,,,,,,,,,,,True
+solhint,no-empty-blocks,,,,,,,,,,,True
+solhint,no-complex-fallback,,,,,,,,,,,True
+solhint,avoid-suicide,,,,,,,,,,,True
+solhint,max-states-count,,,,,,,,,,,True
+solhint,event-name-camelcase,,,,,,,,,,,True
+mythril,Unprotected Ether Withdrawal,True,,,,,,,,,,
+mythril,Dependence on tx.origin,,,,True,,,,,,,
+mythril,External Call To User-Supplied Address,,,,True,,,,,,,
+mythril,Unchecked return value from external call,,,,,True,,,,,,
+mythril,Multiple Calls in a Single Transaction,,,True,,,,,,,,
+mythril,Integer Arithmetic Bugs,,True,,,,,,,,,
+mythril,requirement violation,,,,,,,,,,,True
+mythril,Write to an arbitrary storage location,True,,,,,,,,,,
+mythril,Unprotected Selfdestruct,True,,,,,,,,,,
 ethor-2023,insecure,,,,,,,,,,,
-vandal,OriginUsed,,,,,,,,,,,
-vandal,CheckedCallStateUpdate,,,,,,,,,,,
-osiris,Callstack bug,,,,,,,,,,,
-osiris,Truncation bugs,,,,,,,,,,,
-osiris,Reentrancy bug,,,,,,,,,,,
-osiris,Overflow bugs,,,,,,,,,,,
-osiris,Underflow bugs,,,,,,,,,,,
-osiris,Concurrency bug,,,,,,,,,,,
-osiris,Time dependency bug,,,,,,,,,,,
-osiris,Division bugs,,,,,,,,,,,
+vandal,OriginUsed,True,,,,,,,,,,
+vandal,CheckedCallStateUpdate,True,,,,,,,,,,
+osiris,Callstack bug,,,True,,,,,,,,
+osiris,Truncation bugs,,True,,,,,,,,,
+osiris,Reentrancy bug,,,,True,,,,,,,
+osiris,Overflow bugs,,True,,,,,,,,,
+osiris,Underflow bugs,,True,,,,,,,,,
+osiris,Concurrency bug,,,,,,,,,,,True
+osiris,Time dependency bug,,,,,,,,True,,,
+osiris,Division bugs,,True,,,,,,,,,
 slither,incorrect-exp,,True,,,,,,,,,
 slither,pragma,,,,,,,,,,,True
 slither,variable-scope,,,,,,,,,,True,
@@ -260,39 +260,39 @@ slither,cyclomatic-complexity,,,,,,,,,,,True
 slither,function-init-state,,,,,,,,,,True,
 slither,msg-value-loop,,True,,,,,,,,,
 slither,mapping-deletion,True,,,,,,,,,,
-maian,Ether lock (Ether accepted without send),,,,,,,,,,,
-maian,Ether lock,,,,,,,,,,,
-maian,Ether leak,,,,,,,,,,,
-solhint,use-forbidden-name,,,,,,,,,,,
-mythril,Locking Ether,,,,,,,,,,,
-semgrep,non-payable-constructor
-solhint,reentrancy
-mythril,state access after external call
-conkas,Integer Overflow
-conkas,Integer Underflow
-confuzzius,Reentrancy
-confuzzius,Integer Overflow
-ethor-2023,secure
-sfuzz,Reentrancy
-sfuzz,Integer Underflow
-sfuzz,Integer Overflow
-confuzzius,Locking Ether,,,,,,,,,,,,
-maian,Destructible,,,,,,,,,,,,
-madmax,UnboundedMassOp,,,,,,,,,,,,
-madmax,OverflowLoopIterator,,,,,,,,,,,,
+maian,Ether lock (Ether accepted without send),,,,,,,,,,,True
+maian,Ether lock,,,,,,,,,,,True
+maian,Ether leak,,,,,,,,,,,True
+solhint,use-forbidden-name,,,,,,,,,,,True
+mythril,Locking Ether,,,True,,,,,,,,
+semgrep,non-payable-constructor,,,,,,,,,,,True
+solhint,reentrancy,,,,True
+mythril,state access after external call,,,,True
+conkas,Integer Overflow,,True
+conkas,Integer Underflow,,True
+confuzzius,Reentrancy,,,,True
+confuzzius,Integer Overflow,,True
+ethor-2023,secure,,,,,,,,,,,True
+sfuzz,Reentrancy,,,,True
+sfuzz,Integer Underflow,,True
+sfuzz,Integer Overflow,,True
+confuzzius,Locking Ether,,,,,,,,,,,True,
+maian,Destructible,True,,,,,,,,,,,
+madmax,UnboundedMassOp,,True,,,,,,,,,,
+madmax,OverflowLoopIterator,,True,,,,,,,,,,
 mythril,DELEGATECALL to a user-supplied address,True,,,,,,,,,,,
-mythril,strict ether balance check,,,,,,,,,,,,
-osiris,Signedness bugs,,,,,,,,,,,,
-oyente,Callstack Depth Attack Vulnerability,,,,,,,,,,,,
-semgrep,erc20-public-transfer,,,,,,,,,,,,
-semgrep,non-optimal-variables-swap,,,,,,,,,,,,
-semgrep,use-abi-encodecall-instead-of-encodewithselector,,,,,,,,,,,,
-slither,arbitrary-send-erc20,,,,,,,,,,,,
-slither,assert-state-change,,,,,,,,,,,,
-slither,boolean-cst,,,,,,,,,,,,
-slither,constant-function-state,,,,,,,,,,,,
-slither,erc721-interface,,,,,,,,,,,,
-slither,reused-constructor,,,,,,,,,,,,
-slither,unimplemented-functions,,,,,,,,,,,,
-slither,void-cst,,,,,,,,,,,,
-slither,write-after-write,,,,,,,,,,,,
+mythril,strict ether balance check,,True,,,,,,,,,,
+osiris,Signedness bugs,,True,,,,,,,,,,
+oyente,Callstack Depth Attack Vulnerability,,,True,,,,,,,,,
+semgrep,erc20-public-transfer,True,,,,,,,,,,,
+semgrep,non-optimal-variables-swap,,,,,,,,,,,True,
+semgrep,use-abi-encodecall-instead-of-encodewithselector,,,,,,,,,,,True,
+slither,arbitrary-send-erc20,True,,,,,,,,,,,
+slither,assert-state-change,,,,,,,,,,,True,
+slither,boolean-cst,True,,,,,,,,,,,
+slither,constant-function-state,,,,,,,,,,,True,
+slither,erc721-interface,,,True,,,,,,,,,
+slither,reused-constructor,,,,,,,,,,,True,
+slither,unimplemented-functions,,,,,,,,,,,True,
+slither,void-cst,,,,,,,,,,,True,
+slither,write-after-write,,,,,,,,,,,True,
