@@ -266,33 +266,33 @@ maian,Ether leak,,,,,,,,,,,True
 solhint,use-forbidden-name,,,,,,,,,,,True
 mythril,Locking Ether,,,True,,,,,,,,
 semgrep,non-payable-constructor,,,,,,,,,,,True
-solhint,reentrancy,,,,True
-mythril,state access after external call,,,,True
-conkas,Integer Overflow,,True
-conkas,Integer Underflow,,True
-confuzzius,Reentrancy,,,,True
-confuzzius,Integer Overflow,,True
+solhint,reentrancy,,,,True,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+mythril,state access after external call,,,,True,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+conkas,Integer Overflow,,True,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+conkas,Integer Underflow,,True,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+confuzzius,Reentrancy,,,,True,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+confuzzius,Integer Overflow,,True,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 ethor-2023,secure,,,,,,,,,,,True
-sfuzz,Reentrancy,,,,True
-sfuzz,Integer Underflow,,True
-sfuzz,Integer Overflow,,True
-confuzzius,Locking Ether,,,,,,,,,,,True,
-maian,Destructible,True,,,,,,,,,,,
-madmax,UnboundedMassOp,,True,,,,,,,,,,
-madmax,OverflowLoopIterator,,True,,,,,,,,,,
-mythril,DELEGATECALL to a user-supplied address,True,,,,,,,,,,,
-mythril,strict ether balance check,,True,,,,,,,,,,
-osiris,Signedness bugs,,True,,,,,,,,,,
-oyente,Callstack Depth Attack Vulnerability,,,True,,,,,,,,,
-semgrep,erc20-public-transfer,True,,,,,,,,,,,
-semgrep,non-optimal-variables-swap,,,,,,,,,,,True,
-semgrep,use-abi-encodecall-instead-of-encodewithselector,,,,,,,,,,,True,
-slither,arbitrary-send-erc20,True,,,,,,,,,,,
-slither,assert-state-change,,,,,,,,,,,True,
-slither,boolean-cst,True,,,,,,,,,,,
-slither,constant-function-state,,,,,,,,,,,True,
-slither,erc721-interface,,,True,,,,,,,,,
-slither,reused-constructor,,,,,,,,,,,True,
-slither,unimplemented-functions,,,,,,,,,,,True,
-slither,void-cst,,,,,,,,,,,True,
-slither,write-after-write,,,,,,,,,,,True,
+sfuzz,Reentrancy,,,,True,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+sfuzz,Integer Underflow,,True,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+sfuzz,Integer Overflow,,True,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+confuzzius,Locking Ether,,,,,,,,,,,True
+maian,Destructible,True,,,,,,,,,,
+madmax,UnboundedMassOp,,True,,,,,,,,,
+madmax,OverflowLoopIterator,,True,,,,,,,,,
+mythril,DELEGATECALL to a user-supplied address,True,,,,,,,,,,
+mythril,strict ether balance check,,True,,,,,,,,,
+osiris,Signedness bugs,,True,,,,,,,,,
+oyente,Callstack Depth Attack Vulnerability,,,True,,,,,,,,
+semgrep,erc20-public-transfer,True,,,,,,,,,,
+semgrep,non-optimal-variables-swap,,,,,,,,,,,True
+semgrep,use-abi-encodecall-instead-of-encodewithselector,,,,,,,,,,,True
+slither,arbitrary-send-erc20,True,,,,,,,,,,
+slither,assert-state-change,,,,,,,,,,,True
+slither,boolean-cst,True,,,,,,,,,,
+slither,constant-function-state,,,,,,,,,,,True
+slither,erc721-interface,,,True,,,,,,,,
+slither,reused-constructor,,,,,,,,,,,True
+slither,unimplemented-functions,,,,,,,,,,,True
+slither,void-cst,,,,,,,,,,,True
+slither,write-after-write,,,,,,,,,,,True
