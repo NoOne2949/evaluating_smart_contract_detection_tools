@@ -2,7 +2,7 @@ import csv
 import sys
 import re
 import pandas as pd
-from confront_vulnerability import check_vuln
+from collections import Counter
 
 artifacts_file = "csvs/sample_of_interest.csv"
 log_file = "vulnerabilities_log.csv"
@@ -37,32 +37,31 @@ def confront_vulnerabilities(tool, log_df, artifact_df):
     result_df['common_vulnerabilities'] = result_df.apply(find_common_vulnerabilities, axis=1)
     result_df = result_df.dropna(subset=['common_vulnerabilities'])
 
-    print(len(result_df))
+    print(f"\nresult df: {len(result_df)}\n")
     return result_df
 
 
 def find_common_vulnerabilities(row):
-    findings_set = set(v for v in row['Mapped_findings'].split(';') if ': ' in v)
-    tag_set = set(v for v in row['tag'].split(';') if ': ' in v)
+    findings_set = set(v.strip() for v in row['Mapped_findings'].split(';') if ': ' in v)
+    tag_set = set(v.strip() for v in row['tag'].split(';') if ': ' in v)
     common_vulnerabilities = []
 
-    for finding in findings_set:
-        finding_line = finding.strip().split(': ')[0]
-        finding_vuln = finding.strip().split(': ')[1]
-
-        if re.match(r'^\d+-\d+', finding_line):
-            line_start = finding_line.strip('-')[0]
-            line_end = finding_line.strip('-')[1]
-
-            for tag in tag_set:
-                tag_line = tag.strip().split(': ')[0]
-                tag_vuln = tag.strip().split(': ')[1]
-                if line_start <= tag_line <= line_end and finding_vuln == tag_vuln:
-                    common_vulnerabilities.append(tag)
-        else:
-            for tag in tag_set:
-                if finding == tag:
-                    common_vulnerabilities.append(tag)
+    if len(findings_set) > 0 and len(tag_set) > 0:
+        print(f"findings: {findings_set}")
+        print(f"tag: {tag_set}")
+        for finding in findings_set:
+            f_line, f_vuln = finding.split(':')
+            if f_line != 'none':
+                for tag in tag_set:
+                    t_line, t_vuln = tag.split(':')
+                    if re.match(r'^\d+-\d+', f_line):
+                        start, end = map(int, f_line.split('-'))
+                        t_line = int(t_line)
+                        if start <= t_line <= end and t_vuln == f_vuln:
+                            common_vulnerabilities.append(tag)
+                    elif int(t_line) == int(f_line) and f_vuln == t_vuln:
+                        common_vulnerabilities.append(tag)
+        print(common_vulnerabilities)
 
     common_vulnerabilities = set(common_vulnerabilities)
     return '; '.join(common_vulnerabilities) if common_vulnerabilities else None
@@ -105,44 +104,39 @@ def get_unique_vulnerabilities(result_df):
         },
     }
 
+    total = 0
     group_df = result_df.groupby('contract')
+    print(f"LEN OF GROUP DF: {len(group_df)}")
     for contract, group in group_df:
         print(f"\nContract: {contract}")
         common = []
-        unique_values = None
 
         for _, row in group.iterrows():
             print(row['tool'], row['contract'], row['common_vulnerabilities'])
-            common.append(set(row['common_vulnerabilities'].split(';')))
-        if len(common) == 1:
-            unique_values = common[0]
-        elif len(common) == 2:
-            unique_values = common[0] ^ common[1]
-        elif len(common) == 3:
-            union_all = common[0].union(*common[1:])
-            intersection_all = common[0].intersection(*common[1:])
-            unique_values = union_all - intersection_all
+            vulns = row['common_vulnerabilities'].split(';')
+            common.extend([vuln.strip() for vuln in vulns])
+        print(f"common: {common}")
+        vuln_counts = Counter(common)
+        unique_vulns = [vuln.strip() for vuln in common if vuln_counts[vuln] == 1]
+        print(f"unique: {unique_vulns}")
 
-        if unique_values:
+        if unique_vulns:
             for _, row in group.iterrows():
                 vulnerabilities = set(row['common_vulnerabilities'].split(';'))
+                print(f"vulnerabilities: {vulnerabilities}")
                 for vulnerability in vulnerabilities:
-                    if vulnerability in unique_values:
+                    if vulnerability.strip() in unique_vulns:
+                        print(f"Tool: {row['tool']}")
                         tool = row['tool']
                         vuln = vulnerability.split(': ')[1]
                         unique_vulnerabilities[tool][vuln] += 1
+                        total += 1
 
-        print(common)
-        print(unique_values)
     print(f"\nRESULTS:"
-          f"\nconkas{unique_vulnerabilities['conkas']}"
-          f"\nslither{unique_vulnerabilities['slither']}"
-          f"\nsmartcheck{unique_vulnerabilities['smartcheck']}")
-    total = 0
-    for tool in unique_vulnerabilities.keys():
-        for key in unique_vulnerabilities[tool].keys():
-            total += unique_vulnerabilities[tool][key]
-    print("Total: ", total)
+          f"\nconkas{unique_vulnerabilities['conkas']}\n"
+          f"\nslither{unique_vulnerabilities['slither']}\n"
+          f"\nsmartcheck{unique_vulnerabilities['smartcheck']}\n"
+          f"\nTotal: {total}")
 
 
 if __name__ == '__main__':
