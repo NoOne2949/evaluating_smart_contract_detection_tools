@@ -13,7 +13,7 @@ def read_contract_and_ask_gpt(path):
 
     for index, row in df[:1].iterrows():
 
-        address = row["source"] + '/' + row["path"]
+        address = row["contract"]
         source_code = row["source_code"]
         start_time = time.time()
         vulnerabilities = ask_gpt(source_code)
@@ -79,5 +79,4 @@ def ask_gpt(code):
         print("Error:", response.status_code, response.text)
 
 
-read_contract_and_ask_gpt(
-    "../../../filtered_datasets/study_context/sbresult_manual_analysis.csv")
+read_contract_and_ask_gpt("../csvs/sample_of_interest.csv")
