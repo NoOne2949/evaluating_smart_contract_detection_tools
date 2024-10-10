@@ -1,9 +1,9 @@
 import time
-
 import pandas as pd
 import requests
+import json
 
-openai_api_key = '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'
+openai_api_key = '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'
 
 
 def read_contract_and_ask_gpt(path):
@@ -11,10 +11,12 @@ def read_contract_and_ask_gpt(path):
 
     gpt_analysis = []
 
-    for index, row in df[:1].iterrows():
+    for index, row in df[:200].iterrows():
+        if row["label"] != 'smartbugs_results':
+            continue
 
         address = row["contract"]
-        source_code = row["source_code"]
+        source_code = row["contract_code"]
         start_time = time.time()
         vulnerabilities = ask_gpt(source_code)
         end_time = time.time()
@@ -26,9 +28,10 @@ def read_contract_and_ask_gpt(path):
                            "Vulnerabilities": vulnerabilities,
                            "Time": passed_time}
             gpt_analysis.append(found_vulns)
-
+            break
     df = pd.DataFrame(gpt_analysis)
-    df.to_csv("../../../filtered_datasets/study_context/gpt_analysis/sbr_sample_gpt.csv", index=False)
+    path = "../gpt_analysis/sb_results/smartbugs_results_gpt_analysistest.csv"
+    df.to_csv(path, index=False)
 
 
 def ask_gpt(code):
@@ -41,31 +44,25 @@ def ask_gpt(code):
         "Content-Type": "application/json",
         "Authorization": f"Bearer {openai_api_key}"
     }
+    print(code)
 
     data = {
-        "model": "gpt-3.5-turbo",
+        "model": "gpt-4",
+        "temperature": 0,
         "messages": [
             {
                 "role": "system",
-                "content": "You are a smart contract expert, and you're great in finding security vulnerability."
-                           " Your role is to find vulnerabilities in the provided smart contracts, please follow the "
-                           "DASP Top 10 taxonomy, which encompass Reentrancy, Access Control, Arithmetic, Unchecked "
-                           "Return Values For Low Level Calls, Denial of Service, Bad Randomness, Front Running, "
-                           "Time Manipulation and Short Addresses."
+                "content": "You are a smart contract expert specializing in finding security vulnerabilities. Use the DASP Top 10 taxonomy, including Reentrancy, Access Control, Arithmetic, Unchecked Return Values For Low-Level Calls, Denial of Service, Bad Randomness, Front Running, Time Manipulation, and Short Addresses."
             },
             {
                 "role": "user",
-                "content": "Here's the Smart Contract code: "
-                           + code + "Please give me only the number of line of code which is vulnerable. "
-                                    "Don't you dare to give me any other information or use other vulnerability class."
-                                    " You MUST follow this result "
-                                    "pattern: line: vulnerability; line: vulnerability; moreover, please follow the "
-                                    "DASP Top 10 taxonomy. Remember to follow the provided pattern, do not add other"
-                                    " sentences or words, do not use lists, follow the result pattern!"
-
+                "content": f"Analyze the following Smart Contract code: {code}. Provide only the line numbers and the type of vulnerability in this format: '34: reentrancy; 41: access control;'. If no vulnerabilities are found, respond with 'no'. Do not include any additional information or use any other vulnerability class outside of the DASP Top 10. Stick to the pattern and format exactly as instructed."
             }
         ]
     }
+
+    print(data["messages"])
+
 
     response = requests.post(url, headers=headers, json=data)
 
@@ -79,4 +76,5 @@ def ask_gpt(code):
         print("Error:", response.status_code, response.text)
 
 
-read_contract_and_ask_gpt("../csvs/sample_of_interest.csv")
+# Esegui la funzione con il file specificato
+read_contract_and_ask_gpt("../csvs/sample_of_interest_with_code.csv")

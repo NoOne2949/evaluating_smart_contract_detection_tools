@@ -1,0 +1,656 @@
+Path,Vulnerabilities,Time
+0xA14d964FB52BF333888D162E9CAF8cC7F090CDe4,8: access control;,1.4945991039276123
+0x4AB274FC3A81B300A0016b3805d9b94C81FA54d2,5: access control; 17: arithmetic; 35: bad randomness;,1.5909600257873535
+0xebc7FdCE290D380a295D6024B56B4d7Fe410F53E,13: access control; 29: access control; 35: access control; 39: access control; 43: access control; 50: access control; 55: access control; 59: access control; 62: access control;,2.466127872467041
+0x160564d346f6e9fb3d93c034f207ecf9791b7739,3: access control; 24: access control; 28: access control;,1.4988200664520264
+0xfabe292d8019bfa02e5fead2c78ef71a1bf35ce8,no;,1.875537872314453
+0xb20bb2780a6ae9e399e805ce4f60321245f7a0db,"12: unchecked; 
+26: unchecked; 
+43: unchecked; 
+49: unchecked; 
+59: unchecked;",2.8488337993621826
+0xc6c4c7826D44ABF22c711E8E86bDC3f5242d2182,no;,4.082258939743042
+0xCF0c7e3Ad3b2C82BdDd286A301aFaAFd185F30EC,24: access control; 30: access control; 40: reentrancy; 52: arithmetic; 59: unchecked;,2.1097898483276367
+0x8af7243f9a173ad8ca6c8a3a053f0182c5352d15,"8: access control
+11: arithmetic
+17: arithmetic
+19: access control
+24: arithmetic
+26: arithmetic
+35: access control;",1.6703989505767822
+0x3aaaf1c542b365e47f13ab62497f020eee45f747,4: unchecked; 22: bad randomness;,1.559800148010254
+0x6e7f987907320630b7880Eecc26B17C0D9afa7b4,"7: access control;
+25: access control;
+30: access control;
+35: access control;",1.5054967403411863
+0x354b10083a2d6b8bd18ddd390fac7bcdede8a839,"7: access control;
+25: access control;
+37: access control;
+49: access control;",1.4515230655670166
+0x1f0b9Db5bb0F2a60F8C8824CEc738C15805dBDec,6: uninitialized variables; 11: uninitialized variables; 16: arithmetic; 22: arithmetic; 27: arithmetic; 34: arithmetic; 39: arithmetic; 44: arithmetic; 49: arithmetic; 60: fallback function;,2.520656108856201
+0xd41f3b51e0c2d825a1178582d27c84dbfe48d1af,20: arithmetic;,0.756519079208374
+0xa8fa462e08282f48756a672a03d0e10e154ed2af,no;,2.20939302444458
+0x37c0f21f9dc15be832d06a3c79ee45d16f9ed1d6,22: access control; 28: access control; 66: access control; 81: access control; 92: access control;,1.7859508991241455
+0x06Bb6701983E126f31a4C20d6bECB12dfD70709E,"5: access control;
+12: access control;
+13: access control;
+16: access control;
+37: unchecked;
+40: reentrancy;",1.5802056789398191
+0xff95FBB77852C846724CE4Fa140Ca25f31A90bb0,"34: access control
+47: access control
+50: access control
+54: access control
+76: access control
+80: access control
+81: access control
+99: access control
+122: access control
+127: access control;",2.6247119903564453
+0xa0fD10BE97Cca603450373CDfAEb08316e684360,21: access control; 43: access control; 54: access control; 64: access control; 76: access control; 80: access control;,2.142342090606689
+0x30e1a463ecf25dbba2f83cb3e4b10045f888e55b,"12: unchecked;
+24: access control;
+30: access control;
+39: access control;
+48: access control;
+57: access control;
+",3.834232091903688
+0x8a70cf25cf32e728be9e30c20b2781f60cb0ed6d,26: reentrancy;,4.825783967971802
+0x2a106e06cd26fad93f732daa4218fce4eac6d6d8,36: arithmetic;  54: unchecked;  64: access control;,1.423565149307251
+0xee2157c15a43be80faac64801ed89c8d8e2c4d3a,4: access control;,2.764970064163208
+0xe3B6638F0C1C0FA37282FAb6eF9457e457A1E9a8,9: reentrancy; 16: denial of service;,4.617943048477173
+0x6439e643dc316ac4108ebdc6c364a65994b6b1ff,20: denial of service;  37: access control;  53: access control;  67: access control;  82: access control;  97: access control;  103: access control;  114: bad randomness;  125: unchecked;  138: access control;,3.587143898010254
+0x43d0111ec0584381077a598a1cc5c1fc72722e6c,7: access control;,0.9255123138427734
+0x6aC85d0408044AfB786a6d631d4D3426Ce0E031a,6: access control; 18: unchecked; 28: access control; 34: unchecked;,1.6355361938476562
+0x888666ca69e0f178ded6d75b5726cee99a87d698,"3: access control;
+14: access control;
+37: access control;
+39: access control;",1.9790217876434328
+0x80f84866d4872f1ea412ddf10e2ed7af0b8ca8fb,3: access control; 16: short addresses; 21: arithmetic; 28: access control; 36: access control; 43: access control; 46: bad randomness; 53: unchecked;,2.4255306720733643
+0xc9c1bfb27e97531ecfe005faa2b2ed4828b08a0b,14: access control; 24: access control; 38: denial of service; 42: denial of service; 51: arithmetic; 59: short addresses; 66: access control; 81: access control; 86: access control; 91: access control; 98: access control; 103: access control; 108: access control; 115: access control; 120: access control; 132: access control; 140: access control; 147: access control; 154: access control; 159: access control; 165: access control; 172: access control; 176: access control;,5.198073863983154
+0x8C95e60A62b8d71CC557F1fd0f9Ce011b83F8d68,3: unchecked; 23: unchecked;,3.916577100753784
+0x4c465715e56f95cc9623144d1378bdd044dd3e1e,14: unchecked; 29: access control; 36: access control;,1.278899908065796
+0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680,85: short addresses;,2.1415789127349854
+0xb4e348c10b8f1dcf2b5bc524f1f2ab912fde4048,8: denial of service; 17: denial of service; 31: denial of service; 36: denial of service; 44: denial of service; 49: denial of service; 58: denial of service; 64: denial of service; 74: denial of service; 83: denial of service; 93: denial of service; 101: denial of service; 104: denial of service; 111: denial of service; 115: denial of service; 123: denial of service; 128: denial of service; 133: denial of service; 143: denial of service; 152: denial of service; 159: denial of service; 161: denial of service; 165: denial of service; 166: denial of service; 168: denial of service; 170: denial of service; 172: denial of service; 174: denial of service; 175: denial of service; 177: denial of service; 179: denial of service; 181: denial of service; 182: denial of service; 185: denial of service; 198: denial of service; 205: denial of service; 206: denial of service; 208: denial of service;,9.85494089126587
+0xf884e0096f826f82d9999dc11becb836dbb7c1f7,no,1.9945330619812007
+0x600ad7b57f3e6aeee53acb8704a5ed50b60cacd6,NO,1.056873083114624
+0x401e28717a6a35a50938bc7f290f2678fc0a2816,5: information leakage; 30: unchecked; 45: unchecked; 57: unchecked; 77: unchecked; 89: unchecked; 106: unchecked; 119: unchecked; 130: unchecked; 144: unchecked; 155: unchecked;,4.603877067565918
+0x2bcca955c9200c9a5f888bc2b14b91aaa56cd5c5,no;,1.1251230239868164
+0x7da82c7ab4771ff031b66538d2fb9b0b047f6cf9,5: reentrancy; 28: access control; 49: unchecked; 80: denial of service; 105: time manipulation;,1.7249619960784912
+0xc75175d7de7e8036f7c00a8e89f30dcf6e733f2e,8: unchecked; 13: unchecked; 18: unchecked; 23: unchecked; 33: unchecked; 52: unchecked; 71: unchecked; 82: unchecked; 92: unchecked; 99: unchecked; 103: unchecked; 119: unchecked; 131: unchecked;,7.480396032333374
+0x5d4c95284d7b0a271c2c030cf803b24646ee0dcb,"3: access control;
+68: access control;",2.0939340591430664
+0x460dc8b70a189bee176d22d3f0272d171bd4c5ed,22: time manipulation; 26: short addresses;,2.1176059246063232
+0xe5544a2a5fa9b175da60d8eec67add5582bb31b0,4: unchecked; 43: reentrancy; 65: unchecked; 69: unchecked; 72: unchecked; 84: arithmetic; 87: unchecked; 90: denial of service; 92: bad randomness; 101: unchecked; 111: unchecked; 132: unchecked; 137: front running; 138: access control; 144: time manipulation;,6.62545371055603
+0x70A8629c1B9A50133C5325502232Bd54447BEeE7,33: reentrancy;,1.007563829421997
+0xcf00354366bca2f2cd49007bfaeac49d97463200,17: unchecked; 18: unchecked; 46: unchecked; 47: unchecked; 59: unchecked; 60: unchecked; 74: unchecked; 75: unchecked; 83: unchecked; 97: unchecked;,4.513031005859375
+0xb4e7fc7f59c2ec07aee08c46241d7b47de4cec06,"50: reentrancy
+ 58: reentrancy
+ 65: reentrancy
+ 82: reentrancy
+ 93: reentrancy
+ 121: access control
+ 132: access control
+ 149: access control
+ 155: access control
+ 160: access control
+ 177: access control
+ 186: access control
+ 197: arithmetic
+ 201: arithmetic
+ 206: arithmetic
+ 209: arithmetic
+ 247: unchecked
+ 263: unchecked
+ 266: unchecked
+ 273: unchecked
+ 275: unchecked
+ 291: unchecked
+ 292: unchecked
+ 315: denial of service
+ 344: denial of service
+ 372: denial of service
+ 378: bad randomness
+ 389: bad randomness
+ 399: bad randomness
+ 400: bad randomness
+ 402: bad randomness
+ 411: bad randomness
+ 423: bad randomness
+ 427: bad randomness
+ 451: bad randomness
+ 453: bad randomness
+ 478: time manipulation
+ 493: time manipulation
+ 512: time manipulation
+ 545: short addresses;",11.506205081939695
+0x28dcd428e8125990f9e5fe1b82db0e3ed240711c,79: unchecked;,1.074092149734497
+0x4ed985e2da341e276bbf7782f2e1e30689d33c89,14: access control; 49: access control; 57: access control;,1.220947027206421
+0x87E093F4A39BC0F486f59e45Af64D2D669D61b5B,"8: access control
+15: access control
+21: access control
+22: access control
+25: access control
+30: access control
+37: access control
+43: access control
+47: access control
+58: access control
+67: access control
+75: access control
+87: access control;",2.6074581146240234
+0x8c0a599d3ff4d3344cb93ae49247c11b645c5e44,5: unchecked; 8: unchecked; 11: unchecked; 19: unchecked; 39: unchecked; 45: unchecked; 70: unchecked; 80: unchecked; 88: unchecked; 98: unchecked; 112: unchecked; 118: unchecked; 133: unchecked; 135: unchecked; 147: unchecked; 148: unchecked; 159: unchecked; 166: unchecked; 178: unchecked; 183: unchecked; 196: unchecked;,8.8076491355896
+0xbf7316fab5c8cfbda5e763a5a1f94c4e0ce7ec37,"5: access control;
+27: access control;
+36: access control;
+54: access control;
+59: access control;
+71: access control;
+75: access control;
+85: access control;
+102: access control;
+108: access control;
+114: access control;
+120: access control;",2.8472187519073486
+0x04daec4e1fc6a4b4555b509b7c5c673ebad29f1f,1: arithmetic; 12: arithmetic; 15: arithmetic; 30: arithmetic; 33: arithmetic; 49: arithmetic;,2.712226867675781
+0x9047ef7c3d52956dd0909c1c1e011e986ce60691,2: access control; 8: access control; 34: reentrancy; 51: reentrancy; 68: reentrancy; 73: reentrancy; 29: arithmetic; 38: arithmetic; 55: arithmetic; 62: arithmetic; 21: denial of service; 78: denial of service; 84: denial of service; 15: bad randomness; 31: bad randomness; 40: bad randomness; 47: bad randomness; 50: bad randomness; 58: bad randomness; 65: bad randomness; 72: bad randomness; 14: time manipulation; 28: time manipulation; 41: time manipulation; 45: time manipulation; 54: time manipulation; 59: time manipulation; 64: time manipulation; 69: time manipulation; 26: short addresses; 43: short addresses; 66: short addresses;,8.570031881332397
+0xb12C7DF9F092814e7863b65035Eb14D19FA61faF,70: reentrancy;,1.1854779720306396
+0x44FB2663d37e36e4a2B4b865D9ec832e5Da6A016,8: unchecked;,1.1372101306915283
+0xe8200511F3C276fA7300719f9B45301Bc471f4fB,5: access control; 26: unchecked;,1.686149835586548
+0x45e42d659d9f9466cd5df622506033145a9b89bc,7: unchecked; 37: unchecked;,2.2909860610961914
+0x4993CB95c7443bdC06155c5f5688Be9D8f6999a5,13: access control;,0.7536578178405762
+0xe2e4d0d3410cd3e81bfcb7dad364dd168bb499f3,13: unchecked; 17: unchecked;,2.417244911193848
+0x111cc94a5dabdf192c5106fadc844a98b0f56be0,24: access control; 33: access control;,0.9680829048156738
+0x76e580f75BF01bfFbF4f44167d5822346de4f176,"5: unchecked;
+19: unchecked;
+23: unchecked;
+49: arithmetic;
+60: arithmetic;
+64: arithmetic;",2.498605251312256
+0x53fDf0c63b87F2Db6e2C58AB05a8a3c39d7d8D49,48: access control;  57: access control;  63: access control;,1.3623669147491455
+0xc3ef562cc403c8f9edf7c3826655fbf50f4ddde8,"6: access control;
+20: access control;
+25: access control;
+35: access control;
+40: access control;
+45: access control;",1.6080200672149658
+0x5c40ef6f527f4fba68368774e6130ce6515123f2,"45: unchecked;
+47: unchecked;
+31: access control;
+51: access control;
+8: short addresses;",3.483330011367798
+0x1dea4cA1Ca2A2c946B233a227883ef6846CF17d5,14: arithmetic; 41: arithmetic;,1.4280672073364258
+0xd8f1da4a236c4d6f310c02dedc049b69277b7c80,5: arithmetic; 11: arithmetic;,1.327355146408081
+0x2bd2326c993dfaef84f696526064ff22eba5b362,6: time manipulation;,0.7757060527801514
+0xee4e09a72c5f8d60ce09b4b90dd1ee680fc375fe,no;,1.722930908203125
+0x50cb0011a52a8415deae370301d78369e6089fa2,10: access control;,0.7596518993377686
+0x5dc8108fc79018113a58328f5283b376b83922ef,3: access control;,1.6502280235290527
+0xfd39bd49ab3df4eda75a23807dab186d4902f924,5: access control;,1.5004689693450928
+0xF3f2BbbBD5a1986944C6A4B9C8B37004E04dc8F6,5: access control;,1.2346091270446775
+0x341f8e038ee688ac2e76af210035696eab0a4f66,6: access control; 14: access control;,1.3864350318908691
+0x763465c2114e33886e1574e5994df1bb8cd5f160,3: access control; 14: access control;,1.5753657817840576
+0xF5b86B8a7d3Ad269eDFf19e2f2D0C59b42AEFb13,14: unchecked;,1.4659340381622314
+0x022f41a91cb30d6a20ffcfde3f84be6c1fa70d60,6: unchecked;,2.6059370040893555
+0xf690f0ee16bb8f67c4f8a8d9e116f77cf3acf166,NO;,2.000463962554932
+0xf6d9979499491c1c0c9ef518860f4476c1cd551a,6: access control; 19: access control; 28: access control;,1.2332561016082764
+0x0e08f0daee46e772eee7999c5b6d7d0401d8d72b,no;,0.926865816116333
+0xe9da10f1aba727bfb3641846ed4d5bbf2add39c4,4: unchecked;,1.3878929615020752
+0x0b0e47119bf5495dfcd9264916a9fe3481cd24c7,5: reentrancy;,1.696274995803833
+0x629469c8db3a4d7bcc3a823effcf8900119ba7e7,7: unchecked;,1.5774579048156738
+0x212590b04bfc83befc4b88bb3ecbc4f1446e15f4,3: access control; 12: denial of service;,1.46990704536438
+0x882fb4240f9a11e197923d0507de9a983ed69239,6: arithmetic;,0.7521848678588867
+0x97680599b29491dF74c15ad129c635D9ebAa03b8,5: access control; 11: access control; 12: access control;,1.030064344406128
+0x8154ae317a767e69d7f427aebdfbdddadcd5cf48,2: access control;,1.2334308624267578
+0xeb3c1a7f816da958a0f8b9f4ef63a19b26d03739,4: denial of service;,2.086703062057495
+0x7f6d05523908a9688eab8ab8bbc7842e3d453bfb,Unable;,2.227708101272583
+0xc54d1a03e5fc1558d4a95e9fbbb2423f02168c23,Unable;,2.204008102416992
+0xdb22939e20A4C41cd7e2b9B325ce452B36c80dd9,4: denial of service;,0.8381140232086182
+0x6467687d8aaacd7239ee639c8808624013997b92,5: access control; 11: access control;,9.310518026351929
+0x62854fc64d74b7eb5e4d0a2910e277ffb4d3d1e3,6: access control; 16: access control;,1.4721720218658447
+0xbf54d498760fe8e8f4dff031b783362de7043cb4,Unable;,2.9448556900024414
+0x509F5Ca1C64F0F0A63E5C28aDB3398a3c3ec13cf,NO;,1.8396110534667969
+0x921a8142872f1b76d9288b37fcea6d52ebd41562,6: unchecked;,0.9141349792480468
+0x488690160a80702e6b8e47c7d62ec2779eb5f240,NO;,3.102792263031006
+0x7f9af66163461009e9a4c57f6d3c6421bc47a663,7: reentrancy;,0.8356599807739258
+0xce1555c4fc4ddc2d87183d1a36e0a410e565624d,3: unchecked;,1.5253372192382812
+0x7b9e81ec3591b570aa2c9fbec77f7dda76ac4f6d,Unable;,1.4032869338989258
+0xF2289a55cd754D3b586CAc1675E1c157A36637BB,6: unchecked;,1.5402178764343262
+0x52070b253406fc4F2bf71dBaF910F66c45828DBA,no;,1.4390337467193604
+0xad2D970EDFF30d8f166989470aaF4BE3Ff6375aE,63: access control;  75: access control;  83: access control;  100: access control;  109: access control;  134: access control;,2.400062084197998
+0x6d2f190e6fd3bece517cb817254e8411249656a6,14: reentrancy; 48: access control; 92: unchecked;,1.9060392379760744
+0xf53E7f01371C6fc0E1c821d3c3C8b30Be366BB6E,21: unchecked;,0.9381980895996094
+0xbe87e87965b96d8174eae4e3724a6d7417c488b0,"15: bad randomness
+25: reentrancy
+34: access control
+44: unchecked
+51: time manipulation;",1.7665207386016846
+0x06194c50a5a85bb1fee0e73877eefdef64466514,85: access control;  85: access control;,1.19750714302063
+0xb98fdd97f3da105e6b166461afac208981bc786b,"8: access control;
+23: access control;
+25: access control;
+31: access control;
+43: access control;
+50: access control;
+65: access control;",1.8641448020935056
+0x5bdf79f1e7431edb75537d23d3b404ef86f44316,"82: reentrancy ;
+ 108: reentrancy ;",2.777850866317749
+0xba3e14a7f0169d86fc1389ad40ca4356a1404640,"3: unchecked;
+5: access control;",1.1166858673095703
+0x90aa6fb2c2ab2c9e3fd5634c054d636c708cd5f3,"6: access control;
+49: access control;
+77: arithmetic;
+96: unchecked;
+103: reentrancy;
+113: denial of service;
+121: denial of service;
+135: reentrancy;
+145: denial of service;
+159: reentrancy;
+169: denial of service;",4.440304756164551
+0xcab39d1c7383fc9682a1221bffacbce2bdd967ca,"8: access control;
+16: access control;
+18: access control;
+23: access control;
+30: access control;
+35: access control;
+41: access control;
+48: access control;
+66: access control;
+73: access control;
+79: access control;
+88: access control;",3.162900924682617
+0x6b63ea3612dde97082aab468157950f927618d31,"53: access control;
+ 71: access control;
+ 75: unchecked;
+ 78: unchecked;
+ 84: access control;
+ 88: access control;
+ 93: access control;
+ 100: unchecked;
+ 109: access control;
+ 117: access control;
+ 121: unchecked;
+ 131: access control;
+ 145: access control;
+ 160: access control;
+ 182: access control;
+ 192: access control;
+ 199: access control;
+ 225: reentrancy;
+ 238: reentrancy;
+
+please note that these are the  numbers of the vulnerable code, not the original  numbers of the entire smart contract;",7.789314031600952
+0xE01B770235Bc5db653604e5519F048dF54490B5f,"5: access control;
+16: access control;
+20: access control;
+25: access control;
+50: access control;
+72: access control;",2.43402099609375
+0xd23f2533B726C9Cb1Fb9ed109b82e5A8F01c881e,NO;,3.320307970046997
+0xf184279e6d4654890b4410cf300ed55600f018be,"57: bad randomness;
+ 77: denial of service;
+ 94: access control;
+ 112: access control;
+ 123: access control;
+ 142: denial of service;",2.8947250843048096
+0x83d904a2489bae727c1037469206891d8d058d92,4: access control; 35: access control; 41: access control; 47: access control; 57: access control; 62: access control; 70: access control; 73: access control; 81: access control; 93: access control; 103: access control; 116: access control; 131: access control; 137: access control; 140: access control; 150: access control; 160: access control; 166: access control; 173: access control; 176: access control; 183: access control; 195: access control; 206: access control; 227: access control; 240: access control; 243: access control; 248: access control; 254: access control; 264: access control; 276: access control; 280: access control; 282: access control; 290: access control; 293: access control; 298: access control; 304: access control; 309: access control; 319: access control; 336: access control; 345: access control; 360: access control; 366: access control; 369: access control; 375: access control; 400: access control; 411: access control; 418: access control;,10.076827049255373
+0x3B6d241e1b38776C2eFE944E7012239ed59334c1,10: access control;,0.7506499290466309
+0xade85d1796008281dbf4baaedb2790d3fea8d89d,"8: access control;
+10: access control;
+16: access control;
+36: access control;
+53: access control;
+65: access control;
+72: access control;
+75: access control;
+84: access control;",5.925740003585815
+0xfa7b9770ca4cb04296cac84f37736d4041251cdf,10: access control; 28: access control;,1.0186970233917236
+0x873c58020bcb114b4fea456cef93aaf58e8e305d,2: unchecked; 19: unchecked; 24: unchecked; 56: access control;,1.7817888259887695
+0x3efd578b271d034a69499e4a2d933c631d44b9ad,13: arithmetic;,1.434092998504639
+0x74Aca0F1a40F7e0F3845DadF52C65060dE7749AF,"55: reentrancy;
+ 72: reentrancy;",1.125946044921875
+0x2c875e5ea4706b1978a41b59edf2d3af31d60e70,16: access control; 36: unchecked; 50: unchecked; 60: denial of service; 73: unchecked;,3.245915174484253
+0x08711d3b02c8758f2fb3ab4e80228418a7f8e39c,26: unchecked; 31: reentrancy; 54: arithmetic; 64: bad randomness; 70: time manipulation; 89: reentrancy;,2.156890153884888
+0xdb6d68e1d8c3f69d32e2d83065492e502b4c67ba,"17: denial of service;
+26: access control;
+32: arithmetic;
+34: unchecked;
+40: front running;
+56: access control;",2.9194018840789795
+0x84d50ebf4737331fb41ff9e3c6c324262c5b661c,6: access control; 15: access control; 20: access control; 22: access control; 25: access control; 28: access control; 37: access control; 40: access control; 43: access control; 47: access control; 51: access control; 55: access control; 70: access control; 89: access control; 90: access control; 99: access control; 119: access control; 133: access control; 148: access control; 150: access control; 152: access control; 153: access control; 154: access control; 165: access control; 168: access control; 169: access control; 170: access control; 183: access control; 187: access control; 188: access control; 189: access control; 191: access control; 201: access control; 205: access control; 206: access control; 215: access control; 218: access control; 219: access control; 220: access control;,8.084205865859985
+0x4bd4afa9b213b5184c995aaef4982ce564121d20,7: unchecked; 25: access control; 45: access control;,1.377587080001831
+0x23141df767233776f7cbbec497800ddedaa4c684,3: time manipulation; 4: arithmetic; 10: access control;,1.0360729694366455
+0xd43cbd8a74535327a8a196ea36cd44fc799ca289,2: unchecked; 3: access control; 12: unchecked;,2.6105551719665527
+0x1c3c643f49be262c3040e917e7d2299b9bc081a1,1: time manipulation;,0.7262058258056641
+0x3e72548c1535beadcdf084ec13fd7850c49050ed,"6: access control;
+10: reentrancy;
+25: access control;",2.644073009490967
+0x124446eff5787b036aa062a2ef5321ce607437ba,"4: access control;
+24: denial of service;",1.9964191913604736
+0x5Bc7e5694ee5D6ea32A0dA36EFb56A177190A53a,17: access control; 22: access control; 36: access control;,1.9701099395751955
+0xe8e506306ddb78ee38c9b0d86c257bd97c2536b3,"10: access control;
+23: access control;
+27: access control;
+39: access control;
+43: access control;
+",2.09710693359375
+0xcd820a2f792f429bf95e6d0de909d06110b44123,9: reentrancy; 17: access control; 24: access control;,1.0839040279388428
+0x8d7b6fb1523f04e644085e14d5e49b1c6278c92e,"4: access control; 
+11: denial of service; 
+15: denial of service; 
+17: denial of service; 
+25: unchecked; 
+33: arithmetic; 
+38: arithmetic;",2.6991610527038574
+0xaBbb6bEbFA05aA13e908EaA492Bd7a8343760477,"4: reentrancy ;
+10: unchecked ;",1.4298031330108645
+0x39aa4006ee5941c0c0e41b924fdafcb2c4c918e8,Unable;,1.3427331447601318
+0xBDf12A64B482D292f6a45eb8db1809ABCD1bB8d1,"8: access control;
+18: access control;",2.272810935974121
+0x75f398D5B9E92D17EE307268c28779DA26508F54,"7: access control;
+18: access control;
+23: unchecked;
+29: unchecked;
+34: unchecked;
+39: arithmetic;
+44: arithmetic;
+45: arithmetic;
+47: arithmetic;
+52: arithmetic;
+57: denial of service;
+62: denial of service;
+70: denial of service;
+72: denial of service;
+73: denial of service;
+75: denial of service;
+82: denial of service;
+91: denial of service;
+92: denial of service;
+94: bad randomness;
+106: bad randomness;
+113: bad randomness;
+119: bad randomness;
+125: bad randomness;
+131: front running;
+134: front running;
+137: front running;
+141: front running;
+148: time manipulation;",7.377234935760498
+0x6adF9E666e3e85876B1Ba25eDB31799FaAd8417b,5: unchecked; 13: unchecked;,2.102191925048828
+0x319af0f8552e2caceb6a8b2541ef00239a6ae1cc,no;,1.5914249420166016
+0x82df5022fbcfdd877830371d7713f0181a554c9c,5: access control; 14: denial of service; 19: arithmetic;,1.5665769577026367
+0xaced90c414006b622a4b1ce74fa34b1f650ab319,"28: reentrancy;
+40: access control;
+44: access control;
+48: arithmetic;
+57: arithmetic;
+64: arithmetic;
+101: arithmetic;",9.888444900512695
+0x911143d946ba5d467bfc476491fdb235fef4d667,87: reentrancy;  102: reentrancy;  111: reentrancy;  156: access control;  189: access control;  199: access control;  241: access control;  242: access control;  248: access control;  258: access control;  289: access control;  294: access control;  300: access control;  305: access control;  329: access control;  334: access control;  340: access control;  417: access control;  437: access control;  467: access control;  469: access control;  475: access control;  496: access control;  523: access control;  547: access control;  551: access control;  565: access control;  567: access control;  569: access control;  571: access control;  573: access control;  576: access control;  593: access control;  614: access control;  615: access control;  625: access control;  665: access control;  672: access control;  674: access control;  678: access control;  680: access control;  687: access control;  701: access control;  713: access control;  716: access control;  740: access control;  744: access control;  749: access control;  754: access control;  757: access control;  760: access control;  762: access control;  765: access control;  774: access control;  776: access control;  787: access control;  789: access control;  791: access control;  793: access control;  798: access control;  800: access control;  803: access control;  812: access control;  823: access control;  852: access control;  854: access control;  860: access control;  868: access control;  893: access control;  899: access control;  901: access control;  920: access control;  944: access control;  947: access control;  962: access control;  964: access control;  982: access control;  1000: access control;  1021: access control;  1030: access control;  1054: access control;  1095: access control;  1104: access control;  1142: access control;  1149: access control;  1173: access control;  1178: access control;  1185: access control;  1191: access control;  1193: access control;  1198: access control;  1215: access control;  1226: access control;  1232: access control;  1246: access control;  1248: access control;  1251: access control;  1260: access control;  1291: access control;  1318: access control;  1351: access control;  1390: access control;  1396: access control;  1419: access control;  1425: access control;  1449: access control;  1454: access control;  1458: access control;  1464: access control;  1468: access control;  1470: access control;  1472: access control;  1475: access control;  1484: access control;  1486: access control;  1489: access control;  1498: access control;  1529: access control;  1546: access control;  1579: access control;  1603: access control;  1636: access control;  1640: access control;  1672: access control;  1690: access control;  1718: access control;  1722: access control;  1740: access control;  1742: access control;  1747: access control;  1752: access control;  1755: access control;  1760: access control;  1781: access control;  1792: access control;  1798: access control;  1799: access control;  1808: access control;  1833: access control;  1835: access control;  1862: access control;  1889: access control;  1916: access control;  1947: access control;  1978: access control;  2008: access control;  2040: access control;  2072: access control;  2102: access control;  2135: access control;  2168: access control;  2200: access control;  2234: access control;  2265: access control;  2296: access control;  2331: access control;  2366: access control;  2384: access control;  2412: access control;  2443: access control;  2474: access control;  2504: access control;  2535: access control;  2566: access control;  2623: access control;  2644: access control;  2676: access control;  2707: access control;  2739: access control;  2770: access control;  2801: access control;  2832: access control;  2863: access control;  2897: access control;  2923: access control;  2955: access control;  2986: access control;  3017: access control;  3048: access control;  3079: access control;  3110: access control;  3135: access control;  3140: access control;  3142: access control;  3147: access control;  3161: access control;  3163: access control;  3165: access control;  3169: access control;  3179: access control;  3181: access control;  3183: access control;  3185: access control;  3188: access control;  3191: access control;  3194: access control;  3197: access control;  3201: access control;  3203: access control;  3205: access control;  3207: access control;  321;,51.73051381111145
+0x2a650356bd894370cc1d6aba71b36c0ad6b3dc18,16: access control;,7.548363924026489
+0xa3d4d7df3988d48c48728787cb5910a8a4cc4d26,"11: access control;
+16: access control;
+33: access control;
+36: access control;
+48: access control;
+58: access control;
+85: access control;
+109: access control;
+127: access control;
+136: access control;
+142: access control;
+163: access control;
+185: access control;",4.42385721206665
+0xb961339f6f7f3b020255d9281fdd3bf2eb9b4d1e,"9: access control;
+11: access control;
+53: time manipulation;
+65: access control;
+71: access control;
+81: access control;
+88: access control;
+92: access control;
+95: access control;
+100: access control;
+101: access control;
+106: access control;
+110: access control;
+120: access control;
+121: access control;
+124: access control;
+138: access control;
+141: access control;
+142: access control;
+144: access control;
+147: access control;
+150: access control;
+157: access control;
+166: access control;
+199: access control;
+201: access control;
+214: access control;
+221: access control;
+228: access control;
+233: access control;
+242: access control;
+244: access control;
+256: access control;
+267: access control;
+276: access control;
+306: access control;
+307: access control;
+314: access control;
+329: access control;
+336: access control;
+338: access control;
+349: access control;
+351: access control;
+352: access control;
+355: access control;
+359: access control;
+371: access control;
+385: access control;
+398: access control;
+400: access control;
+419: access control;
+420: access control;
+424: access control;
+428: access control;
+431: access control;
+434: access control;
+437: access control;
+451: access control;
+454: access control;
+456: access control;
+457: access control;
+463: access control;
+468: access control;
+470: access control;
+478: access control;
+488: access control;
+501: access control;
+505: access control;
+511: access control;
+526: access control;
+529: access control;
+535: access control;
+538: access control;
+539: access control;
+543: access control;
+546: access control;
+547: access control;
+553: access control;
+559: access control;
+573: access control;
+595: access control;
+597: access control;
+607: access control;
+619: access control;
+621: access control;
+622: access control;
+624: access control;
+626: access control;
+628: access control;
+653: access control;
+658: access control;
+660: access control;
+670: access control;
+672: access control;
+673: access control;
+677: access control;
+681: access control;
+685: access control;
+706: access control;
+713: access control;
+716: access control;
+729: access control;
+734: access control;
+741: access control;
+746: access control;
+759: access control;
+770: access control;
+772: access control;
+773: access control;
+779: access control;
+784: access control;
+786: access control;
+794: access control;
+804: access control;
+817: access control;
+821: access control;
+827: access control;
+842: access control;
+846: access control;
+852: access control;
+855: access control;
+856: access control;
+897: access control;
+910: access control;
+911: access control;
+913: access control;
+916: access control;
+918: access control;
+920: access control;
+926: access control;
+930: access control;
+934: access control;
+942: access control;
+957: access control;
+960: access control;
+974: access control;
+979: access control;
+986: access control;
+991: access control;
+1004: access control;
+1015: access control;
+1017: access control;
+1018: access control;
+1024: access control;
+1030: access control;
+1032: access control;
+1040: access control;
+1050: access;",25.83696722984314
+0xac44b0c61c20c5063e22d3a0ff67f13afdfed103,"7: access control;
+16: denial of service;
+31: access control;
+44: access control;",2.0289528369903564
+0x7dd8d4c556d2005c5bafc3d5449a99fb46279e6b,11: reentrancy;,1.3097751140594482
+0x0f170120733474c6ec7daf6ae6aeeeb8b645e92c,10: unchecked;,1.5770020484924316
+0x4671ebe586199456ca28ac050cc9473cbac829eb,10: access control; 16: access control; 21: access control; 26: access control; 34: access control; 45: access control;,1.841213941574097
+0xd7bf41bbc8979b3821851b871f055f4ae62b2299,s: 26: arithmetic; 29: variable shadowing/confusion; 32: lack of input validation;,2.286062002182007
+0xde5ebd0b8879b0a42b23b37e4d76a5e21a0bef4b,13: access control; 17: reentrancy; 27: arithmetic;,1.5031380653381348
+0xf9ac5e26d7ec113f42b18c78c05fab68181adfbf,"5: unchecked,
+8: access control;",1.0736210346221924
+0xc70fd22c9821006fb469e4ed14324a991d0296cc,14: access control;,0.8688111305236816
+0x50c5712624b58905c19aee87deca593a2690e3f4,no;,1.110725164413452
+0x5d951e9377ec3383808d842fb37182c1363ca34b,6: access control; 23: bad randomness; 30: reentrancy; 46: arithmetic; 49: unchecked;,1.711667776107788
+0xbD37672116c2F4C14BA5a23921BDC57860e64Aa0,4: access control; 20: access control; 23: access control;,1.374338150024414
+0x79ec9B050Ec82C31D4fc90FB169d968256C5Cb11,13: access control;,1.2280871868133545
+0xd39fe1cffd8f070429169b416b7e07f486d553cf,no;,1.389740228652954
+0x2f81a082e11ee3ab3b063bb9605affc8e3121926,2: access control; 26: access control;,0.9116270542144777
+0x755cdba6ae4f479f7164792b318b2a06c759833b,7: unchecked; 10: access control;,1.2304039001464844
+0xad2b1feb2153cd5a6b8a5f37a820ba013a89cabf,6: reentrancy; 12: reentrancy; 22: access control; 28: arithmetic; 30: unchecked; 34: unchecked; 39: denial of service; 42: denial of service; 48: denial of service; 52: denial of service; 55: bad randomness; 57: front running; 62: time manipulation;,3.714130163192749
+0xB19ff6657A80a68c94CA3fe6AAc3B6cfd16bdcD4,no;,1.0022821426391602
+0x938875f7a161ce2f4c314ba1bb3172dbf52ebb3d,NO;,1.185403823852539
+0x9828953884b857380a80d177c38d95aeb42cd34c,19: unchecked;,0.8649108409881592
+0x6Ba4313d6B01efD3C81224a1d34794B2A0b0CF76,no;,1.4635238647460938
+0xb6Db69e99f7E3ccB352FaBde7D98A8FAe0De4297,2: access control; 13: reentrancy; 38: denial of service;,1.6960842609405518
+0xd4fb7fd0c254a8c6211e441f7236fa9479708a99,24: access control; 27: access control; 34: access control; 37: access control; 42: access control; 46: access control;,1.5754070281982422
+0x5a4964bb5fdd3ce646bb6aa020704f7d4db79302,12: unchecked; 22: access control; 35: access control; 37: access control; 48: unchecked; 54: unchecked;,3.313045024871826
+0xC4216D17a72BD49E404Fe396bB93c9Cd8Cf3e881,3: access control; 12: access control; 26: access control; 28: access control; 34: access control; 39: access control; 42: access control;,1.902809858322144
+0x6abd2b75ff5f306a4d99bfab1ff84b57bb9d23e7,7: access control; 20: reentrancy;,1.352876901626587
+0x9674e9123caf1f74d7f2b8c6823734891c0573d7,"9: access control;
+20: access control;
+25: reentrancy;",1.625018835067749
+0x4B8e1ad58657F8b4b036AD12AfbCef54D24Ac9Ba,2: access control; 5: access control; 16: access control; 22: access control; 27: access control;,3.3097968101501465
+0x9C169d81420aAD7D8a0D6d9F295C3ba2C33575De,22: access control;  33: access control;,1.3110339641571045
+0xB071e5c53094Cabb971E98EBA3B1A86BE555c943,5: access control;,0.92942214012146
+0xb377dc0593ebce801cdfff2e0c8f786983f7d2e7,8: access control; 19: access control;,0.9553959369659424
+0xfbd9986b21fbc0d718d3999a640fe41391b5694d,9: reentrancy; 20: bad randomness;,1.5623910427093506
+0x8a772004af0b8fca5e7093c6f277ba7b0e8fa97a,"11: unchecked;
+20: access control;
+30: access control;
+38: arithmetic;
+54: short addresses;
+67: denial of service;",2.142915725708008
+0x85b846d361f861c9363f769e65f76b83dc80b531,9: access control; 13: unchecked; 22: access control; 29: access control; 37: access control; 41: arithmetic;,3.2564430236816406
+0xd18e21bb13d154a16793c6f89186a034a8116b74,14: access control; 32: access control; 51: access control; 53: access control;,1.7280981540679932
+0x27c41d20014fa87291006d02ddd81b2128039bd7,7: access control;,1.4307949542999268
+0x993bbc77c48ca648659129602dd507a96bc5b561,3: access control; 8: unchecked; 11: denial of service;,1.3091919422149658
+0xab5c8051b9a1df1aab0149f8b0630848b7ecabf6,no;,2.272583246231079
+0x466f39a5fd8d1bd54ea7e82975177c0f00c68492,1: access control;,2.88585901260376
+0x9c9dc2b707a99ae4b6795538ac6bf4f6d4842830,"5: access control;
+13: unchecked;",1.6905720233917236
+0xa43ebd8939d8328f5858119a3fb65f65c864c6dd,13: bad randomness;  17: reentrancy;  22: arithmetic;  23: arithmetic;,1.4370810985565186
+0xcc39e8ab206229c95b9649ead3560e1712a72eed,7: access control; 8: access control; 14: access control;,1.059816837310791
+0xf236d15aa8164626e3457cd38e69d7f46f95eeb9,7: access control; 13: reentrancy; 14: reentrancy;,2.434904098510742
+0xb57acd47240599d0c68f14892dd05441af67e2d3,7: access control; 22: access control;,1.917665958404541
+0xcf31dd376d15db527375b8c2b24e0ef45bcf71b6,"3: denial of service; 
+11: reentrancy; 
+12: reentrancy; 
+15: unchecked; 
+21: unchecked; 
+25: arithmetic; 
+26: arithmetic; 
+28: denial of service;",2.4596731662750244
+0xf1aa63ad7a897ca02cab6021513ee0a86820153e,10: unchecked;,1.3450441360473633
+0x144bf2bbc61a5ae867d7e1fd603015df7f6d4fb6,13: access control;  30: access control;  38: access control;,2.355837821960449
+0x260972db3571a4297b9e0cfa237eabbc9c6e35ce,10: access control;,0.7457528114318848
+0xd1c37dffd4ef36867c5bd7e59566358ea3d21e63,7: reentrancy; 11: unchecked; 16: arithmetic; 18: unchecked; 20: unchecked;,3.108768939971924
+0x4C2C4511BA8F5B5f356ADF7eaeBCE8dD2ea9a9c6,6: access control;,1.0634381771087646
+0xa35fc4d3ea15e0d9272dc181ee1c2761d5d0cabd,5: access control; 9: access control; 10: access control; 14: access control; 15: access control; 16: access control;,4.520832061767578
+0x139759b6Cfada56ccf5B3536f21EAC209140A9d4,3: access control; 14: arithmetic;,1.4391109943389893
+0x799f987acb75a571dd95f7fd152d30f50484b837,14: access control;,0.8146460056304932
+0xb6cd94c7cdea8fa5cfad9210e3f2358ad8b0cd75,5: access control;,1.128221035003662
+0xf9e03d5e3d86277574cfd5f7e842f213cf88945f,"7: unchecked; 
+11: denial of service; 
+12: denial of service;",2.606894969940185
+0xDea48D521832780f5e437F7f744c94d2CdA85Af9,5: unchecked; 7: arithmetic; 8: denial of service;,2.665283203125
+0x5f5d7147adb6ed31a2ca03ce3defb070a3be0ebb,11: access control;,0.86285400390625
+0x3d42f7eb6b97ab66d8d44c725651befe02a70e5e,5: access control;,0.6978380680084229
+0x60a76ea79eBC7264F2897EE7FE4f33F31ef25A74,5: access control; 6: access control;,1.0216848850250244
+0x7CF51743Ed1BCE645e1bB4A3619B73CC782C8de6,10: unchecked;  14: unchecked;,3.406942367553711
+0xD934eE44c22fE8cF0f43bf66620b3001D9172904,"8: access control;
+22: denial of service;
+26: bad randomness;",2.139334917068481
+0x66943100bf0464c1ec43b957a5f72fe2d67a3678,4: access control; 8: access control; 12: unchecked;,1.2871580123901367
+0x2807e558a7eba8d25c3a05a0e7e9a6a437a6e6a4,"6: access control;
+10: access control;",0.938344955444336
+0x6c5c0e2496d27f60c486faaaaa9bde58ea1dc386,3: information exposure through event data; 4: access control; 10: unchecked;,1.7064828872680664
+0x49311a711ea4aff7fea3e0c32066e732fe4652ba,4: access control; 6: unchecked;,1.801062822341919
+0x40ebf2d6e998a76a848c41908733b26e04adffe2,11: reentrancy; 13: access control; 15: reentrancy; 19: access control; 23: denial of service;,1.6059231758117676
+0xe601d4981FA105fEC023622bddE3f07C774b421F,5: uninitialized storage pointer; 14: unchecked transfer;,1.4231626987457275
+0xE7aA95217EB415B2c400c81e2B65359E720aB936,11: unchecked; 14: unchecked; 17: unchecked; 20: unchecked; 23: unchecked; 26: unchecked;,3.7854819297790527
+0xbad661c5a1970342ade69857689738b6c8d9da51,3: access control; 9: access control; 16: access control; 22: access control; 27: access control; 32: access control; 37: access control; 43: access control;,1.8495559692382808
+0x8f4e3d448a318c1dec52b3f22d77132a39c62025,4: reentrancy; 13: denial of service;,1.5180349349975586
+0x1c94f41ab9cd8faa8af45ae7827bf5a8f891f4cd,7: access control; 12: denial of service;,1.0850651264190674
+0x0318179601a70085aeb488f178b081295b65ecc9,10: access control;,1.6399171352386477
+0x627917e47cd111382ddf7fb1dc140d2daf8876b3,12: unchecked;,1.383616924285889
+0x22F83d39A2148dD389ED4C7A9280f57D5c8679DA,6: uninitialized storage pointer; 8: unchecked suicide / self-destruct; 11: unprotected ether withdrawal; 15: unprotected function execution;,1.637217998504639
+0x536c2622748118a82bc9fb15a450d828966d9761,4: reentrancy; 10: reentrancy; 12: reentrancy; 16: reentrancy; 17: reentrancy;,2.075277805328369
+0xe47014f16c55ddd3add5b68b951e10fcea7da686,5: dos;,0.9255850315093994
+0xe0b8fce1183e31c995b40460e6cb6712fa929f59,5: access control;,1.053001880645752
+0xFE70f7D0Fe6Ceb71D4FC0308322fFA6098043E43,NO;,2.158493995666504
+0x1d11e5eaE3112dbD44f99266872FF1D07C77DCe8,no;,1.2208099365234375
+0xa9659531a174390b6921ffd540365bbb02297f10,5: access control;,0.9392468929290771
+0x1e9d5e4ed8ef31cfece10b4c92c9057f991f36bc,6: reentrancy; 13: denial of service;,2.1325929164886475
+0xbeac5df5f1c56f949852c8589314036042c1d603,5: unchecked;,1.5620219707489014
