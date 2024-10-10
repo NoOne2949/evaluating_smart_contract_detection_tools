@@ -29,7 +29,7 @@ def analyze_sb_results(vulnerability_in_code, address):
                 except IndexError:
                     pass  # Ignore malformed entries
     else:
-        if vulnerability_in_code.strip() == 'S':
+        if vulnerability_in_code.strip().lower() == 'no':
             obj = {
                 "line": 'NO',
                 "vulnerability": 'NO',
